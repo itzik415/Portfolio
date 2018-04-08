@@ -317,4 +317,184 @@
 
 
 /* Small phones: from 0 to 480px */
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {
+
+    html,
+    body {
+        font-weight: 400;
+        font-size: 8.5px;
+        width: 100%;
+        padding: 0;
+        /* padding: 10px 20px 0px 20px ; */
+    }
+
+    #main-opening {
+        height: 580px;
+    }
+
+    #main_button {
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    #portfolio_name {
+        font-size: 15px;
+    }
+
+    .ion-arrow-right-c {
+        display: none;
+    }
+
+    header {
+        display: none;
+    }
+
+    #moon{
+        display: none;
+    }
+    
+    
+    #hole1{ 
+        display: none;   
+    }
+
+    #hole2{
+        display: none;
+    }
+
+
+    #hole3{
+        display: none;
+    }
+
+    hr {
+        width: 40px;
+    }
+
+    h4 {
+        padding: 0;
+        font-size: 300%;
+    }
+
+    .para {
+        flex-direction: column;
+        justify-content: center;
+        width: 370px;
+        height: 670px;
+    }
+
+    .about-me {
+        width: 340px;
+        padding: 20px;
+        font-size: 160%;
+    }
+
+    .my-photo {
+        width: 350px;
+        margin-bottom: 10px;
+    }
+
+    #about-content {
+        padding-bottom: 20px;
+    }
+
+    #portfolio-content {
+        padding-bottom: 2%;
+    }
+
+    .project {
+        flex-direction: column;
+        /* align-items: center; */
+        text-align: left;
+        box-shadow: none;
+        padding: 10px;
+        width: 370px;
+        height: 610px;
+    }
+
+    h6 {
+        font-size: 400%;
+        text-align: left;
+    }
+
+    .app-description {
+        margin: 0;
+        font-size: 200%;
+        line-height: 25px;
+        width: 100%;
+        
+    }
+
+    .left-side {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .right-side1 {
+        background: #ff4e6c;
+        margin-top: 5%;
+        width: 350px;
+        height: 320px;
+    }
+    .right-side2 {
+        background: #26AFEB;
+        margin-top: 5%;
+        width: 350px;
+        height: 320px;
+    }
+    .right-side3 {
+        background: #60be86;
+        margin-top: 5%;
+        width: 350px;
+        height: 320px;
+    }
+
+    h7 {
+        margin: 2% 2% 0 0;
+    }
+
+    .code-button {
+        margin: 2% 2% 0 0;
+    }
+
+    .para2 {
+        flex-direction: column;
+        justify-content: start;
+        width: 370px;
+        height: 230px;
+    }
+
+    .what-i-know,
+    .what-i-learn {
+        width: 340px;
+        font-size: 300%;
+    }
+
+    .skill-name {
+        margin: 0;
+    }
+
+    .holder {
+        width: 350px;
+    }
+
+    .fa-facebook-square,
+    .fa-camera-retro,
+    .fa-github-square,
+    .fa-linkedin,
+    .fa-clipboard-list{
+        margin: 0 3px 5px 3px;
+        background-color: rgba(27, 25, 41, 0.726);
+        border-radius: 6px;
+        padding: 10px 13px;
+        font-size: 50px;
+        
+    }
+
+    .footer-name {
+        margin: 7px 0;
+        font-size: 120%;
+    }
+
+}
