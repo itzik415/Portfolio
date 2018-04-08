@@ -1,0 +1,320 @@
+/* Big tablets to 1500px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1500px) {
+    html,
+    body {
+        font-weight: 400;
+        font-size: 17px;
+        padding: 10px 20px 0px 20px ;
+    }
+
+    hr {
+        width: 130px;
+    }
+
+    .para {
+        width: 1000px;
+        height: 360px;
+    }
+
+    .para2 {
+        padding: 8px;
+        width: 1000px;
+    }
+
+    .what-i-know {
+        width: 85%;
+        padding: 5px;
+        margin: 20px;
+    }
+    
+    .what-i-learn {
+        width: 85%;
+        padding: 5px;
+        margin: 20px;
+    }
+
+    .skill-icon {
+        margin: 20px 65px;
+        font-size: 50px;
+    }
+    
+    .skill-icon1 {
+        margin: 20px 65px;
+        font-size: 50px;
+    }
+
+    .about-me {
+        padding: 23px 15px;
+    }
+
+    .project {
+        width: 1000px;
+        height: 320px;
+    }
+
+    .app-description {
+        line-height: 20px;
+    }
+    
+    .programs-used {
+        margin: 4% 0 2% 0;
+    }
+
+    #submit_word {
+        margin-left: 15.5%;
+    }
+    
+    .ion-paper-airplane {
+        margin-right: 15.5%;
+    }
+
+}
+
+/* Big tablets to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+
+    html,
+    body {
+        font-weight: 400;
+        font-size: 15px;
+        padding: 10px 20px 0px 20px ;
+    }
+
+    #moon{
+        position: absolute;
+        height: 220px;
+        width: 220px;
+      }
+      
+      
+    #hole1{ 
+        width: 61px;
+        height: 61px;
+        top: 20%;
+        right: -60%;
+    }
+    
+    #hole2{
+        width: 27px;
+        height: 27px;
+        top: -5%;
+        right: -40%;
+    }
+    
+    
+    #hole3{
+        width: 17.5px;
+        height: 17.5px;
+        top: 10%;
+        right: -50%;
+    }
+
+    .about-me {
+        padding: 38px 10px;
+    }
+
+    #submit_word {
+        margin-left: 10.5%;
+    }
+    
+    .ion-paper-airplane {
+        margin-right: 10.5%;
+    }
+
+    #button-submit {
+        width: 120px;
+    }
+
+    .house-pic {
+        width: 60px;
+    }
+
+    .bitcoin-pic {
+        width: 60px;
+    }
+
+    .programs-used {
+        margin: 11% 0 2% 0;
+    }
+
+}
+
+/* Small tablets to big tablets: 768px to 1023px */
+@media only screen and (max-width: 1127px) {
+    html,
+    body {
+        font-weight: 400;
+        font-size: 14px;
+        padding: 10px 20px 0px 20px ;
+    }
+
+    hr {
+        width: 100px;
+        margin: 20px 10px 0 10px;
+    }
+
+    .para {
+        width: 800px;
+        height: 300px;
+    }
+
+    .about-me {
+        padding: 12px 10px;
+        line-height: 22px;
+    }
+
+    .project {
+        width: 800px;
+        height: 280px;
+    }
+
+    .programs-used {
+        margin: 1% 0 2% 0;
+    }
+
+    .para2 {
+        padding: 8px;
+        width: 800px;
+        height: 300px;
+    }
+
+    .skill-name {
+        padding: 0px;
+        margin: 0px 20px;
+        width: 80px;
+    }
+
+    .skill-icon {
+        /* width: 15px */
+    }
+
+    .icons-skills {
+        margin: 0;
+    }
+
+}
+
+
+/* Small tablets to big tablets: 768px to 1023px */
+@media only screen and (max-width: 920px) {
+
+    html,
+    body {
+        font-weight: 400;
+        font-size: 14px;
+        padding: 10px 20px 0px 20px ;
+    }
+
+    #moon{
+        position: absolute;
+        height: 180px;
+        width: 180px;
+    }
+    
+    
+    #hole1{ 
+        width: 47px;
+        height: 47px;
+        top: 20%;
+        right: -60%;
+    }
+
+    #hole2{
+        width: 20px;
+        height: 20px;
+        top: -5%;
+        right: -40%;
+    }
+
+
+    #hole3{
+        width: 13px;
+        height: 13px;
+        top: 10%;
+        right: -50%;
+    }
+
+    .para {
+        width: 600px;
+        height: 220px;
+    }
+
+    .about-me {
+        padding: 2px 10px;
+        line-height: 19px;
+        font-size: 12px;
+    }
+
+    .open-para {
+        font-size: 16px; 
+    }
+
+    .project {
+        width: 600px;
+        height: 220px;
+    }
+
+    .app-description {
+        line-height: 15px;
+    }
+
+    .left-side {
+        padding: 5px;
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    h7 {
+        margin: 30px 2px 0 2px;
+        padding: 8px 6px;
+    }
+
+    .programs-used {
+        margin: 0;
+    }
+
+    .coding-look {
+        height: 30px;
+    }
+
+    .code-button {
+        padding: 5px 10px;
+        margin: 2px 2px 0 2px;
+    }
+
+    .para2 {
+        padding: 8px;
+        width: 600px;
+        height: auto;
+    }
+
+    .skill-name {
+        padding: 0px;
+        margin: 0px 20px;
+        width: 80px;
+    }
+
+    .skill-icon {
+        margin: 10px;
+        font-size: 30px;
+    }
+
+    .skill-icon1 {
+        margin: 10px;
+        font-size: 30px;
+    }
+
+    .icons-skills {
+        margin: 0;
+    }
+}
+
+/* Small phones to small tablets: 481px to 767px */
+@media only screen and (max-width: 723px) {}
+
+
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {}
