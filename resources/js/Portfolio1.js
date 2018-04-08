@@ -18,8 +18,43 @@ $(document).ready(function() {
     $('#main_button').click(function(){
     	$('html, body').animate({
     		scrollTop : $('.portfolio').offset().top
-    		}, 500) 	
+    	}, 500) 	
     })
+
+    //making the name at the button work
+    $('.itzik').click(function(){
+    	$('html, body').animate({
+    		scrollTop : $('#main-opening').offset().top
+    	}, 500) 	
+    })
+
+    $('.ion-navicon-round').click(function() {
+        $('.hidden2').slideToggle("slow")
+    });
+
+    $('.ion-close-round').click(function() {
+        $('.hidden2').slideToggle("slow")
+    });
+
+    $('#home2').click(function() {
+        $('.hidden2').slideToggle("slow")
+    });
+
+    $('#about2').click(function() {
+        $('.hidden2').slideToggle("slow")
+    });
+
+    $('#portfolio2').click(function() {
+        $('.hidden2').slideToggle("slow")
+    });
+
+    $('#skills2').click(function() {
+        $('.hidden2').slideToggle("slow")
+    });
+
+    $('#contact2').click(function() {
+        $('.hidden2').slideToggle("slow")
+    });
     
 });
 
@@ -42,17 +77,32 @@ function amount(i){
 }
 
 //printing to the screen the stars
-for(let i = 0; i < 380; i++){
-    amount(i);
+if(outerWidth < 415){
+    var screenHeight = screen.height - 25;
+    for(let i = 0; i < 200; i++){
+        amount(i);
+    } 
+}else {
+    var screenHeight = screen.height - 110;
+    for(let i = 0; i < 380; i++){
+        amount(i);
+    }
 }
+
 
 
 //making the stars shining
 var shiningStar = function(){
-    var y = Math.floor(Math.random()* 100);
+    if(outerWidth < 500){
+        var y = Math.floor(Math.random()* 40);
+    }else {
+        var y = Math.floor(Math.random()* 100);
+    }
     document.querySelectorAll('.star-img')[y].style.animation = 'star-img 4.343s linear infinite';
     document.querySelectorAll('.star-img')[y].style.width = '12px';
 }
+
+
 
 setInterval(shiningStar,100);
 
@@ -136,8 +186,6 @@ liveButton3.addEventListener('mouseout',function(){
     liveButton3.style.color = '#60be86';
 })
 //////////////////////////////////////////////////////////
-
-
 
 
 

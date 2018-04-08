@@ -24,6 +24,15 @@ body {
     font-size: 20px;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     padding: 10px 20px 0px 20px ;
+    overflow-x: hidden; 
+}
+
+.hidden {
+    display: none;
+}
+
+.hidden2 {
+    display: none;
 }
 
 hr {

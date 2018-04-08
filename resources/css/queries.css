@@ -328,8 +328,75 @@
         /* padding: 10px 20px 0px 20px ; */
     }
 
+    .hidden {
+        position:fixed; 
+        top: 0; 
+        left: 0; 
+        z-index: 2000; 
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 55px;
+        padding: 10px;
+        background: white;
+        opacity: 0.85; 
+    }
+
+    .hidden2 {
+        display: none;
+        position:fixed; 
+        top: 0; 
+        left: 0; 
+        z-index: 2001; 
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+        background: white;
+        opacity: 0.95;
+    }
+
+    .close-button {
+        display: flex;
+        justify-content: end;
+    }
+
+    .ion-close-round {
+        font-size: 30px;
+        color: grey;
+        padding: 10px 10px;
+        margin-left: 89%;
+    }
+    
+    .main-menu-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h9 {
+        font-size: 350%;
+        padding: 20px;
+    }
+
+    .nav-content0 {
+        color: #ff4e6c;
+    }
+
+    h2 {
+        font-size: 220%;
+    }
+
+    .ion-navicon-round {
+        font-size: 30px;
+    }
+
     #main-opening {
-        height: 580px;
+        height: 670px;
     }
 
     #main_button {
@@ -373,7 +440,7 @@
     }
 
     h4 {
-        padding: 0;
+        padding: 10px 0 0 0;
         font-size: 300%;
     }
 
