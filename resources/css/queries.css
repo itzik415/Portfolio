@@ -277,11 +277,12 @@
 
     .coding-look {
         height: 30px;
+        margin-left: 2px;
     }
 
     .code-button {
         padding: 5px 10px;
-        margin: 2px 2px 0 2px;
+        margin: 2px 0px 0 0px;
     }
 
     .para2 {
@@ -396,7 +397,7 @@
     }
 
     #main-opening {
-        height: 670px;
+        height: 735px;
     }
 
     #main_button {
@@ -483,14 +484,18 @@
     h6 {
         font-size: 400%;
         text-align: left;
+        margin-left: 0;
     }
 
     .app-description {
-        margin: 0;
+        margin: 0 0 0 0.5%;
         font-size: 200%;
         line-height: 25px;
         width: 100%;
-        
+    }
+
+    .programs-used {
+        margin-left: -0.3%;
     }
 
     .left-side {
@@ -518,11 +523,15 @@
     }
 
     h7 {
-        margin: 2% 2% 0 0;
+        margin: 2% 0% 0 1%;
+        padding: 8px 10px;
     }
 
     .code-button {
-        margin: 2% 2% 0 0;
+        margin: 2% 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .para2 {
@@ -530,6 +539,7 @@
         justify-content: start;
         width: 370px;
         height: 230px;
+        background: white;
     }
 
     .what-i-know,
@@ -556,7 +566,6 @@
         border-radius: 6px;
         padding: 10px 13px;
         font-size: 50px;
-        
     }
 
     .footer-name {
