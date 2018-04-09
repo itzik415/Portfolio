@@ -98,9 +98,20 @@ var shiningStar = function(){
     }else {
         var y = Math.floor(Math.random()* 100);
     }
-    document.querySelectorAll('.star-img')[y].style.animation = 'star-img 4.343s linear infinite';
+    document.querySelectorAll('.star-img')[y].style.animation = 'star-img 4.34345s linear infinite';
     document.querySelectorAll('.star-img')[y].style.width = '12px';
 }
+
+
+document.querySelector('#button-submit').addEventListener('click', function (){
+    document.querySelector('.ion-paper-airplane').style.animation = 'ion-paper-airplane 10s 1';
+})
+
+document.querySelector('#button-submit').addEventListener('click', function (){
+    document.querySelector('.send-spaceship').style.animation = 'send-spaceship 12s 1';
+})
+
+
 
 
 
@@ -186,6 +197,14 @@ liveButton3.addEventListener('mouseout',function(){
     liveButton3.style.color = '#60be86';
 })
 //////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
 
 
 

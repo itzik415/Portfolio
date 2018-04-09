@@ -80,6 +80,11 @@
         padding: 10px 20px 0px 20px ;
     }
 
+    .Spaceman-in-space {
+        top: 100px;
+        right: 50px;
+    }
+
     #moon{
         position: absolute;
         height: 220px;
@@ -122,7 +127,7 @@
     }
 
     #button-submit {
-        width: 120px;
+        width: 130px;
     }
 
     .house-pic {
@@ -192,6 +197,17 @@
         margin: 0;
     }
 
+    /* .send-spaceship {
+        padding-left: 150px;
+    } */
+
+    #button-submit {
+        width: 120px;
+    }
+    #submit_word {
+        margin-left: 6px;
+    }
+
 }
 
 
@@ -203,6 +219,11 @@
         font-weight: 400;
         font-size: 14px;
         padding: 10px 20px 0px 20px ;
+    }
+
+    .Spaceman-in-space {
+        top: 100px;
+        right: 38px;
     }
 
     #moon{
@@ -419,6 +440,14 @@
         display: none;
     }
 
+    .Spaceman-in-space {
+        display: none;
+    }
+
+    .star-img{
+        width: 4px;
+    }
+
     #moon{
         display: none;
     }
@@ -555,6 +584,18 @@
 
     .holder {
         width: 350px;
+    }
+
+    #button-submit {
+        width: 120px;
+    }
+
+    .send-spaceship {
+        margin-left: 12px;
+    }
+
+    #submit_word {
+        margin-left: 6px;
     }
 
     .fa-facebook-square,
