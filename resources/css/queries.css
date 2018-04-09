@@ -365,11 +365,12 @@
         justify-content: end;
     }
 
-    .ion-close-round {
-        font-size: 30px;
+    .closing-icon-bar {
+        width: 52px;
+        height: 52px;
         color: grey;
         padding: 10px 10px;
-        margin-left: 89%;
+        margin: 0.2% 0 25% 86%;
     }
     
     .main-menu-buttons {
@@ -392,8 +393,8 @@
         font-size: 220%;
     }
 
-    .ion-navicon-round {
-        font-size: 30px;
+    .nav-icon-bar {
+        width: 45px;
     }
 
     #main-opening {

@@ -28,11 +28,11 @@ $(document).ready(function() {
     	}, 500) 	
     })
 
-    $('.ion-navicon-round').click(function() {
+    $('.nav-icon-bar').click(function() {
         $('.hidden2').slideToggle("slow")
     });
 
-    $('.ion-close-round').click(function() {
+    $('.closing-icon-bar').click(function() {
         $('.hidden2').slideToggle("slow")
     });
 
