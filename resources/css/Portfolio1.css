@@ -720,7 +720,7 @@ textarea {
 @keyframes send-spaceship {
     20%, 25%, 30% {
         width: 80px;
-        transform: translate(300px,-300px) rotate(-90deg);   
+        transform: translate(100px,-350px) rotate(-90deg);   
     }
 
     35%, 40%, 45%, 50% {
