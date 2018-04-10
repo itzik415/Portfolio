@@ -718,24 +718,23 @@ textarea {
 }
 
 @keyframes send-spaceship {
-    20%, 30% {
+    20%, 25%, 30% {
         width: 80px;
-        transform: translate(300px,-300px); 
+        transform: translate(300px,-300px) rotate(-90deg);   
     }
 
-    40%, 50% {
+    35%, 40%, 45%, 50% {
         width: 110px;
-        transform: rotate(270deg);
+        
     }
     
-    63%, 63.999%, 65%, 69.999%{
+    60%, 65%, 70%{
         width: 130px;
-
     } 
     
     80%, 85%, 100%{
-        width: 190px;
-        transform: translate(-4000px,-40px);
+        width: 200px;
+        transform: translate(-2000px,-300px) rotate(-90deg);
     } 
 }
 
