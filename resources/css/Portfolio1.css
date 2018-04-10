@@ -27,6 +27,8 @@ body {
     overflow-x: hidden; 
 }
 
+
+
 .hidden {
     display: none;
 }
@@ -110,7 +112,8 @@ h2 {
 .nav-content:hover {
     transition: 0.2s;
     color: #ff4e6c;
-    text-decoration: underline;
+    border-bottom: 2px solid #ff4e6c;
+    padding: 3px;
 }
 
 .resume-header {
@@ -715,11 +718,25 @@ textarea {
 }
 
 @keyframes send-spaceship {
-    20%, 21.999%, 63%, 63.999%, 65%, 69.999%, 80%, 85%, 100%{
-        width: 200px;
-        transform: translate(1000px,-1000px);
-        opacity: 0;
+    20%, 30% {
+        width: 80px;
+        transform: translate(300px,-300px); 
     }
+
+    40%, 50% {
+        width: 110px;
+        transform: rotate(270deg);
+    }
+    
+    63%, 63.999%, 65%, 69.999%{
+        width: 130px;
+
+    } 
+    
+    80%, 85%, 100%{
+        width: 190px;
+        transform: translate(-4000px,-40px);
+    } 
 }
 
 /* .ion-paper-airplane {
@@ -801,3 +818,8 @@ footer{
     transition: 0.3s;
 }
 
+.selected {
+    color: #ff4e6c;
+    border-bottom: 2px solid #ff4e6c;
+    padding: 3px;
+}

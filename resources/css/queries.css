@@ -445,7 +445,13 @@
     }
 
     .star-img{
-        width: 4px;
+        width: 60px;
+    }
+
+    @keyframes star-img {
+        20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+            opacity: 0;
+        }
     }
 
     #moon{

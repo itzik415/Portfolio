@@ -56,6 +56,39 @@ $(document).ready(function() {
         $('.hidden2').slideToggle("slow")
     });
     
+    // Change highlighted nav item on scroll
+    $(window).scroll(function() {
+        var navHeight = $('#nav').height(),
+            documentHeight = $(document).height(),
+            windowHeight = $(window).height(),
+            scroll = $(window).scrollTop(),
+            about = $('#about-content').offset().top,
+            portfolio = $('#portfolio-content').offset().top;
+            skills = $('#skills-content').offset().top;
+
+        if (scroll >= about - navHeight) {
+            $('#nav a').removeClass('selected');
+            $('#about1').addClass('selected');
+        }
+        if (scroll >= portfolio - navHeight) {
+            $('#nav a').removeClass('selected');
+            $('#portfolio1').addClass('selected');
+        }
+        if (scroll >= skills - navHeight) {
+            $('#nav a').removeClass('selected');
+            $('#skills1').addClass('selected');
+        }
+        // If at the top of the page, remove all selected classes
+        if (scroll === 0) {
+            $('#nav a').removeClass('selected');
+            $('#home1').addClass('selected');
+        }
+        // If at bottom of page, add selected class on Contact
+        if (scroll + windowHeight === documentHeight) {
+            $('#nav a').removeClass('selected');
+            $('#contact1').addClass('selected');
+        }
+    });
 });
 
 
@@ -77,7 +110,7 @@ function amount(i){
 }
 
 //printing to the screen the stars
-if(outerWidth < 415){
+if(outerWidth < 480){
     var screenHeight = screen.height - 25;
     for(let i = 0; i < 200; i++){
         amount(i);
@@ -102,19 +135,6 @@ var shiningStar = function(){
     document.querySelectorAll('.star-img')[y].style.width = '12px';
 }
 
-
-document.querySelector('#button-submit').addEventListener('click', function (){
-    document.querySelector('.ion-paper-airplane').style.animation = 'ion-paper-airplane 10s 1';
-})
-
-document.querySelector('#button-submit').addEventListener('click', function (){
-    document.querySelector('.send-spaceship').style.animation = 'send-spaceship 12s 1';
-})
-
-
-
-
-
 setInterval(shiningStar,100);
 
 function newNum(){
@@ -132,9 +152,9 @@ document.querySelector('#main_button').addEventListener('mouseout',function(){
 })
 
 //Manipulate submit form button
-document.querySelector('#button-submit').addEventListener('click', function(){
-    // document.querySelector('.button').style.transition = '0.15s';
-    document.querySelector('#button-submit').style.background = '#ff4e6c';
+
+document.querySelector('#button-submit').addEventListener('click', function (){
+    document.querySelector('.send-spaceship').style.animation = 'send-spaceship 5s 1';
 })
 
 document.querySelector('#button-submit').addEventListener('mouseout',function(){
