@@ -21,7 +21,7 @@ $(document).ready(function() {
     	}, 500) 	
     })
 
-    //making the name at the button work
+    //making my name at the bottom scroll to the top of the page
     $('.itzik').click(function(){
     	$('html, body').animate({
     		scrollTop : $('#main-opening').offset().top
@@ -92,12 +92,9 @@ $(document).ready(function() {
 });
 
 
-
-var screenHeight = screen.height - 110;
-
 //creating white starts
 function amount(i){
-    let y = String(Math.floor(Math.random() * screenHeight));
+    let y = String(Math.floor(Math.random() * (innerHeight-15)));
     let x = String(Math.floor(Math.random() * screen.width));
     var star = document.getElementsByClassName('star-img')[i];
     var img = document.createElement("img");
@@ -110,13 +107,19 @@ function amount(i){
 }
 
 //printing to the screen the stars
-if(outerWidth < 480){
-    var screenHeight = screen.height - 25;
+if(outerWidth < 1050){
+    for(let i = 0; i < 300; i++){
+        amount(i);
+    } 
+}else if(outerWidth < 800){
+    for(let i = 0; i < 250; i++){
+        amount(i);
+    } 
+}else if(outerWidth < 500){
     for(let i = 0; i < 200; i++){
         amount(i);
     } 
 }else {
-    var screenHeight = screen.height - 110;
     for(let i = 0; i < 380; i++){
         amount(i);
     }
@@ -127,10 +130,14 @@ if(outerWidth < 480){
 //making the stars shining
 var shiningStar = function(){
     var totalStars = document.querySelectorAll('.star-img');
-    if(outerWidth < 500){
+    if(outerWidth < 800 && outerWidth >= 500){
+        var y = Math.floor(Math.random()* 65);
+        totalStars[y].style.animation = 'star-img 4.34345s linear infinite';
+        totalStars[y].style.width = '9px';
+    }if(outerWidth < 500){
         var y = Math.floor(Math.random()* 40);
         totalStars[y].style.animation = 'star-img 4.34345s linear infinite';
-        totalStars[y].style.width = '8px';
+        totalStars[y].style.width = '7px';
     }else {
         var y = Math.floor(Math.random()* 100);
         totalStars[y].style.animation = 'star-img 4.34345s linear infinite';

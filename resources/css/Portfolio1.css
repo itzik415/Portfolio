@@ -725,7 +725,6 @@ textarea {
 
     35%, 40%, 45%, 50% {
         width: 110px;
-        
     }
     
     60%, 65%, 70%{
@@ -737,23 +736,6 @@ textarea {
         transform: translate(-2000px,-300px) rotate(-90deg);
     } 
 }
-
-/* .ion-paper-airplane {
-    font-size: 100%;
-    color: white;
-    margin-right: 15.5%;
-    z-index: 10000;
-    position: absolute;
-    left: 52%;
-}
-
-@keyframes ion-paper-airplane {
-    20%, 21.999%, 63%, 63.999%, 65%, 69.999% , 80%, 82%, 100% {
-        font-size: 100px;
-        transform: translate(870px,-1000px);
-        opacity: 0;
-    }
-} */
 
 #submit_word {
     margin-left: 19.5%;
