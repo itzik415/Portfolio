@@ -126,13 +126,16 @@ if(outerWidth < 480){
 
 //making the stars shining
 var shiningStar = function(){
+    var totalStars = document.querySelectorAll('.star-img');
     if(outerWidth < 500){
         var y = Math.floor(Math.random()* 40);
+        totalStars[y].style.animation = 'star-img 4.34345s linear infinite';
+        totalStars[y].style.width = '8px';
     }else {
         var y = Math.floor(Math.random()* 100);
+        totalStars[y].style.animation = 'star-img 4.34345s linear infinite';
+        totalStars[y].style.width = '12px';
     }
-    document.querySelectorAll('.star-img')[y].style.animation = 'star-img 4.34345s linear infinite';
-    document.querySelectorAll('.star-img')[y].style.width = '12px';
 }
 
 setInterval(shiningStar,100);
