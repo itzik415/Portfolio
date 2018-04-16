@@ -108,8 +108,10 @@ function amount(i){
 
 //printing to the screen the stars
 if(outerWidth < 1050){
-    for(let i = 0; i < 300; i++){
-        amount(i);
+    for(let i = 0; 
+        i < 300; i++){
+        amount( i )
+        ;
     } 
 }else if(outerWidth < 800){
     for(let i = 0; i < 250; i++){
@@ -162,7 +164,6 @@ document.querySelector('#main_button').addEventListener('mouseout',function(){
 })
 
 //Manipulate submit form button
-
 document.querySelector('#button-submit').addEventListener('click', function (){
     document.querySelector('.send-spaceship').style.animation = 'send-spaceship 5s 1';
 })
@@ -172,71 +173,28 @@ document.querySelector('#button-submit').addEventListener('mouseout',function(){
 })
 
 //////////////////////////////////////////////////////////
-var gitButton1 = document.querySelector('.github-button1');
-var liveButton1 = document.querySelector('.live-coding1');
+var gitButton = document.querySelectorAll('.github-button');
+var liveButton = document.querySelectorAll('.live-coding');
 
-liveButton1.addEventListener('mouseover',function(){
-    gitButton1.style.background = 'white';
-    gitButton1.style.color = '#ff4e6c';
-    liveButton1.style.background = '#ff4e6c';
-    liveButton1.style.color = 'white';
-})
+for(let i = 0; i < liveButton.length; i++){
+    liveButton[i].addEventListener('mouseover',function(){    
+        gitButton[i].style.background = 'white';
+        gitButton[i].style.color = '#ff804e';
+        liveButton[i].style.background = '#ff804e';
+        liveButton[i].style.color = 'white';
+    })
+}
 
-liveButton1.addEventListener('mouseout',function(){
-    gitButton1.style.background = '#ff4e6c';
-    gitButton1.style.color = 'white';
-    liveButton1.style.background = 'white';
-    liveButton1.style.color = '#ff4e6c';
-})
-//////////////////////////////////////////////////////////
-
-//////////////////////////////////////////////////////////
-var gitButton2 = document.querySelector('.github-button2');
-var liveButton2 = document.querySelector('.live-coding2');
-
-liveButton2.addEventListener('mouseover',function(){
-    gitButton2.style.background = 'white';
-    gitButton2.style.color = '#26AFEB';
-    liveButton2.style.background = '#26AFEB';
-    liveButton2.style.color = 'white';
-})
-
-liveButton2.addEventListener('mouseout',function(){
-    gitButton2.style.background = '#26AFEB';
-    gitButton2.style.color = 'white';
-    liveButton2.style.background = 'white';
-    liveButton2.style.color = '#26AFEB';
-})
-//////////////////////////////////////////////////////////
+for(let i = 0; i < liveButton.length; i++){
+    liveButton[i].addEventListener('mouseout',function(){
+        gitButton[i].style.background = '#ff804e';
+        gitButton[i].style.color = 'white';
+        liveButton[i].style.background = 'white';
+        liveButton[i].style.color = '#ff804e';
+    })
+}
 
 //////////////////////////////////////////////////////////
-var gitButton3 = document.querySelector('.github-button3');
-var liveButton3 = document.querySelector('.live-coding3');
-
-liveButton3.addEventListener('mouseover',function(){
-    gitButton3.style.background = 'white';
-    gitButton3.style.color = '#60be86';
-    liveButton3.style.background = '#60be86';
-    liveButton3.style.color = 'white';
-})
-
-liveButton3.addEventListener('mouseout',function(){
-    gitButton3.style.background = '#60be86';
-    gitButton3.style.color = 'white';
-    liveButton3.style.background = 'white';
-    liveButton3.style.color = '#60be86';
-})
-//////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-
-
 
 
 //Manipulate contact button arrow 

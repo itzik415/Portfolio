@@ -23,11 +23,18 @@ body {
     font-weight: 400;
     font-size: 20px;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-    padding: 10px 20px 0px 20px ;
+    /* background: linear-gradient(to bottom, #04050a 0%,#131f51 60%,#48577D 100%); */
     overflow-x: hidden; 
 }
 
-
+.about,
+.portfolio,
+.skills,
+.contact,
+footer {
+    padding: 30px 60px 60px 60px;
+    margin: 3%;
+}
 
 .hidden {
     display: none;
@@ -111,21 +118,21 @@ h2 {
 
 .nav-content:hover {
     transition: 0.2s;
-    color: #ff4e6c;
-    border-bottom: 2px solid #ff4e6c;
+    color: #ff804e;
+    border-bottom: 2px solid #ff804e;
     padding: 3px;
 }
 
 .resume-header {
     color: white;
-    background: #ff4e6c;
-    border: 1px solid #ff4e6c;
+    background: #ff804e;
+    border: 1px solid #ff804e;
     padding: 10px;
     border-radius: 18px;
 }
 
 .resume-header:hover {
-    background: #f32b4d;
+    background: #f86930;
     text-decoration: none;
 }
 
@@ -136,8 +143,9 @@ h2 {
 /*******************/
 
 #main-opening {
-    height: 950px;
+    height: 100vh;
     font-family: 'Righteous', cursive;
+    background: linear-gradient(to bottom, #04050a 0%,#131f51 60%,#48577D 100%);
     border-bottom: 1px solid rgba(255, 255, 255, 0.767);
     
     animation-play-state: running;
@@ -161,8 +169,8 @@ h2 {
 
 #come_in {
     font-size: 250%;
-    text-shadow: 0px 0px 100px #ff4e6c36,0px 0px 100px#ff4e6c7a,0px 0px 100px #ff4e6cbd;
-    color: #ff4e6c;
+    text-shadow: 0px 0px 100px #ff804e,0px 0px 100px#ff804e86,0px 0px 100px #ff804e25;
+    color: #ff804e;
     z-index: 2;
 }
 
@@ -229,7 +237,7 @@ h2 {
   right: 40px;
   z-index: 3;
   box-shadow: inset -16px 4px 5px rgba(0,0,0,0.4);
-  background: radial-gradient(circle at 5px 175px,  rgb(115, 118, 138),  rgb(31, 49, 69));
+  background: radial-gradient(circle at 5px 175px,  rgb(147, 148, 153),  rgb(60, 72, 85));
 }
 
 
@@ -238,7 +246,7 @@ h2 {
     height: 70px;
     top: 20%;
     right: -60%;
-    background: radial-gradient(circle at 5px 175px,  rgb(115, 118, 138),  rgb(31, 49, 69));
+    background: radial-gradient(circle at 5px 175px,  rgb(147, 148, 153),  rgb(60, 72, 85));
     border-radius: 50%;
     box-shadow: inset 6px -4px 5px rgba(0,0,0,0.4);
     position: relative;
@@ -250,7 +258,7 @@ h2 {
     height: 30px;
     top: -5%;
     right: -40%;
-    background: radial-gradient(circle at 5px 175px,  rgb(115, 118, 138),  rgb(31, 49, 69));
+    background: radial-gradient(circle at 5px 175px,  rgb(147, 148, 153),  rgb(60, 72, 85));
     border-radius: 50%;
     box-shadow: inset 6px -4px 5px rgba(0,0,0,0.4);
     position: relative;
@@ -263,7 +271,7 @@ h2 {
     height: 20px;
     top: 10%;
     right: -50%;
-    background: radial-gradient(circle at 5px 175px,  rgb(115, 118, 138),  rgb(31, 49, 69));
+    background: radial-gradient(circle at 5px 175px,  rgb(147, 148, 153),  rgb(60, 72, 85));
     border-radius: 50%;
     box-shadow: inset 6px -4px 5px rgba(0,0,0,0.4);
     position: relative;
@@ -299,8 +307,8 @@ h2 {
     flex-direction: column;
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.767);
-    padding: 30px 60px 60px 60px;
-    margin: 30px 0 30px 0;
+    /* padding: 30px 60px 60px 60px; */
+    /* margin: 30px 0 30px 0; */
 }
 
 .about-me {
@@ -324,6 +332,7 @@ h2 {
     width: 34.5%;
     height: auto;
     padding: 0.8%;
+    border-radius: 5%;
 }
 
 .para {
@@ -332,6 +341,7 @@ h2 {
     align-items: center;
     justify-content: space-between;
     margin-top: 30px;
+    border-radius: 10px;
     background: rgba(255, 78, 108, 0);
     margin-bottom: 30px;
     padding: 8px;
@@ -351,8 +361,8 @@ h2 {
     flex-direction: column;
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.767);
-    padding: 30px 60px 60px 60px;
-    margin: 30px 0 30px 0;
+    /* padding: 30px 60px 60px 60px; */
+    /* margin: 30px 0 30px 0; */
 }
 
 .portfolio-projects {
@@ -373,17 +383,20 @@ h2 {
     margin-top: 10px;
     background: white;
     margin-bottom: 10px;
+    border-radius: 10px;
     width: 1300px;
     height: 400px;
     box-shadow: 0px 0px 5px 2.5px rgb(218, 218, 218);
 }
 
-.right-side1 {
+.right-side {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #ff4e6c;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #ff804e;
     width: 50%;
 }
 
@@ -391,25 +404,8 @@ h2 {
     width: 80px;
 }
 
-.right-side2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #26AFEB;
-    width: 50%;
-}
-
 .bitcoin-pic {
     width: 70px;
-}
-
-.right-side3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #60be86;
-    width: 50%;
 }
 
 .left-side {
@@ -441,75 +437,27 @@ h7 {
     margin: 10% 0 2% 0;
 }
 
-.github-button1 {
-    background: #ff4e6c;
+.github-button {
+    background: #ff804e;
     color: white;
     padding: 11px 16px 11px 16px;
     font-size: 100%;
-    border: 1px solid #ff4e6c;
+    border: 1px solid #ff804e;
 }
 
-.github-button1:hover {
+.github-button:hover {
     cursor: pointer;
 }
 
-.live-coding1 {
+.live-coding {
     background: white;
-    color: #ff4e6c;
+    color: #ff804e;
     padding: 11px 16px 11px 16px;
     font-size: 100%;
-    border: 1px solid #ff4e6c;
+    border: 1px solid #ff804e;
 }
 
-.live-coding1:hover {
-    cursor: pointer;
-}
-
-.github-button2 {
-    background: #26AFEB;
-    color: white;
-    padding: 11px 16px 11px 16px;
-    font-size: 100%;
-    border: 1px solid #26AFEB;
-}
-
-.github-button2:hover {
-    cursor: pointer;
-}
-
-.live-coding2 {
-    background: white;
-    color: #26AFEB;
-    padding: 11px 16px 11px 16px;
-    font-size: 100%;
-    border: 1px solid #26AFEB;
-}
-
-.live-coding2:hover {
-    cursor: pointer;
-}
-
-.github-button3 {
-    background: #60be86;
-    color: white;
-    padding: 11px 16px 11px 16px;
-    font-size: 100%;
-    border: 1px solid #60be86;
-}
-
-.github-button3:hover {
-    cursor: pointer;
-}
-
-.live-coding3 {
-    background: white;
-    color: #60be86;
-    padding: 11px 16px 11px 16px;
-    font-size: 100%;
-    border: 1px solid #60be86;
-}
-
-.live-coding3:hover {
+.live-coding:hover {
     cursor: pointer;
 }
 
@@ -541,8 +489,6 @@ h7 {
     flex-direction: column;
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.767);
-    padding: 30px 60px 60px 60px;
-    margin: 30px 0 30px 0;
 }
 
 .para2 {
@@ -550,6 +496,7 @@ h7 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
     margin-top: 30px;
     background: rgb(255, 255, 255, 0.9);
     margin-bottom: 30px;
@@ -561,7 +508,7 @@ h7 {
 .what-i-know {
     font-size: 150%;
     text-align: center;
-    color: #ff4e6c;
+    color: #ff804e;
     border-bottom: 1px solid grey;
     width: 100%;
     padding: 5px;
@@ -615,7 +562,7 @@ h5 {
 }
 
 .skill-icon:hover {
-    color: #ff4e6c;
+    color: #ff804e;
     transition: 0.3s;
 }
 
@@ -651,22 +598,9 @@ h5 {
     flex-direction: column;
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.767);
-    padding: 30px 60px 60px 60px;
-    margin: 30px 0 30px 0;
+    /* padding: 30px 60px 60px 60px; */
+    /* margin: 30px 0 30px 0; */
 }
-
-/* .lower-arrow {
-    position: absolute;
-    top: 4940px;
-    padding: 12px 13px 7px 13px;
-    background: #ff4e6c;
-}
-
-.arrow-box {
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-} */
 
 form {
     display: flex;
@@ -750,13 +684,16 @@ textarea {
 footer{
     background: linear-gradient(#292e463b,#06080f62);
     /* background-color: #181e2d; */
-    height: 17vh;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px 60px 60px 60px;
-    margin: 30px 0 30px 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    /* padding: 30px 60px 60px 60px; */
+    /* margin: 30px 0 30px 0; */
 }
 
 .social-icons {
@@ -783,7 +720,7 @@ footer{
 .fa-linkedin:hover,
 .fa-clipboard-list:hover {
     cursor: pointer;
-    color: #ff4e6c;
+    color: #ff804e;
     transition: 0.3s;
 }
 
@@ -794,13 +731,13 @@ footer{
 
 .itzik:hover {
     cursor: pointer;
-    color: #ff4e6c;
+    color: #ff804e;
     text-decoration: underline;
     transition: 0.3s;
 }
 
 .selected {
-    color: #ff4e6c;
-    border-bottom: 2px solid #ff4e6c;
+    color: #ff804e;
+    border-bottom: 2px solid #ff804e;
     padding: 3px;
 }
