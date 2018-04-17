@@ -94,7 +94,11 @@ $(document).ready(function() {
 
 //creating white starts
 function amount(i){
-    let y = String(Math.floor(Math.random() * (innerHeight-15)));
+    let size = 120;
+    if(screen.height <= 1040){ 
+        size = 20;
+    }
+    let y = String(Math.floor(Math.random() * (screen.height-size)));
     let x = String(Math.floor(Math.random() * screen.width));
     var star = document.getElementsByClassName('star-img')[i];
     var img = document.createElement("img");
@@ -106,19 +110,19 @@ function amount(i){
     src.appendChild(img);
 }
 
-//printing to the screen the stars
-if(outerWidth < 1050){
+//printing to the stars to the screen
+if(outerWidth < 1050 && outerWidth >= 800 ){
     for(let i = 0; 
         i < 300; i++){
         amount( i )
         ;
     } 
-}else if(outerWidth < 800){
+}else if(outerWidth < 800 && outerWidth >= 500){
     for(let i = 0; i < 250; i++){
         amount(i);
     } 
 }else if(outerWidth < 500){
-    for(let i = 0; i < 200; i++){
+    for(let i = 0; i < 100; i++){
         amount(i);
     } 
 }else {
@@ -126,8 +130,6 @@ if(outerWidth < 1050){
         amount(i);
     }
 }
-
-
 
 //making the stars shining
 var shiningStar = function(){
@@ -172,7 +174,7 @@ document.querySelector('#button-submit').addEventListener('mouseout',function(){
     document.querySelector('#button-submit').style.background = '#1E242C';
 })
 
-//////////////////////////////////////////////////////////
+//Making the github and live coding button change color
 var gitButton = document.querySelectorAll('.github-button');
 var liveButton = document.querySelectorAll('.live-coding');
 
@@ -193,33 +195,6 @@ for(let i = 0; i < liveButton.length; i++){
         liveButton[i].style.color = '#ff804e';
     })
 }
-
-//////////////////////////////////////////////////////////
-
-
-//Manipulate contact button arrow 
-// document.querySelector('.lower-arrow').addEventListener('click', function(){
-//     document.querySelector('.lower-arrow').style.transition = '0.3s';
-//     document.querySelector('.lower-arrow').style.background = 'white';
-//     document.querySelector('.arrow-box').style.color = '#ff4e6c';
-// })
-
-// document.querySelector('.lower-arrow').addEventListener('mouseout',function(){
-//     document.querySelector('.lower-arrow').style.background = '#ff4e6c';
-//     document.querySelector('.arrow-box').style.color = 'white';
-// })
-
-// document.querySelector('.lower-arrow').addEventListener('click',function(){
-//     window.scrollTo({
-//         top: 0,
-//         behavior: "smooth"
-//     });
-// })
-
-
-
-
-
 
 
 
