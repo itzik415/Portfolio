@@ -5,16 +5,16 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <title>MY PORTFOLIO</title>
+            <title>Itzik Shaoulian</title>
             <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Bangers|Butcherman|Faster+One|Righteous|Creepster|Fontdiner+Swanky|VT323" rel="stylesheet">
             <link rel="stylesheet" href="resources/css/Portfolio1.css">
-            <link rel="stylesheet" href="resources/css/queries.css">
+            <!-- <link rel="stylesheet" href="resources/css/queries.css"> -->
             <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
             <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
             <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+            <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
         </head>
-
         <body>
             <div class="hidden">
                 <div class="my-name-header">
@@ -33,7 +33,7 @@
                     <h9><a href="#portfolio-content" class="nav-content0" id="portfolio2">Portfolio</a></h9>
                     <h9><a href="#skills-content" class="nav-content0" id="skills2">Skills</a></h9>
                     <h9><a href="#contact-content" class="nav-content0" id="contact2">Contact</a></h9>
-                    <h9><a href="#" class="nav-content0">Resume</a></h9>
+                    <h9><a href="https://documentviewer.herokuapp.com/?state=%7B%22ids%22:%5B%2210IoC2TJ4gxvoNEf8Hsbs9AsdbOyaNHhB%22%5D,%22action%22:%22open%22,%22userId%22:%22114551444387747421783%22%7D" target="_blank" class="nav-content0">Resume</a></h9>
                 </div>
             </div>
             <header id="header">
@@ -49,23 +49,18 @@
                             <li class="option-name"><a href="#portfolio-content" class="nav-content" id="portfolio1">Portfolio</a></li>
                             <li class="option-name"><a href="#skills-content" class="nav-content" id="skills1">Skills</a></li>
                             <li class="option-name"><a href="#contact-content" class="nav-content" id="contact1">Contact</a></li>
-                            <li class="option-name"><a href="#" class="resume-header" class="nav-content">Resume</a></li>
+                            <li class="option-name"><a href="https://documentviewer.herokuapp.com/?state=%7B%22ids%22:%5B%2210IoC2TJ4gxvoNEf8Hsbs9AsdbOyaNHhB%22%5D,%22action%22:%22open%22,%22userId%22:%22114551444387747421783%22%7D" target="_blank" class="resume-header" class="nav-content">Resume</a></li>
                         </ul>
                     </nav>
                 </div> 
             </header>
             <div id ="main-opening">
-                <!-- <div id="falling-star"></div> -->
-                <img class="Spaceman-in-space" src="resources/css/images/Spaceman-in-space.png">
-                <div id="moon">
-                    <div id="hole1"></div>
-                    <div id="hole2"></div>
-                    <div id="hole3"></div>
-                </div>
+                <div id="falling-star"></div>
+                <img class="cartoon-moon" src="resources/css/images/cartoon-moon.png">
                 <p id="open">Hello, I'm Itzik Shaoulian.</p>
                 <p id="come_in">I'm a full stack web developer.</p>
                 <div id="portfolio_button">
-                    <button id="main_button"><p id='portfolio_name'>Portfolio</p><i class='ion-arrow-right-c'></i></button>
+                    <button id="main_button"><p id='portfolio_name'>View my work</p><i class='ion-arrow-right-c'></i></button>
                 </div>
                 <img class="star-img" src="resources/css/images/star3.png">
             </div>
@@ -76,7 +71,7 @@
                     <hr>
                 </div>
                 <div class="para">
-                    <img class="my-photo" src="resources/css/images/photo_of_me.jpg">
+                    <img class="my-photo" src="resources/css/images/itzik.jpg">
                     <p class="about-me">
                         <span class="open-para">Hi, I'm Itzik!</span> I'm a software developer who found his true passion in programming. 
                         Curious as to how programs work, I started teaching myself how to code, 
@@ -93,79 +88,78 @@
                     <h4>Portfolio</h4>
                     <hr>
                 </div>
-                <div class="portfolio-projects">
-                    <div class="project">
-                        <div class="left-side">
-                            <h6>Roomie</h6>
-                            <p class="app-description">Hodler offers complete cryptocurrency management, 
-                                with easy to use tools to keep track of all your cryptocurrency investments. 
-                                Get detailed price and market information for individual
-                                 currencies and your entire portfolio all in one place.</p>
-                            <div class="programs-used">
-                                <h7>Html</h7>
-                                <h7>Css</h7>
-                                <h7>Javescript</h7>
-                                <h7>Nodejs</h7>
-                                <h7>MongoDB</h7>
-                            </div> 
-                            <div class="coding-look">
-                                <a  class="github-button1 code-button" href="https://github.com/leecmoses/roomie" target="_blank">Github</a>
-                                <a class="live-coding1 code-button" href="#">Live Coding</a>
-                            </div>    
+                <div class="choosing-option">
+                    <h6 class="all-programming-languages">ALL</h6>
+                    <h6 class="all-programming-languages">NODE.JS</h6>
+                    <h6 class="all-programming-languages">REACT</h6>
+                    <h6 class="all-programming-languages">JAVASCRIPT</h6>
+                </div>
+                <div class="gallery">
+                    <div class="first-project-line">
+                        <div class="photo">
+                            <div class="project-image"></div>
+                            <div class="text">
+                                <p class="header-title">Digicaching</p>
+                                <p class="title-description">Node.js + React</p>
+                            </div>
+                            <div class="project-button">LEARN MORE</div>
                         </div>
-                        <div class="right-side1">
-                            <p class="project-name">Roomie</p>
-                            <img class="house-pic" src="resources/css/images/large_cute-house.png">   
-                        </div>
-                    </div>
-                    <div class="project">
-                        <div class="left-side">
-                            <h6>Hodler</h6>
-                            <p class="app-description">Hodler offers complete cryptocurrency management, 
-                                    with easy to use tools to keep track of all your cryptocurrency investments. 
-                                    Get detailed price and market information for individual
-                                     currencies and your entire portfolio all in one place.</p>
-                            <div class="programs-used">
-                                <h7>Html</h7>
-                                <h7>Css</h7>
-                                <h7>Javescript</h7>
-                                <h7>Nodejs</h7>
-                                <h7>MongoDB</h7>
-                            </div> 
-                            <div class="coding-look">
-                                <a class="github-button2 code-button" href="https://github.com/leecmoses/roomie">Github</a>
-                                <a class="live-coding2 code-button" href="#">Live Coding</a>
-                            </div>    
-                        </div>
-                        <div class="right-side2">
-                            <p class="project-name">Hodler</p> 
-                            <img class="bitcoin-pic" src="resources/css/images/Bitcoin_Digital_Currency_Logo.png">  
+                        <div class="photo">
+                            <div class="project-image"></div>
+                            <div class="text">
+                                <p class="header-title">Digicaching</p>
+                                <p class="title-description">Node.js + React</p>
+                            </div>
+                            <div class="project-button">LEARN MORE</div>
                         </div>
                     </div>
-                    <div class="project">
-                        <div class="left-side">
-                            <h6>Roomie</h6>
-                            <p class="app-description">Hodler offers complete cryptocurrency management, 
-                                    with easy to use tools to keep track of all your cryptocurrency investments. 
-                                    Get detailed price and market information for individual
-                                     currencies and your entire portfolio all in one place.</p>
-                            <div class="programs-used">
-                                <h7>Html</h7>
-                                <h7>Css</h7>
-                                <h7>Javascript</h7>
-                                <h7>Nodejs</h7>
-                                <h7>MongoDB</h7>
-                            </div> 
-                            <div class="coding-look">
-                                <a class="github-button3 code-button" href="https://github.com/leecmoses/roomie">Github</a>
-                                <a class="live-coding3 code-button" href="#">Live Coding</a> 
-                            </div>    
+                    <div class="second-project-line">
+                        <div class="photo">
+                            <div class="project-image"></div>
+                            <div class="text">
+                                <p class="header-title">Digicaching</p>
+                                <p class="title-description">Node.js + React</p>
+                            </div>
+                            <div class="project-button">LEARN MORE</div>
                         </div>
-                        <div class="right-side3">
-                            <p class="project-name">Roomie</p>   
+                        <div class="photo">
+                            <div class="project-image"></div>
+                            <div class="text">
+                                <p class="header-title">Digicaching</p>
+                                <p class="title-description">Node.js + React</p>
+                            </div>
+                            <div class="project-button">LEARN MORE</div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="hidden-folder">
+                    <div class="middle-section">
+                        <div class="projects-images">
+
+                        </div>
+                        <div class="project-description">
+                            <p class="main-project-title">Digicaching</p>
+                            <p class="main-project-description">Online Game</p>
+                            <hr class="main-project-hr">
+                            <p class="main-project-long-description">Digicaching is a virtual geocaching app that lets users find, 
+                                    collect, and share virtual items by exploring their communities and environment. 
+                                    Users can combine items to upgrade them into more rare items, 
+                                    and fulfill collections by combining advanced component items to build the rarest ones.</p>
+                            <div class="icon-button">
+                                <ion-icon class="project-close-button" name="close"></ion-icon>
+                            </div>    
+                                
                         </div>
                     </div>
                 </div>
+                <!-- <div class="projects1"> -->
+                    <!-- <img class="projects-photos" src="resources/css/images/digicaching-main.png">
+                    <img class="projects-photos" src="resources/css/images/catalyst-main.png">
+                </div>
+                <div class="projects2">
+                    <img class="projects-photos" src="resources/css/images/digicaching-main.png">
+                    <img class="projects-photos" src="resources/css/images/catalyst-main.png">
+                </div> -->
             </div>
             <div class="skills" id="skills-content">
                 <div class="main-line">
@@ -174,85 +168,8 @@
                     <hr>
                 </div>
                 <div class="para2">
-                    <div class="skills-para1">
-                        <p class="what-i-know">
-                            What I Know
-                        </p>
-                        <div class="icons-skills">
-                            <div class="skill-name">
-                                <i class="skill-icon devicon-html5-plain"></i>
-                                <h5>Html</h5>
-                            </div>
-                            <div class="skill-name">
-                                <i class="skill-icon devicon-css3-plain"></i>
-                                <h5>Css</h5>
-                            </div>
-                            <div class="skill-name">
-                                <i class="skill-icon devicon-jquery-plain"></i>
-                                <h5>jQuery</h5>
-                            </div>
-                            <div class="skill-name">
-                                <i class="skill-icon devicon-javascript-plain"></i>
-                                <h5>Javascript</h5>
-                            </div>
-                            <div class="skill-name">
-                                <i class="skill-icon devicon-react-original"></i>
-                                <h5>React</h5>
-                            </div>
-                        </div>
-                        <div class="icons-skills">
-                            <div class="skill-name">
-                                <i class="skill-icon devicon-amazonwebservices-original"></i>
-                                <h5>AWS</h5>
-                            </div>
-                            <div class="skill-name">
-                                <i class="skill-icon devicon-python-plain"></i>
-                                <h5>Python</h5>
-                            </div>
-                            <div class="skill-name">
-                                <i class="skill-icon devicon-nodejs-plain"></i>
-                                <h5>Nodejs</h5>
-                            </div>
-                            <div class="skill-name">
-                                <i class="skill-icon devicon-github-plain"></i>
-                                <h5>Github</h5>
-                            </div>
-                            <div class="skill-name">
-                                <i class="skill-icon devicon-postgresql-plain"></i>
-                                <h5>PostgreSQL</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-                <div class="para2">
-                    <div class="skills-para2">
-                        <p class="what-i-learn">
-                            What I'm Learning
-                        </p>
-                        <div class="icons-skills">
-                            <div class="skill-name">
-                                <i class="skill-icon1 devicon-angularjs-plain"></i>
-                                <h5>Angularjs</h5>
-                            </div>
-                            <div class="skill-name">
-                                <i class="skill-icon1 devicon-java-plain"></i>
-                                <h5>Java</h5>
-                            </div>
-                            <div class="skill-name">
-                                <i class="skill-icon1 devicon-mongodb-plain"></i>
-                                <h5>mongoDB</h5>
-                            </div>
-                            <div class="skill-name">
-                                <i class="skill-icon1 devicon-typescript-plain"></i>
-                                <h5>Type Script</h5>
-                            </div>
-                            <div class="skill-name">
-                                <i class="skill-icon1 devicon-sass-original"></i>
-                                <h5>Sass</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
+                    <img class="skills-image" src="resources/css/images/skills copy.png">
+                </div>  
             </div>
             <div class="contact" id="contact-content">
                 <div class="main-line">
@@ -266,10 +183,6 @@
                     <textarea class="holder" placeholder="Drop me some lines" type="text" name="message"></textarea>
                 </form>
                 <button id="button-submit" type="submit"><p id='submit_word'>Submit</p><img class="send-spaceship" src="resources/css/images/send-spaceship.png"></button>
-                <!-- <i class="ion-paper-airplane"></i> -->
-                <!-- <div class="lower-arrow">
-                    <i class="arrow-box ion-android-navigate"></i>
-                </div> -->
             </div>
             <footer>
                 <div class="social-icons">
@@ -277,12 +190,12 @@
                     <a href="https://www.instagram.com/itzikshaoulian" target="_blank"><i class="fas fa-camera-retro fa-2x" class="icon-footer"></i></a>
                     <a href="https://github.com/itzik415" target="_blank"><i class="fab fa-github-square fa-2x" class="icon-footer"></i></a>
                     <a href="https://www.linkedin.com/in/itzik-shaoulian-b61294106/" target="_blank"><i class="fab fa-linkedin fa-2x" class="icon-footer"></i></a>
+                    <a href="mailto:itzikshaoulian@gmail.com"><i class="fa fa-envelope" aria-hidden="true" class="icon-footer"></i></a>
                 </div>
                 <p class="footer-name">© 2018 <span class="itzik">Itzik Shaoulian</span>. Made in Israel</p>
             </footer>
         </body>
-            <script type="text/javascript" src="resources/js/Portfolio1.js"></script>
-        </body>
+        <script type="text/javascript" src="resources/js/Portfolio1.js"></script>
     </html>
 
 

@@ -21,7 +21,7 @@ $(document).ready(function() {
     	}, 500) 	
     })
 
-    //making the name at the button work
+    //making my name at the bottom scroll to the top of the page
     $('.itzik').click(function(){
     	$('html, body').animate({
     		scrollTop : $('#main-opening').offset().top
@@ -92,12 +92,13 @@ $(document).ready(function() {
 });
 
 
-
-var screenHeight = screen.height - 110;
-
 //creating white starts
-function amount(i){
-    let y = String(Math.floor(Math.random() * screenHeight));
+var amount = function(i){
+    let size = 120;
+    if(window.innerHeight <= 1040){ 
+        size = 20;
+    }
+    let y = String(Math.floor(Math.random() * (window.innerHeight-size)));
     let x = String(Math.floor(Math.random() * screen.width));
     var star = document.getElementsByClassName('star-img')[i];
     var img = document.createElement("img");
@@ -109,28 +110,36 @@ function amount(i){
     src.appendChild(img);
 }
 
-//printing to the screen the stars
-if(outerWidth < 480){
-    var screenHeight = screen.height - 25;
-    for(let i = 0; i < 200; i++){
+//printing the stars to the screen
+if(outerWidth < 1050 && outerWidth >= 800 ){
+    for(let i = 0; i < 300; i++){
+        amount(i);
+    } 
+}else if(outerWidth < 800 && outerWidth >= 500){
+    for(let i = 0; i < 250; i++){
+        amount(i);
+    } 
+}else if(outerWidth < 500){
+    for(let i = 0; i < 100; i++){
         amount(i);
     } 
 }else {
-    var screenHeight = screen.height - 110;
     for(let i = 0; i < 380; i++){
         amount(i);
     }
 }
 
-
-
 //making the stars shining
 var shiningStar = function(){
     var totalStars = document.querySelectorAll('.star-img');
-    if(outerWidth < 500){
+    if(outerWidth < 800 && outerWidth >= 500){
+        var y = Math.floor(Math.random()* 65);
+        totalStars[y].style.animation = 'star-img 4.34345s linear infinite';
+        totalStars[y].style.width = '9px';
+    }if(outerWidth < 500){
         var y = Math.floor(Math.random()* 40);
         totalStars[y].style.animation = 'star-img 4.34345s linear infinite';
-        totalStars[y].style.width = '8px';
+        totalStars[y].style.width = '7px';
     }else {
         var y = Math.floor(Math.random()* 100);
         totalStars[y].style.animation = 'star-img 4.34345s linear infinite';
@@ -148,6 +157,7 @@ function newNum(){
 //Manipulate portfolio button arrow 
 document.querySelector('#main_button').addEventListener('mouseover',function(){
     document.querySelector('.ion-arrow-right-c').style.transform = 'rotate(90deg)';
+    document.querySelector('.ion-arrow-right-c').style.transition = '0.4s';
 })
 
 document.querySelector('#main_button').addEventListener('mouseout',function(){
@@ -155,7 +165,6 @@ document.querySelector('#main_button').addEventListener('mouseout',function(){
 })
 
 //Manipulate submit form button
-
 document.querySelector('#button-submit').addEventListener('click', function (){
     document.querySelector('.send-spaceship').style.animation = 'send-spaceship 5s 1';
 })
@@ -164,62 +173,47 @@ document.querySelector('#button-submit').addEventListener('mouseout',function(){
     document.querySelector('#button-submit').style.background = '#1E242C';
 })
 
-//////////////////////////////////////////////////////////
-var gitButton1 = document.querySelector('.github-button1');
-var liveButton1 = document.querySelector('.live-coding1');
 
-liveButton1.addEventListener('mouseover',function(){
-    gitButton1.style.background = 'white';
-    gitButton1.style.color = '#ff4e6c';
-    liveButton1.style.background = '#ff4e6c';
-    liveButton1.style.color = 'white';
-})
+//Manipulate projects images
+var projectImage = document.querySelectorAll('.photo');
 
-liveButton1.addEventListener('mouseout',function(){
-    gitButton1.style.background = '#ff4e6c';
-    gitButton1.style.color = 'white';
-    liveButton1.style.background = 'white';
-    liveButton1.style.color = '#ff4e6c';
-})
-//////////////////////////////////////////////////////////
+for(let i = 0; i < projectImage.length; i++) {
+    projectImage[i].addEventListener('mouseover',function(){
+        document.querySelectorAll('.project-image')[i].style.opacity = '0';
+        document.querySelectorAll('.project-image')[i].style.transition = '0.4s';
+        document.querySelectorAll('.header-title')[i].style.opacity = '1';
+        document.querySelectorAll('.header-title')[i].style.transition = '0.4s';
+        document.querySelectorAll('.title-description')[i].style.opacity = '1';
+        document.querySelectorAll('.title-description')[i].style.transition = '0.4s';
+        document.querySelectorAll('.project-button')[i].style.opacity = '1';
+        document.querySelectorAll('.project-button')[i].style.transition = '0.4s';
+        document.querySelectorAll('.project-button')[i].style.bottom = '45px';
+        document.querySelectorAll('.text')[i].style.top = '50px';
+        document.querySelectorAll('.text')[i].style.transition = '0.4s';
+    })
+}
 
-//////////////////////////////////////////////////////////
-var gitButton2 = document.querySelector('.github-button2');
-var liveButton2 = document.querySelector('.live-coding2');
+for(let i = 0; i < projectImage.length; i++) {
+    projectImage[i].addEventListener('mouseout',function(){
+        document.querySelectorAll('.project-image')[i].style.opacity = '1';
+        document.querySelectorAll('.header-title')[i].style.opacity = '0';
+        document.querySelectorAll('.title-description')[i].style.opacity = '0';
+        document.querySelectorAll('.project-button')[i].style.opacity = '0';
+        document.querySelectorAll('.project-button')[i].style.bottom = '0px';
+        document.querySelectorAll('.project-button')[i].style.transition = '0.4s';
+        document.querySelectorAll('.text')[i].style.top = '0px';
+        document.querySelectorAll('.text')[i].style.transition = '0.4s';
+    })
+}
 
-liveButton2.addEventListener('mouseover',function(){
-    gitButton2.style.background = 'white';
-    gitButton2.style.color = '#26AFEB';
-    liveButton2.style.background = '#26AFEB';
-    liveButton2.style.color = 'white';
-})
 
-liveButton2.addEventListener('mouseout',function(){
-    gitButton2.style.background = '#26AFEB';
-    gitButton2.style.color = 'white';
-    liveButton2.style.background = 'white';
-    liveButton2.style.color = '#26AFEB';
-})
-//////////////////////////////////////////////////////////
+//.project-button
 
-//////////////////////////////////////////////////////////
-var gitButton3 = document.querySelector('.github-button3');
-var liveButton3 = document.querySelector('.live-coding3');
-
-liveButton3.addEventListener('mouseover',function(){
-    gitButton3.style.background = 'white';
-    gitButton3.style.color = '#60be86';
-    liveButton3.style.background = '#60be86';
-    liveButton3.style.color = 'white';
-})
-
-liveButton3.addEventListener('mouseout',function(){
-    gitButton3.style.background = '#60be86';
-    gitButton3.style.color = 'white';
-    liveButton3.style.background = 'white';
-    liveButton3.style.color = '#60be86';
-})
-//////////////////////////////////////////////////////////
+for(let i = 0; i < document.querySelectorAll('.project-button').length; i++){
+    document.querySelectorAll('.project-button')[i].addEventListener('click', function (){
+        document.querySelectorAll('.hidden-folder')[i].style.display = 'block';
+    })
+}
 
 
 
@@ -231,30 +225,42 @@ liveButton3.addEventListener('mouseout',function(){
 
 
 
+// //Making the github and live coding button change color
+// var gitButton = document.querySelectorAll('.github-button');
+// var liveButton = document.querySelectorAll('.live-coding');
 
-//Manipulate contact button arrow 
-// document.querySelector('.lower-arrow').addEventListener('click', function(){
-//     document.querySelector('.lower-arrow').style.transition = '0.3s';
-//     document.querySelector('.lower-arrow').style.background = 'white';
-//     document.querySelector('.arrow-box').style.color = '#ff4e6c';
-// })
+// for(let i = 0; i < liveButton.length; i++){
+//     liveButton[i].addEventListener('mouseover',function(){    
+//         gitButton[i].style.background = 'white';
+//         gitButton[i].style.color = '#ff804e';
+//         liveButton[i].style.background = '#ff804e';
+//         liveButton[i].style.color = 'white';
+//     })
+// }
 
-// document.querySelector('.lower-arrow').addEventListener('mouseout',function(){
-//     document.querySelector('.lower-arrow').style.background = '#ff4e6c';
-//     document.querySelector('.arrow-box').style.color = 'white';
-// })
+// for(let i = 0; i < liveButton.length; i++){
+//     liveButton[i].addEventListener('mouseout',function(){
+//         gitButton[i].style.background = '#ff804e';
+//         gitButton[i].style.color = 'white';
+//         liveButton[i].style.background = 'white';
+//         liveButton[i].style.color = '#ff804e';
+//     })
+// }
 
-// document.querySelector('.lower-arrow').addEventListener('click',function(){
-//     window.scrollTo({
-//         top: 0,
-//         behavior: "smooth"
-//     });
-// })
+// var programmingLanguages = document.querySelectorAll('.all-programming-languages');
 
+// for(let i = 0; i < programmingLanguages.length; i++){
+//     programmingLanguages[i].addEventListener('click', function(){
+//         programmingLanguages[i].style.background = 'rgb(255, 198, 93)';
+//     })
+// }
 
-
-
-
+// for(let i = 0; i < programmingLanguages.length; i++){
+//     programmingLanguages[i].addEventListener('click', function(){
+//         programmingLanguages[i].style.background = 'rgb(243, 243, 243)';
+//     })
+// }
+    
 
 
 
@@ -267,7 +273,7 @@ liveButton3.addEventListener('mouseout',function(){
 // outerWidth: 1019
 
 // document.body.scrollHeight: 4597 אורך הדף הכולל
-// screenHeight: 940 קבוע לא משתנה
+// screen.height: 940 קבוע לא משתנה
 
 // pageYOffset: 2172 אורך הדף + הקונסול 
 
@@ -297,4 +303,4 @@ liveButton3.addEventListener('mouseout',function(){
 // }
 
 // wholePross();
-// var inter = setInterval(move,10);
+// var inter = setInterval(move,1);

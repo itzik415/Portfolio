@@ -4,7 +4,7 @@
     body {
         font-weight: 400;
         font-size: 17px;
-        padding: 10px 20px 0px 20px ;
+        /* padding: 10px 20px 0px 20px ; */
     }
 
     hr {
@@ -77,7 +77,7 @@
     body {
         font-weight: 400;
         font-size: 15px;
-        padding: 10px 20px 0px 20px ;
+        /* padding: 10px 20px 0px 20px ; */
     }
 
     .Spaceman-in-space {
@@ -150,7 +150,7 @@
     body {
         font-weight: 400;
         font-size: 14px;
-        padding: 10px 20px 0px 20px ;
+        /* padding: 10px 20px 0px 20px ; */
     }
 
     hr {
@@ -197,10 +197,6 @@
         margin: 0;
     }
 
-    /* .send-spaceship {
-        padding-left: 150px;
-    } */
-
     #button-submit {
         width: 120px;
     }
@@ -218,7 +214,7 @@
     body {
         font-weight: 400;
         font-size: 14px;
-        padding: 10px 20px 0px 20px ;
+        /* padding: 10px 20px 0px 20px ; */
     }
 
     .Spaceman-in-space {
@@ -273,6 +269,10 @@
     .project {
         width: 600px;
         height: 220px;
+    }
+
+    .project-name {
+        font-size: 35px;
     }
 
     .app-description {
@@ -334,12 +334,7 @@
 }
 
 /* Small phones to small tablets: 481px to 767px */
-@media only screen and (max-width: 723px) {}
-
-
-
-/* Small phones: from 0 to 480px */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 800px) {
 
     html,
     body {
@@ -347,7 +342,289 @@
         font-size: 8.5px;
         width: 100%;
         padding: 0;
-        /* padding: 10px 20px 0px 20px ; */
+    }
+
+    .hidden {
+        position:fixed; 
+        top: 0; 
+        left: 0; 
+        z-index: 2000; 
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 55px;
+        padding: 10px;
+        background: white;
+        opacity: 0.85; 
+    }
+
+    .hidden2 {
+        display: none;
+        position:fixed; 
+        top: 0; 
+        left: 0; 
+        z-index: 2001; 
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: white;
+        opacity: 0.95;
+    }
+
+    .close-button {
+        display: flex;
+        justify-content: end;
+    }
+
+    .closing-icon-bar {
+        width: 52px;
+        height: 52px;
+        color: grey;
+        padding: 10px 10px;
+        margin: 0.2% 0 5% 92%;
+    }
+
+    .main-menu-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h9 {
+        font-size: 350%;
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    .nav-content0 {
+        color: #ff804e;
+    }
+
+    h2 {
+        font-size: 220%;
+    }
+
+    .nav-icon-bar {
+        width: 45px;
+    }
+
+    #main_button {
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    #portfolio_name {
+        font-size: 15px;
+    }
+
+    .ion-arrow-right-c {
+        display: none;
+    }
+
+    header {
+        display: none;
+    }
+
+    .Spaceman-in-space {
+        display: none;
+    }
+
+    #moon{
+        display: none;
+    }
+
+
+    #hole1{ 
+        display: none;   
+    }
+
+    #hole2{
+        display: none;
+    }
+
+
+    #hole3{
+        display: none;
+    }
+
+    hr {
+        width: 40px;
+    }
+
+    h4 {
+        padding: 10px 0 0 0;
+        font-size: 300%;
+    }
+
+    .para {
+        flex-direction: column;
+        justify-content: center;
+        width: 481px;
+        height: 871px;
+    }
+
+    .open-para{
+        font-size: 200%; 
+    }
+
+    .about-me {
+        width: 460px;
+        margin-top: 25px;
+        font-size: 220%;
+        line-height: 26px;
+    }
+
+    .my-photo {
+        width: 455px;
+        margin-bottom: 15px;
+    }
+
+    #about-content {
+        padding-bottom: 20px;
+    }
+
+    #portfolio-content {
+        padding-bottom: 2%;
+    }
+
+    .portfolio-projects {
+        margin-top: 0;
+    }
+
+    .project {
+        flex-direction: column;
+        text-align: left;
+        box-shadow: none;
+        padding: 13px;
+        width: 481px;
+        height: 700px;
+    }
+
+    .digicaching-video {
+        width: 100%;
+        border-radius: 0px;
+    }
+    
+    h6 {
+        font-size: 430%;
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .app-description {
+        margin: 0 0 0 0.5%;
+        font-size: 220%;
+        line-height: 30px;
+        width: 100%;
+    }
+
+    .programs-used {
+        margin-left: -0.3%;
+    }
+
+    .left-side {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .right-side {
+        margin-top: 5%;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        width: 100%;
+        height: 50%;
+    }
+
+    h7 {
+        margin: 0 0% 0 1%;
+        font-size: 150%;
+        padding: 8px 10px;
+    }
+
+    .programs-used {
+        margin-top: 55px;
+    }
+
+    .code-button {
+        margin: 2% 0 0 0;
+        font-size: 150%;
+        padding: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .para2 {
+        flex-direction: column;
+        justify-content: start;
+        width: 481px;
+        height: 200px;
+        background: white;
+    }
+
+    .what-i-know,
+    .what-i-learn {
+        width: 340px;
+        font-size: 300%;
+    }
+
+    .skill-name {
+        margin: 0;
+    }
+
+    .holder {
+        width: 350px;
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    #button-submit {
+        width: 120px;
+    }
+
+    .send-spaceship {
+        margin-left: 12px;
+    }
+
+    #submit_word {
+        margin-left: 6px;
+    }
+
+    .fa-facebook-square,
+    .fa-camera-retro,
+    .fa-github-square,
+    .fa-linkedin,
+    .fa-clipboard-list{
+        margin: 0 3px 5px 3px;
+        background-color: rgba(27, 25, 41, 0.726);
+        border-radius: 6px;
+        padding: 10px 13px;
+        font-size: 60px;
+    }
+
+    .footer-name {
+        margin: 7px 0;
+        font-size: 120%;
+    }
+
+}
+
+
+/* Small phones: from 0 to 600px */
+@media only screen and (max-width: 600px) {
+
+    html,
+    body {
+        font-weight: 400;
+        font-size: 8.5px;
+        width: 100%;
+        padding: 0;
     }
 
     .hidden {
@@ -391,7 +668,7 @@
         height: 52px;
         color: grey;
         padding: 10px 10px;
-        margin: 0.2% 0 25% 86%;
+        margin: 0.2% 0 5% 86%;
     }
     
     .main-menu-buttons {
@@ -407,7 +684,7 @@
     }
 
     .nav-content0 {
-        color: #ff4e6c;
+        color: #ff804e;
     }
 
     h2 {
@@ -416,10 +693,6 @@
 
     .nav-icon-bar {
         width: 45px;
-    }
-
-    #main-opening {
-        height: 735px;
     }
 
     #main_button {
@@ -440,45 +713,14 @@
         display: none;
     }
 
-    .Spaceman-in-space {
-        display: none;
-    }
-
-    .star-img{
-        width: 5px;
-    }
-
-    @keyframes star-img {
-        20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
-            opacity: 0;
-        }
-    }
-
-    #moon{
-        display: none;
-    }
-    
-    
-    #hole1{ 
-        display: none;   
-    }
-
-    #hole2{
-        display: none;
-    }
-
-
-    #hole3{
-        display: none;
-    }
-
     hr {
         width: 40px;
     }
 
     h4 {
         padding: 10px 0 0 0;
-        font-size: 300%;
+        font-size: 220%;
+        margin-bottom: 15px;
     }
 
     .para {
@@ -489,9 +731,10 @@
     }
 
     .about-me {
-        width: 340px;
-        padding: 20px;
+        width: 360px;
         font-size: 160%;
+        line-height: 22px;
+        margin-top: 10px;
     }
 
     .my-photo {
@@ -532,6 +775,7 @@
 
     .programs-used {
         margin-left: -0.3%;
+        margin-top: 0;
     }
 
     .left-side {
@@ -539,20 +783,7 @@
         padding: 0px;
     }
 
-    .right-side1 {
-        background: #ff4e6c;
-        margin-top: 5%;
-        width: 350px;
-        height: 320px;
-    }
-    .right-side2 {
-        background: #26AFEB;
-        margin-top: 5%;
-        width: 350px;
-        height: 320px;
-    }
-    .right-side3 {
-        background: #60be86;
+    .right-side {
         margin-top: 5%;
         width: 350px;
         height: 320px;
@@ -608,6 +839,7 @@
     .fa-camera-retro,
     .fa-github-square,
     .fa-linkedin,
+    .fa-envelope,
     .fa-clipboard-list{
         margin: 0 3px 5px 3px;
         background-color: rgba(27, 25, 41, 0.726);
@@ -619,6 +851,18 @@
     .footer-name {
         margin: 7px 0;
         font-size: 120%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .social-icons {
+        display: flex; 
+        padding: 10px;
+        margin: 10px;
     }
 
 }
