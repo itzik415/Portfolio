@@ -151,13 +151,6 @@
         font-weight: 400;
         font-size: 14px;
         /* padding: 10px 20px 0px 20px ; */
-<<<<<<< HEAD
-=======
-    }
-
-    #main-opening {
-        height: 1366px;
->>>>>>> f57c8e88fc15a6aa7d0392f6f68b0f222b75acf2
     }
 
     hr {
@@ -418,13 +411,6 @@
         width: 45px;
     }
 
-<<<<<<< HEAD
-=======
-    #main-opening {
-        height: 1024px;
-    }
-
->>>>>>> f57c8e88fc15a6aa7d0392f6f68b0f222b75acf2
     #main_button {
         width: 100px;
         height: 30px;
@@ -518,14 +504,11 @@
         height: 700px;
     }
 
-<<<<<<< HEAD
     .digicaching-video {
         width: 100%;
         border-radius: 0px;
     }
     
-=======
->>>>>>> f57c8e88fc15a6aa7d0392f6f68b0f222b75acf2
     h6 {
         font-size: 430%;
         text-align: left;
@@ -549,10 +532,6 @@
     }
 
     .right-side {
-<<<<<<< HEAD
-=======
-        background: #ff804e;
->>>>>>> f57c8e88fc15a6aa7d0392f6f68b0f222b75acf2
         margin-top: 5%;
         border-top-right-radius: 0px;
         border-bottom-left-radius: 10px;
@@ -561,11 +540,7 @@
     }
 
     h7 {
-<<<<<<< HEAD
         margin: 0 0% 0 1%;
-=======
-        margin: 2% 0% 0 1%;
->>>>>>> f57c8e88fc15a6aa7d0392f6f68b0f222b75acf2
         font-size: 150%;
         padding: 8px 10px;
     }
@@ -641,11 +616,7 @@
 }
 
 
-<<<<<<< HEAD
 /* Small phones: from 0 to 600px */
-=======
-/* Small phones: from 0 to 480px */
->>>>>>> f57c8e88fc15a6aa7d0392f6f68b0f222b75acf2
 @media only screen and (max-width: 600px) {
 
     html,
@@ -724,13 +695,6 @@
         width: 45px;
     }
 
-<<<<<<< HEAD
-=======
-    #main-opening {
-        height: 667px;
-    }
-
->>>>>>> f57c8e88fc15a6aa7d0392f6f68b0f222b75acf2
     #main_button {
         width: 100px;
         height: 30px;
@@ -755,11 +719,7 @@
 
     h4 {
         padding: 10px 0 0 0;
-<<<<<<< HEAD
         font-size: 220%;
-=======
-        font-size: 250%;
->>>>>>> f57c8e88fc15a6aa7d0392f6f68b0f222b75acf2
         margin-bottom: 15px;
     }
 
@@ -824,10 +784,6 @@
     }
 
     .right-side {
-<<<<<<< HEAD
-=======
-        background: #ff804e;
->>>>>>> f57c8e88fc15a6aa7d0392f6f68b0f222b75acf2
         margin-top: 5%;
         width: 350px;
         height: 320px;
