@@ -93,12 +93,21 @@ $(document).ready(function() {
 
 
 //creating white starts
+<<<<<<< HEAD
 var amount = function(i){
     let size = 120;
     if(window.innerHeight <= 1040){ 
         size = 20;
     }
     let y = String(Math.floor(Math.random() * (window.innerHeight-size)));
+=======
+function amount(i){
+    let size = 120;
+    if(screen.height <= 1040){ 
+        size = 20;
+    }
+    let y = String(Math.floor(Math.random() * (screen.height-size)));
+>>>>>>> f57c8e88fc15a6aa7d0392f6f68b0f222b75acf2
     let x = String(Math.floor(Math.random() * screen.width));
     var star = document.getElementsByClassName('star-img')[i];
     var img = document.createElement("img");
@@ -110,10 +119,19 @@ var amount = function(i){
     src.appendChild(img);
 }
 
+<<<<<<< HEAD
 //printing the stars to the screen
 if(outerWidth < 1050 && outerWidth >= 800 ){
     for(let i = 0; i < 300; i++){
         amount(i);
+=======
+//printing to the stars to the screen
+if(outerWidth < 1050 && outerWidth >= 800 ){
+    for(let i = 0; 
+        i < 300; i++){
+        amount( i )
+        ;
+>>>>>>> f57c8e88fc15a6aa7d0392f6f68b0f222b75acf2
     } 
 }else if(outerWidth < 800 && outerWidth >= 500){
     for(let i = 0; i < 250; i++){
@@ -173,6 +191,7 @@ document.querySelector('#button-submit').addEventListener('mouseout',function(){
     document.querySelector('#button-submit').style.background = '#1E242C';
 })
 
+<<<<<<< HEAD
 
 //Manipulate projects images
 var projectImage = document.querySelectorAll('.photo');
@@ -261,6 +280,29 @@ for(let i = 0; i < document.querySelectorAll('.project-button').length; i++){
 //     })
 // }
     
+=======
+//Making the github and live coding button change color
+var gitButton = document.querySelectorAll('.github-button');
+var liveButton = document.querySelectorAll('.live-coding');
+
+for(let i = 0; i < liveButton.length; i++){
+    liveButton[i].addEventListener('mouseover',function(){    
+        gitButton[i].style.background = 'white';
+        gitButton[i].style.color = '#ff804e';
+        liveButton[i].style.background = '#ff804e';
+        liveButton[i].style.color = 'white';
+    })
+}
+
+for(let i = 0; i < liveButton.length; i++){
+    liveButton[i].addEventListener('mouseout',function(){
+        gitButton[i].style.background = '#ff804e';
+        gitButton[i].style.color = 'white';
+        liveButton[i].style.background = 'white';
+        liveButton[i].style.color = '#ff804e';
+    })
+}
+>>>>>>> f57c8e88fc15a6aa7d0392f6f68b0f222b75acf2
 
 
 
