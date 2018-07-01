@@ -209,9 +209,15 @@ for(let i = 0; i < projectImage.length; i++) {
 
 //Manipulate project button
 
+var totalHeight = document.body.scrollHeight;
+
 for(let i = 0; i < document.querySelectorAll('.project-button').length; i++){
     document.querySelectorAll('.project-button')[i].addEventListener('click', function (){
         document.querySelectorAll('.hidden-folder')[i].style.display = 'block';
+        document.querySelectorAll('.hidden-folder')[i].style.height = totalHeight + 'px';
+        document.querySelectorAll('.hidden-folder')[i].style.position = 'fixed';
+        document.querySelectorAll('.hidden-folder')[i].style.top = '0';
+        document.querySelectorAll('.hidden-folder')[i].style.left = '0';
     })
 }
 

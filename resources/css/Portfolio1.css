@@ -316,7 +316,7 @@ h2 {
     height: 100%;
 }
 
-.choosing-option {
+/* .choosing-option {
     display: flex;
     width: 70%;
     justify-content: space-evenly;
@@ -333,7 +333,7 @@ h6:hover {
     background: #d6a2f8;
     border: 1px solid rgb(214, 214, 214);
     cursor: pointer;
-}
+} */
 
 .gallery {
     padding: 30px 0 100px 0;
@@ -355,9 +355,31 @@ h6:hover {
 }
 
 .project-image {
-    background-image: url(images/digicaching-main.png);
     width: 480px;
     height: 300px;
+    margin: 10px;
+}
+
+.image-1{
+    background-image: url(images/digicaching-main.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.image-2{
+    background-image: url(images/catalyst-main.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.image-3{
+    background-image: url(images/digicaching-main.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.image-4{
+    background-image: url(images/digicaching-main.png);
     background-size: cover;
     background-position: center;
 }
@@ -399,12 +421,14 @@ h6:hover {
     opacity: 0;
 }
 
+/*--HIDDEN-FOLDER-NUMBER-1--*/
+
 .hidden-folder {
     display: none;
     width: 100%;
-    height: 100%;
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
+    z-index: 10;
 }
 
 .middle-section {
@@ -418,10 +442,7 @@ h6:hover {
 .projects-images {
     height: 60%;
     width: 100%;
-    background: url(images/digicaching-main.png);
-    background-size: cover;
     border-bottom: 5px solid black;
-    /* background-position: center; */
 }
 
 .project-description {
@@ -443,7 +464,7 @@ h6:hover {
 }
 
 .main-project-hr {
-    width: 600px;
+    width: 628px;
     margin: 10px 0;
     font-family: sans-serif;
 }
@@ -471,6 +492,28 @@ h6:hover {
 .project-close-button:hover {
     cursor: pointer;
     color: grey;
+}
+
+/*--HIDDEN-FOLDER-NUMBER-2--*/
+
+.number-1 {
+    background: url(images/digicaching-main.png);
+    background-size: cover;
+}
+
+.number-2 {
+    background: url(images/catalyst-main.png);
+    background-size: cover;
+}
+
+.number-3 {
+    background: url(images/catalyst-main.png);
+    background-size: cover;
+}
+
+.number-4 {
+    background: url(images/catalyst-main.png);
+    background-size: cover;
 }
 
 /********************/
