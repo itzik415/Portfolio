@@ -208,78 +208,56 @@ for(let i = 0; i < projectImage.length; i++) {
 
 
 //Manipulate project button
-
 var totalHeight = document.body.scrollHeight;
+var hiddenFolder = document.querySelectorAll('.hidden-folder');
 
 for(let i = 0; i < document.querySelectorAll('.project-button').length; i++){
     document.querySelectorAll('.project-button')[i].addEventListener('click', function (){
-        document.querySelectorAll('.hidden-folder')[i].style.display = 'block';
-        document.querySelectorAll('.hidden-folder')[i].style.height = totalHeight + 'px';
-        document.querySelectorAll('.hidden-folder')[i].style.position = 'fixed';
-        document.querySelectorAll('.hidden-folder')[i].style.top = '0';
-        document.querySelectorAll('.hidden-folder')[i].style.left = '0';
+        hiddenFolder[i].style.display = 'block';
+        hiddenFolder[i].style.height = totalHeight + 'px';
+        hiddenFolder[i].style.position = 'fixed';
+        hiddenFolder[i].style.top = '0';
+        hiddenFolder[i].style.left = '0';
     })
 }
 
 for(let i = 0; i < document.querySelectorAll('.project-close-button').length; i++){
     document.querySelectorAll('.project-close-button')[i].addEventListener('click', function (){
-        document.querySelectorAll('.hidden-folder')[i].style.display = 'none';
+        hiddenFolder[i].style.display = 'none';
+    })
+}
+
+//Manipulate photos arrow buttons
+for(let i = 0; i < document.querySelectorAll('.black-arrow-right').length; i++){
+    let y = 0;
+    document.querySelectorAll(".black-arrow-right")[i].addEventListener('click', function(){ 
+        if(y < 4){
+            document.querySelectorAll(".projects-images")[i].classList.remove(`number-${i}-${y}`);
+            document.querySelectorAll(".projects-images")[i].classList.add(`number-${i}-${y+1}`);
+            y++;
+        }else{
+            document.querySelectorAll(".projects-images")[i].classList.remove(`number-${i}-4`);
+            document.querySelectorAll(".projects-images")[i].classList.add(`number-${i}-0`);
+            y = 0;
+        }    
+    })
+
+    document.querySelectorAll(".black-arrow-left")[i].addEventListener('click', function(){ 
+        if(y > 0){
+            document.querySelectorAll(".projects-images")[i].classList.remove(`number-${i}-${y}`);
+            document.querySelectorAll(".projects-images")[i].classList.add(`number-${i}-${y-1}`);
+            y--;
+        }else{
+            document.querySelectorAll(".projects-images")[i].classList.remove(`number-${i}-0`);
+            document.querySelectorAll(".projects-images")[i].classList.add(`number-${i}-4`);
+            y = 4;
+        }    
     })
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-// //Making the github and live coding button change color
-// var gitButton = document.querySelectorAll('.github-button');
-// var liveButton = document.querySelectorAll('.live-coding');
-
-// for(let i = 0; i < liveButton.length; i++){
-//     liveButton[i].addEventListener('mouseover',function(){    
-//         gitButton[i].style.background = 'white';
-//         gitButton[i].style.color = '#ff804e';
-//         liveButton[i].style.background = '#ff804e';
-//         liveButton[i].style.color = 'white';
-//     })
-// }
-
-// for(let i = 0; i < liveButton.length; i++){
-//     liveButton[i].addEventListener('mouseout',function(){
-//         gitButton[i].style.background = '#ff804e';
-//         gitButton[i].style.color = 'white';
-//         liveButton[i].style.background = 'white';
-//         liveButton[i].style.color = '#ff804e';
-//     })
-// }
-
-// var programmingLanguages = document.querySelectorAll('.all-programming-languages');
-
-// for(let i = 0; i < programmingLanguages.length; i++){
-//     programmingLanguages[i].addEventListener('click', function(){
-//         programmingLanguages[i].style.background = 'rgb(255, 198, 93)';
-//     })
-// }
-
-// for(let i = 0; i < programmingLanguages.length; i++){
-//     programmingLanguages[i].addEventListener('click', function(){
-//         programmingLanguages[i].style.background = 'rgb(243, 243, 243)';
-//     })
-// }
-    
-
-
-
 //document.querySelector('#main-opening').offsetHeight;
- 
+
 // innerHeight: 557 החלק של הבפנים לא כולל הקונסול
 // innerWidth: 1019
 
@@ -295,26 +273,3 @@ for(let i = 0; i < document.querySelectorAll('.project-close-button').length; i+
 // scrollY: 2172 האורך של הדף באותו חלק שאנחנו נמצאים
 // screenY: 22 השטח מחוץ לדף שנשאר 
 
-
-// //fallig star
-// function move() {
-//     var fallingStar = document.querySelector("#falling-star");
-//     fallingStar.style.display = 'block';
-//     fallingStar.style.top=""+y+"px";
-//     fallingStar.style.right=""+x+"px"; 
-//     x = x+1;
-//     y = y+1;
-//     if(y === 520 || x === 1200){
-//         x = newNum();
-//         y = newNum();
-//     }
-// }
-
-
-// function wholePross(){
-//     x = newNum();
-//     y = newNum();
-// }
-
-// wholePross();
-// var inter = setInterval(move,1);

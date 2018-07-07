@@ -1,868 +1,265 @@
 /* Big tablets to 1500px (widths smaller than the 1140px row) */
 @media only screen and (max-width: 1500px) {
-    html,
-    body {
-        font-weight: 400;
+    .cartoon-moon {
+        width: 200px;
+    }
+
+    .send-spaceship {
+        left: 52%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .cartoon-moon {
+        display: none;
+    }
+
+    .about-me {
+        font-size: 100%;
+        line-height: 25px;
+    }
+
+    .my-photo {
+        width: 500px;
+    }
+
+    h2 {
+        font-size: 120%;
+    }
+    
+    .nav-content {
+        margin: 0 25px 0 0;
+        font-size: 100%;
+    }
+
+    .resume-header {
+        font-size: 90%;
+    }
+
+    .send-spaceship {
+        left: 53%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #open {
+        font-size: 170%;
+    }
+
+    #come_in {
+        font-size: 150%;
+    }
+
+    #portfolio_name {
         font-size: 17px;
-        /* padding: 10px 20px 0px 20px ; */
     }
 
-    hr {
-        width: 130px;
+    #main_button {
+        width: 180px;
+        height: 45px;
     }
 
-    .para {
-        width: 1000px;
-        height: 360px;
-    }
-
-    .para2 {
-        padding: 8px;
-        width: 1000px;
-    }
-
-    .what-i-know {
-        width: 85%;
-        padding: 5px;
-        margin: 20px;
-    }
-    
-    .what-i-learn {
-        width: 85%;
-        padding: 5px;
-        margin: 20px;
-    }
-
-    .skill-icon {
-        margin: 20px 65px;
-        font-size: 50px;
-    }
-    
-    .skill-icon1 {
-        margin: 20px 65px;
-        font-size: 50px;
-    }
-
-    .about-me {
-        padding: 23px 15px;
-    }
-
-    .project {
-        width: 1000px;
-        height: 320px;
-    }
-
-    .app-description {
-        line-height: 20px;
-    }
-    
-    .programs-used {
-        margin: 4% 0 2% 0;
-    }
-
-    #submit_word {
-        margin-left: 15.5%;
-    }
-    
-    .ion-paper-airplane {
-        margin-right: 15.5%;
-    }
-
-}
-
-/* Big tablets to 1200px (widths smaller than the 1140px row) */
-@media only screen and (max-width: 1200px) {
-
-    html,
-    body {
-        font-weight: 400;
-        font-size: 15px;
-        /* padding: 10px 20px 0px 20px ; */
-    }
-
-    .Spaceman-in-space {
-        top: 100px;
-        right: 50px;
-    }
-
-    #moon{
-        position: absolute;
-        height: 220px;
-        width: 220px;
-      }
-      
-      
-    #hole1{ 
-        width: 61px;
-        height: 61px;
-        top: 20%;
-        right: -60%;
-    }
-    
-    #hole2{
-        width: 27px;
-        height: 27px;
-        top: -5%;
-        right: -40%;
-    }
-    
-    
-    #hole3{
-        width: 17.5px;
-        height: 17.5px;
-        top: 10%;
-        right: -50%;
-    }
-
-    .about-me {
-        padding: 38px 10px;
-    }
-
-    #submit_word {
-        margin-left: 10.5%;
-    }
-    
-    .ion-paper-airplane {
-        margin-right: 10.5%;
-    }
-
-    #button-submit {
-        width: 130px;
-    }
-
-    .house-pic {
-        width: 60px;
-    }
-
-    .bitcoin-pic {
-        width: 60px;
-    }
-
-    .programs-used {
-        margin: 11% 0 2% 0;
-    }
-
-}
-
-/* Small tablets to big tablets: 768px to 1023px */
-@media only screen and (max-width: 1127px) {
-    html,
-    body {
-        font-weight: 400;
-        font-size: 14px;
-        /* padding: 10px 20px 0px 20px ; */
+    h4 {
+        font-size: 150%;
     }
 
     hr {
         width: 100px;
-        margin: 20px 10px 0 10px;
     }
 
     .para {
-        width: 800px;
-        height: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .my-photo {
+        width: 450px;
     }
 
     .about-me {
-        padding: 12px 10px;
-        line-height: 22px;
+        width: 400px;
+        text-align: center;
+        margin-top: 20px;
     }
 
-    .project {
-        width: 800px;
-        height: 280px;
+    .skills-image {
+        width: 1100px;
+        margin: -100px 0 -20px 0;
     }
 
-    .programs-used {
-        margin: 1% 0 2% 0;
+    .nav-options {
+        display: none;
     }
 
-    .para2 {
-        padding: 8px;
-        width: 800px;
-        height: 300px;
+    .hidden {
+        position:fixed; 
+        top: 0; 
+        left: 0; 
+        z-index: 2000; 
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 55px;
+        padding: 10px;
+        background: white;
+        opacity: 0.85; 
     }
 
-    .skill-name {
-        padding: 0px;
-        margin: 0px 20px;
-        width: 80px;
+    .hidden2 {
+        display: none;
+        position:fixed; 
+        top: 0; 
+        left: 0; 
+        z-index: 2001; 
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: white;
+        opacity: 0.95;
     }
 
-    .skill-icon {
-        /* width: 15px */
+    .close-button {
+        display: flex;
+        justify-content: end;
     }
 
-    .icons-skills {
-        margin: 0;
+    .closing-icon-bar {
+        width: 52px;
+        height: 52px;
+        color: grey;
+        padding: 10px 10px;
+        margin: 0.2% 0 5% 93.5%;
     }
 
-    #button-submit {
-        width: 120px;
+    .main-menu-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    #submit_word {
-        margin-left: 6px;
+
+    h9 {
+        font-size: 200%;
+        padding: 20px;
+        margin: 20px 0;
+        cursor: pointer;
+    }
+
+    .nav-content0 {
+        color: #b84eff;
+    }
+
+    .nav-icon-bar {
+        width: 45px;
+    }
+
+    #portfolio_name {
+        font-size: 15px;
+    }
+
+    .ion-arrow-right-c {
+        font-size: 19px;
+    }
+
+    header {
+        display: none;
     }
 
 }
 
+@media only screen and (max-width: 500px) {
 
-/* Small tablets to big tablets: 768px to 1023px */
-@media only screen and (max-width: 920px) {
-
-    html,
-    body {
-        font-weight: 400;
-        font-size: 14px;
-        /* padding: 10px 20px 0px 20px ; */
+    h2 {
+        font-size: 100%;
     }
 
-    .Spaceman-in-space {
-        top: 100px;
-        right: 38px;
+    #open {
+        font-size: 100%;
     }
 
-    #moon{
-        position: absolute;
-        height: 180px;
-        width: 180px;
-    }
-    
-    
-    #hole1{ 
-        width: 47px;
-        height: 47px;
-        top: 20%;
-        right: -60%;
+    #come_in {
+        font-size: 90%;
     }
 
-    #hole2{
-        width: 20px;
-        height: 20px;
-        top: -5%;
-        right: -40%;
-    }
-
-
-    #hole3{
-        width: 13px;
-        height: 13px;
-        top: 10%;
-        right: -50%;
-    }
-
-    .para {
-        width: 600px;
-        height: 220px;
-    }
-
-    .about-me {
-        padding: 2px 10px;
-        line-height: 19px;
+    #portfolio_name {
         font-size: 12px;
     }
 
-    .open-para {
-        font-size: 16px; 
-    }
-
-    .project {
-        width: 600px;
-        height: 220px;
-    }
-
-    .project-name {
-        font-size: 35px;
-    }
-
-    .app-description {
-        line-height: 15px;
-    }
-
-    .left-side {
-        padding: 5px;
-    }
-
-    h6 {
-        font-size: 20px;
-    }
-
-    h7 {
-        margin: 30px 2px 0 2px;
-        padding: 8px 6px;
-    }
-
-    .programs-used {
-        margin: 0;
-    }
-
-    .coding-look {
-        height: 30px;
-        margin-left: 2px;
-    }
-
-    .code-button {
-        padding: 5px 10px;
-        margin: 2px 0px 0 0px;
-    }
-
-    .para2 {
-        padding: 8px;
-        width: 600px;
-        height: auto;
-    }
-
-    .skill-name {
-        padding: 0px;
-        margin: 0px 20px;
-        width: 80px;
-    }
-
-    .skill-icon {
-        margin: 10px;
-        font-size: 30px;
-    }
-
-    .skill-icon1 {
-        margin: 10px;
-        font-size: 30px;
-    }
-
-    .icons-skills {
-        margin: 0;
-    }
-}
-
-/* Small phones to small tablets: 481px to 767px */
-@media only screen and (max-width: 800px) {
-
-    html,
-    body {
-        font-weight: 400;
-        font-size: 8.5px;
-        width: 100%;
-        padding: 0;
-    }
-
-    .hidden {
-        position:fixed; 
-        top: 0; 
-        left: 0; 
-        z-index: 2000; 
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        height: 55px;
-        padding: 10px;
-        background: white;
-        opacity: 0.85; 
-    }
-
-    .hidden2 {
-        display: none;
-        position:fixed; 
-        top: 0; 
-        left: 0; 
-        z-index: 2001; 
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-        background: white;
-        opacity: 0.95;
-    }
-
-    .close-button {
-        display: flex;
-        justify-content: end;
-    }
-
-    .closing-icon-bar {
-        width: 52px;
-        height: 52px;
-        color: grey;
-        padding: 10px 10px;
-        margin: 0.2% 0 5% 92%;
-    }
-
-    .main-menu-buttons {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    h9 {
-        font-size: 350%;
-        padding: 20px;
-        margin: 20px 0;
-    }
-
-    .nav-content0 {
-        color: #ff804e;
-    }
-
-    h2 {
-        font-size: 220%;
-    }
-
-    .nav-icon-bar {
-        width: 45px;
-    }
-
     #main_button {
-        width: 100px;
-        height: 30px;
-        font-size: 10px;
-    }
-
-    #portfolio_name {
-        font-size: 15px;
+        width: 140px;
+        height: 35px;
     }
 
     .ion-arrow-right-c {
         display: none;
     }
 
-    header {
-        display: none;
+    .closing-icon-bar {
+        margin-left: 82%;
     }
 
-    .Spaceman-in-space {
-        display: none;
-    }
-
-    #moon{
-        display: none;
-    }
-
-
-    #hole1{ 
-        display: none;   
-    }
-
-    #hole2{
-        display: none;
-    }
-
-
-    #hole3{
-        display: none;
-    }
-
-    hr {
-        width: 40px;
+    h9 {
+        font-size: 100%;
+        margin: 10px 0;
     }
 
     h4 {
-        padding: 10px 0 0 0;
-        font-size: 300%;
+        font-size: 100%;
+        padding: 0;
     }
 
-    .para {
-        flex-direction: column;
-        justify-content: center;
-        width: 481px;
-        height: 871px;
-    }
-
-    .open-para{
-        font-size: 200%; 
-    }
-
-    .about-me {
-        width: 460px;
-        margin-top: 25px;
-        font-size: 220%;
-        line-height: 26px;
+    hr {
+        width: 50px;
     }
 
     .my-photo {
-        width: 455px;
-        margin-bottom: 15px;
+        width: 320px;
     }
 
-    #about-content {
-        padding-bottom: 20px;
+    .about-me {
+        font-size: 80%;
+        width: 320px;
     }
 
-    #portfolio-content {
-        padding-bottom: 2%;
-    }
-
-    .portfolio-projects {
-        margin-top: 0;
-    }
-
-    .project {
-        flex-direction: column;
-        text-align: left;
-        box-shadow: none;
-        padding: 13px;
-        width: 481px;
-        height: 700px;
-    }
-
-    .digicaching-video {
-        width: 100%;
-        border-radius: 0px;
-    }
-    
-    h6 {
-        font-size: 430%;
-        text-align: left;
-        margin-left: 0;
-    }
-
-    .app-description {
-        margin: 0 0 0 0.5%;
-        font-size: 220%;
-        line-height: 30px;
-        width: 100%;
-    }
-
-    .programs-used {
-        margin-left: -0.3%;
-    }
-
-    .left-side {
-        width: 100%;
-        padding: 0px;
-    }
-
-    .right-side {
-        margin-top: 5%;
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 10px;
-        width: 100%;
-        height: 50%;
-    }
-
-    h7 {
-        margin: 0 0% 0 1%;
-        font-size: 150%;
-        padding: 8px 10px;
-    }
-
-    .programs-used {
-        margin-top: 55px;
-    }
-
-    .code-button {
-        margin: 2% 0 0 0;
-        font-size: 150%;
-        padding: 3%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .para2 {
-        flex-direction: column;
-        justify-content: start;
-        width: 481px;
+    .project-image {
+        width: 300px;
         height: 200px;
-        background: white;
     }
 
-    .what-i-know,
-    .what-i-learn {
-        width: 340px;
-        font-size: 300%;
+    .gallery {
+        padding-bottom: 10px;
+        padding-top: 0px;
     }
 
-    .skill-name {
-        margin: 0;
+    .skills-image {
+        width: 700px;
+        margin: -80px 0 -20px 0;
     }
 
     .holder {
-        width: 350px;
+        width: 135%;
+        height: 
     }
 
     textarea {
-        height: 150px;
+        height: 7rem;
     }
 
-    #button-submit {
-        width: 120px;
-    }
-
-    .send-spaceship {
-        margin-left: 12px;
-    }
-
-    #submit_word {
-        margin-left: 6px;
-    }
-
-    .fa-facebook-square,
-    .fa-camera-retro,
-    .fa-github-square,
-    .fa-linkedin,
-    .fa-clipboard-list{
-        margin: 0 3px 5px 3px;
-        background-color: rgba(27, 25, 41, 0.726);
-        border-radius: 6px;
-        padding: 10px 13px;
-        font-size: 60px;
-    }
-
-    .footer-name {
-        margin: 7px 0;
-        font-size: 120%;
-    }
-
-}
-
-
-/* Small phones: from 0 to 600px */
-@media only screen and (max-width: 600px) {
-
-    html,
-    body {
-        font-weight: 400;
-        font-size: 8.5px;
-        width: 100%;
-        padding: 0;
-    }
-
-    .hidden {
-        position:fixed; 
-        top: 0; 
-        left: 0; 
-        z-index: 2000; 
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        height: 55px;
-        padding: 10px;
-        background: white;
-        opacity: 0.85; 
-    }
-
-    .hidden2 {
-        display: none;
-        position:fixed; 
-        top: 0; 
-        left: 0; 
-        z-index: 2001; 
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-        /* justify-content: center;
-        align-items: center; */
-        background: white;
-        opacity: 0.95;
-    }
-
-    .close-button {
-        display: flex;
-        justify-content: end;
-    }
-
-    .closing-icon-bar {
-        width: 52px;
-        height: 52px;
-        color: grey;
-        padding: 10px 10px;
-        margin: 0.2% 0 5% 86%;
-    }
-    
-    .main-menu-buttons {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    h9 {
-        font-size: 350%;
-        padding: 20px;
-    }
-
-    .nav-content0 {
-        color: #ff804e;
-    }
-
-    h2 {
-        font-size: 220%;
-    }
-
-    .nav-icon-bar {
-        width: 45px;
-    }
-
-    #main_button {
-        width: 100px;
-        height: 30px;
-        font-size: 10px;
-    }
-
-    #portfolio_name {
-        font-size: 15px;
-    }
-
-    .ion-arrow-right-c {
-        display: none;
-    }
-
-    header {
-        display: none;
-    }
-
-    hr {
-        width: 40px;
-    }
-
-    h4 {
-        padding: 10px 0 0 0;
-        font-size: 220%;
-        margin-bottom: 15px;
-    }
-
-    .para {
-        flex-direction: column;
-        justify-content: center;
-        width: 370px;
-        height: 670px;
-    }
-
-    .about-me {
-        width: 360px;
-        font-size: 160%;
-        line-height: 22px;
-        margin-top: 10px;
-    }
-
-    .my-photo {
-        width: 350px;
-        margin-bottom: 10px;
-    }
-
-    #about-content {
-        padding-bottom: 20px;
-    }
-
-    #portfolio-content {
-        padding-bottom: 2%;
-    }
-
-    .project {
-        flex-direction: column;
-        /* align-items: center; */
-        text-align: left;
-        box-shadow: none;
-        padding: 10px;
-        width: 370px;
-        height: 610px;
-    }
-
-    h6 {
-        font-size: 400%;
-        text-align: left;
-        margin-left: 0;
-    }
-
-    .app-description {
-        margin: 0 0 0 0.5%;
-        font-size: 200%;
-        line-height: 25px;
-        width: 100%;
-    }
-
-    .programs-used {
-        margin-left: -0.3%;
-        margin-top: 0;
-    }
-
-    .left-side {
-        width: 100%;
-        padding: 0px;
-    }
-
-    .right-side {
-        margin-top: 5%;
-        width: 350px;
-        height: 320px;
-    }
-
-    h7 {
-        margin: 2% 0% 0 1%;
-        padding: 8px 10px;
-    }
-
-    .code-button {
-        margin: 2% 0 0 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .para2 {
-        flex-direction: column;
-        justify-content: start;
-        width: 370px;
-        height: 230px;
-        background: white;
-    }
-
-    .what-i-know,
-    .what-i-learn {
-        width: 340px;
-        font-size: 300%;
-    }
-
-    .skill-name {
-        margin: 0;
-    }
-
-    .holder {
-        width: 350px;
-    }
-
-    #button-submit {
-        width: 120px;
+    .fa-facebook-square, 
+    .fa-camera-retro, 
+    .fa-github-square, 
+    .fa-envelope, 
+    .fa-linkedin, 
+    .fa-clipboard-list {
+        margin: 0 4px 10px 4px;
+        padding: 5px 9px;
+        font-size: 45px;
     }
 
     .send-spaceship {
-        margin-left: 12px;
+        left: 58%;
     }
-
-    #submit_word {
-        margin-left: 6px;
-    }
-
-    .fa-facebook-square,
-    .fa-camera-retro,
-    .fa-github-square,
-    .fa-linkedin,
-    .fa-envelope,
-    .fa-clipboard-list{
-        margin: 0 3px 5px 3px;
-        background-color: rgba(27, 25, 41, 0.726);
-        border-radius: 6px;
-        padding: 10px 13px;
-        font-size: 50px;
-    }
-
-    .footer-name {
-        margin: 7px 0;
-        font-size: 120%;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        padding: 5px;
-    }
-
-    .social-icons {
-        display: flex; 
-        padding: 10px;
-        margin: 10px;
-    }
-
 }
+
