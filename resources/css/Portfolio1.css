@@ -115,15 +115,18 @@ h2 {
 .nav-content {
     cursor: pointer;
     color: grey;
-    font-size: 110%;
+    font-size: 90%;
     margin: 0 40px 0 0;
+    font-family: sans-serif;
+    font-weight: 100;
+    transition: 0.2s;
 }
 
 .nav-content:hover {
-    transition: 0.2s;
     color: #b84eff;
     border-bottom: 2px solid #b84eff;
-    padding: 3px;
+    padding-bottom: 3px;
+    font-weight: 400;
 }
 
 .resume-header {
@@ -132,10 +135,16 @@ h2 {
     border: 1px solid #b84eff;
     padding: 10px;
     border-radius: 18px;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 80%;
+    transition: 0.4s;
 }
 
 .resume-header:hover {
-    background: rgb(158, 48, 248);
+    background: none;
+    color: #b84eff;
+    border: 1px solid #b84eff;
     text-decoration: none;
 }
 
