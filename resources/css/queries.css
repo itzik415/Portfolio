@@ -116,8 +116,15 @@
         width: 100%;
         height: 100%;
         flex-direction: column;
-        background: white;
+        background: rgb(10, 10, 10);
         opacity: 0.95;
+    }
+
+    .icon-footer3 {
+        margin: 0 4px 10px 4px;
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 45px;
     }
 
     .close-button {
@@ -128,9 +135,15 @@
     .closing-icon-bar {
         width: 52px;
         height: 52px;
-        color: grey;
+        color: white;
         padding: 10px 10px;
         margin: 0.2% 0 5% 93.5%;
+        transition: color 0.3s;
+    }
+
+    .closing-icon-bar:hover {
+        color: white;
+        cursor: pointer;
     }
 
     .main-menu-buttons {
@@ -141,18 +154,42 @@
     }
 
     h9 {
-        font-size: 200%;
-        padding: 20px;
-        margin: 20px 0;
-        cursor: pointer;
+        font-size: 170%;
+        padding: 14px;
+        margin: 15px 0;
     }
 
     .nav-content0 {
-        color: #b84eff;
+        color: grey;
+        font-family: sans-serif;
+        font-weight: 100;
+        transition: color 0.3s;
+    }
+
+    .nav-content0:hover {
+        color: white;
+    }
+
+    .bottom-hidden {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-name-2 {
+        margin-bottom: 20px;
+        color: white;
+        font-size: 12px;
+        font-family: sans-serif;
+        font-weight: 100;
     }
 
     .nav-icon-bar {
         width: 45px;
+    }
+
+    .nav-icon-bar:hover {
+        cursor: pointer;
     }
 
     #portfolio_name {
@@ -196,10 +233,6 @@
         display: none;
     }
 
-    .closing-icon-bar {
-        margin-left: 82%;
-    }
-
     h9 {
         font-size: 100%;
         margin: 10px 0;
@@ -240,7 +273,6 @@
 
     .holder {
         width: 135%;
-        height: 
     }
 
     textarea {
