@@ -28,12 +28,12 @@
                     <img src="resources/css/images/closing-icon.png" class="closing-icon-bar">
                 </div>
                 <div class="main-menu-buttons">
-                    <h9><a href="#main-opening" class="nav-content0" id="home2">Home</a></h9>
+                    <h9><a href="#main-opening" class="nav-content0 selected2" id="home2">Home</a></h9>
                     <h9><a href="#about-content" class="nav-content0" id="about2">About</a></h9>
                     <h9><a href="#portfolio-content" class="nav-content0" id="portfolio2">Portfolio</a></h9>
                     <h9><a href="#skills-content" class="nav-content0" id="skills2">Skills</a></h9>
-                    <!-- <h9><a href="#contact-content" class="nav-content0" id="contact2">Contact</a></h9> -->
-                    <h9><a href="https://documentviewer.herokuapp.com/?state=%7B%22ids%22:%5B%2210IoC2TJ4gxvoNEf8Hsbs9AsdbOyaNHhB%22%5D,%22action%22:%22open%22,%22userId%22:%22114551444387747421783%22%7D" class="nav-content0"></a>Resume</a></h9>
+                    <h9><a href="#contact-content" class="nav-content0" id="contact2">Contact</a></h9>
+                    <h9><a href="resources/css/images/Itzik-Shaoulian-html-resume.pdf" target="_blank" class="nav-content0">Resume</a></h9>
                 </div>
                 <div class="bottom-hidden">
                     <p class="footer-name-2">© 2018 Itzik Shaoulian. Made in Israel</p>
@@ -54,12 +54,12 @@
                 <div class="nav-options">
                     <nav id="nav">
                         <ul class="list-options">
-                            <li class="option-name"><a href="#main-opening" class="nav-content" id="home1">Home</a></li>
+                            <li class="option-name"><a href="#main-opening" class="nav-content selected" id="home1">Home</a></li>
                             <li class="option-name"><a href="#about-content" class="nav-content" id="about1">About</a></li>
                             <li class="option-name"><a href="#portfolio-content" class="nav-content" id="portfolio1">Portfolio</a></li>
                             <li class="option-name"><a href="#skills-content" class="nav-content" id="skills1">Skills</a></li>
-                            <!-- <li class="option-name"><a href="#contact-content" class="nav-content" id="contact1">Contact</a></li> -->
-                            <li class="option-name"><a href="https://documentviewer.herokuapp.com/?state=%7B%22ids%22:%5B%2210IoC2TJ4gxvoNEf8Hsbs9AsdbOyaNHhB%22%5D,%22action%22:%22open%22,%22userId%22:%22114551444387747421783%22%7D" target="_blank" class="resume-header" class="nav-content">Resume</a></li>
+                            <li class="option-name"><a href="#contact-content" class="nav-content" id="contact1">Contact</a></li>
+                            <li><a href="resources/css/images/Itzik-Shaoulian-html-resume.pdf" target="_blank" class="resume-header" class="nav-content">Resume</a></li>
                         </ul>
                     </nav>
                 </div> 
@@ -67,8 +67,8 @@
             <div id ="main-opening">
                 <div id="falling-star"></div>
                 <img class="cartoon-moon" src="resources/css/images/cartoon-moon.png">
-                <p class="animated fadeInDown" id="open" data-animation="slide-in-right" data-delay=".3s">Hello, I'm Itzik Shaoulian.</p>
-                <p class="animated fadeInDown" id="come_in">I'm a full stack web developer.</p>
+                <p id="open" >Hello, I'm Itzik Shaoulian.</p>
+                <p id="come_in">I'm a full stack web developer.</p>
                 <div id="portfolio_button">
                     <button id="main_button"><p id='portfolio_name'>View my work</p><i class='ion-arrow-right-c'></i></button>
                 </div>
@@ -246,7 +246,6 @@
                         </div> -->
                     </div>
                 </div> 
-            <!-- <img class="projects-photos" src="resources/css/images/catalyst-main.png"> -->
             </div>
             <div class="skills" id="skills-content">
                 <div class="main-line">
@@ -257,7 +256,7 @@
                     <img class="skills-image" src="resources/css/images/skills-5.png">
                 </div>  
             </div>
-            <!-- <div class="contact" id="contact-content">
+            <div class="contact" id="contact-content">
                 <div class="main-line">
                     <h4>Contact Me</h4>
                     <hr>
@@ -266,12 +265,14 @@
                     <input class="holder" placeholder="Name" type="text" name="name" required>
                     <input class="holder" placeholder="Email" type="email" name="email" required>
                     <textarea class="holder" placeholder="Drop me some lines" type="text" name="message"></textarea>
+                    <div class="button-position">
+                        <button id="button-submit" type="submit"><p id='submit_word'>Submit</p><img class="send-spaceship" src="resources/css/images/send-spaceship.png"></button>
+                    </div>
                 </form>
-                <button id="button-submit" type="submit"><p id='submit_word'>Submit</p><img class="send-spaceship" src="resources/css/images/send-spaceship.png"></button>
-            </div> -->
+            </div>
             <footer>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/itzik.shaoulian" target="_blank"><i class="fab fa-facebook-square fa-2x" class="icon-footer"></i></a>
+                    <a href="https://www.facebook.com/itzik.shaoulian" target="_blank"><i class="fab fa-facebook-square fa-2x " class="icon-footer"></i></a>
                     <a href="https://www.instagram.com/itzikshaoulian" target="_blank"><i class="fas fa-camera-retro fa-2x" class="icon-footer"></i></a>
                     <a href="https://github.com/itzik415" target="_blank"><i class="fab fa-github-square fa-2x" class="icon-footer"></i></a>
                     <a href="https://www.linkedin.com/in/itzik-shaoulian-b61294106/" target="_blank"><i class="fab fa-linkedin fa-2x" class="icon-footer"></i></a>

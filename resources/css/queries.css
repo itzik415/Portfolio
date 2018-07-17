@@ -127,6 +127,11 @@
         font-size: 45px;
     }
 
+    .icon-footer3:hover {
+        color: grey;
+        box-shadow: none;
+    }
+
     .close-button {
         display: flex;
         justify-content: end;
@@ -157,6 +162,10 @@
         font-size: 170%;
         padding: 14px;
         margin: 15px 0;
+        color: grey;
+        font-family: sans-serif;
+        font-weight: 100;
+        transition: color 0.3s;
     }
 
     .nav-content0 {
@@ -182,6 +191,10 @@
         font-size: 12px;
         font-family: sans-serif;
         font-weight: 100;
+    }
+
+    .selected2 {
+        color: white;
     }
 
     .nav-icon-bar {
@@ -233,10 +246,10 @@
         display: none;
     }
 
-    h9 {
+    /* h9 {
         font-size: 100%;
         margin: 10px 0;
-    }
+    } */
 
     h4 {
         font-size: 100%;

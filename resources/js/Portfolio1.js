@@ -63,30 +63,44 @@ $(document).ready(function() {
             windowHeight = $(window).height(),
             scroll = $(window).scrollTop(),
             about = $('#about-content').offset().top,
-            portfolio = $('#portfolio-content').offset().top;
+            portfolio = $('#portfolio-content').offset().top,
+            home = $('#main-opening').offset().top,
+            contact = $('#contact-content').offset().top,
             skills = $('#skills-content').offset().top;
+
+        // If at the top of the page
+        if (scroll >= home) {
+            $('#nav a').removeClass('selected');
+            $('#home1').addClass('selected');
+            $('h9 a').removeClass('selected2');
+            $('#home2').addClass('selected2');
+        }
 
         if (scroll >= about - navHeight) {
             $('#nav a').removeClass('selected');
             $('#about1').addClass('selected');
+            $('h9 a').removeClass('selected2');
+            $('#about2').addClass('selected2');
         }
         if (scroll >= portfolio - navHeight) {
             $('#nav a').removeClass('selected');
             $('#portfolio1').addClass('selected');
+            $('h9 a').removeClass('selected2');
+            $('#portfolio2').addClass('selected2');
         }
         if (scroll >= skills - navHeight) {
             $('#nav a').removeClass('selected');
             $('#skills1').addClass('selected');
+            $('h9 a').removeClass('selected2');
+            $('#skills2').addClass('selected2');
         }
-        // If at the top of the page, remove all selected classes
-        if (scroll === 0) {
-            $('#nav a').removeClass('selected');
-            $('#home1').addClass('selected');
-        }
-        // If at bottom of page, add selected class on Contact
-        if (scroll + windowHeight === documentHeight) {
+
+        // If at the bottom of the page
+        if (scroll >= contact - navHeight) {
             $('#nav a').removeClass('selected');
             $('#contact1').addClass('selected');
+            $('h9 a').removeClass('selected2');
+            $('#contact2').addClass('selected2');
         }
     });
 });
@@ -165,12 +179,12 @@ document.querySelector('#main_button').addEventListener('mouseout',function(){
 })
 
 //Manipulate submit form button
-// document.querySelector('#button-submit').addEventListener('click', function (){
-//     document.querySelector('.send-spaceship').style.animation = 'send-spaceship 5s 1';
-// })
+document.querySelector('#button-submit').addEventListener('click', function (){
+    document.querySelector('.send-spaceship').style.animation = 'send-spaceship 5s 1';
+})
 
 // document.querySelector('#button-submit').addEventListener('mouseout',function(){
-//     document.querySelector('#button-submit').style.background = '#1E242C';
+//     document.querySelector('#button-submit').style.background = 'white';
 // })
 
 
