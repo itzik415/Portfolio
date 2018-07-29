@@ -138,8 +138,8 @@
     }
 
     .closing-icon-bar {
-        width: 52px;
-        height: 52px;
+        width: 48px;
+        height: 48px;
         color: white;
         padding: 10px 10px;
         margin: 0.2% 0 5% 93.5%;
@@ -246,10 +246,16 @@
         display: none;
     }
 
-    /* h9 {
+    .closing-icon-bar {
+        width: 45px;
+        height: 45px;
+        margin-left: 86%;
+    }
+
+    h9 {
         font-size: 100%;
         margin: 10px 0;
-    } */
+    }
 
     h4 {
         font-size: 100%;
@@ -285,11 +291,11 @@
     }
 
     .holder {
-        width: 135%;
+        width: 70%;
     }
 
     textarea {
-        height: 7rem;
+        min-width: 60%;
     }
 
     .fa-facebook-square, 
