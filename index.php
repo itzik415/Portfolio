@@ -59,7 +59,7 @@
                             <li class="option-name"><a href="#portfolio-content" class="nav-content" id="portfolio1">Portfolio</a></li>
                             <li class="option-name"><a href="#skills-content" class="nav-content" id="skills1">Skills</a></li>
                             <li class="option-name"><a href="#contact-content" class="nav-content" id="contact1">Contact</a></li>
-                            <li><a href="resources/css/images/Itzik-Shaoulian-html-resume.pdf" target="_blank" class="resume-header" class="nav-content">Resume</a></li>
+                            <li><a href="resources/css/images/Itzik-Shaoulian-html-resume-1.jpg" target="_blank" class="resume-header" class="nav-content">Resume</a></li>
                         </ul>
                     </nav>
                 </div> 
@@ -80,7 +80,7 @@
                     <hr class="animated fadeInLeftBig">
                 </div>
                 <div class="para">
-                    <img class="my-photo" src="resources/css/images/itzik.jpg">
+                    <img class="my-photo" src="resources/css/images/itzik2.jpg">
                     <p class="about-me">
                         <span class="open-para">Hi, I'm Itzik!</span> I'm a software developer who found his true passion in programming. 
                         Curious as to how programs work, I started teaching myself how to code, 

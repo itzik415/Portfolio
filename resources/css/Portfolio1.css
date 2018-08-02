@@ -403,7 +403,7 @@ h6:hover {
 }
 
 .image-1{
-    background-image: url(images/digicaching-main.png);
+    background-image: url(images/digicaching-main.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -422,7 +422,7 @@ h6:hover {
 }
 
 .image-4{
-    background-image: url(images/digicaching-main.png);
+    background-image: url(images/digicaching-main.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -595,24 +595,24 @@ h6:hover {
 /*--DIGICACHING-IMAGES--*/
 
 .number-0-0 {
-    background: url(images/digicaching-main.png);
+    background: url(images/digicaching-main.jpg);
     background-size: cover;
 }
 
 .number-0-1 {
-    background: url(images/digicaching1.png);
+    background: url(images/digicaching1.jpg);
 }
 
 .number-0-2 {
-    background: url(images/digicaching2.png);
+    background: url(images/digicaching2.jpg);
 }
 
 .number-0-3 {
-    background: url(images/digicaching3.png);
+    background: url(images/digicaching3.jpg);
 }
 
 .number-0-4 {
-    background: url(images/digicaching4.png);
+    background: url(images/digicaching4.jpg);
 }
 
 .number-0-1,
