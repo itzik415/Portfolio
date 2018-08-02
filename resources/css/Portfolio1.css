@@ -233,6 +233,12 @@ h2 {
     margin-left: 10px;
 }
 
+.portfolio-main-button {
+    align-items: right;
+    width: 40px;
+    margin-left: 10px;
+}
+
 
 #portfolio_name {
     align-items: left;

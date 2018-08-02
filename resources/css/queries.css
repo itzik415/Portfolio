@@ -213,6 +213,10 @@
         font-size: 19px;
     }
 
+    .portfolio-main-button {
+        width: 19px;
+    }
+
     header {
         display: none;
     }
@@ -241,8 +245,8 @@
         width: 140px;
         height: 35px;
     }
-
-    .ion-arrow-right-c {
+    
+    .portfolio-main-button {
         display: none;
     }
 
