@@ -52,9 +52,9 @@ $(document).ready(function() {
         $('.hidden2').slideToggle("slow")
     });
 
-    $('#contact2').click(function() {
-        $('.hidden2').slideToggle("slow")
-    });
+    // $('#contact2').click(function() {
+    //     $('.hidden2').slideToggle("slow")
+    // });
     
     // Change highlighted nav item on scroll
     $(window).scroll(function() {
@@ -65,7 +65,7 @@ $(document).ready(function() {
             about = $('#about-content').offset().top,
             portfolio = $('#portfolio-content').offset().top,
             home = $('#main-opening').offset().top,
-            contact = $('#contact-content').offset().top,
+            // contacct = $('#contact-content').offset().top,
             skills = $('#skills-content').offset().top;
 
         // If at the top of the page
@@ -96,12 +96,12 @@ $(document).ready(function() {
         }
 
         // If at the bottom of the page
-        if (scroll >= contact - navHeight) {
-            $('#nav a').removeClass('selected');
-            $('#contact1').addClass('selected');
-            $('h9 a').removeClass('selected2');
-            $('#contact2').addClass('selected2');
-        }
+        // if (scroll >= contact - navHeight) {
+        //     $('#nav a').removeClass('selected');
+        //     $('#contact1').addClass('selected');
+        //     $('h9 a').removeClass('selected2');
+        //     $('#contact2').addClass('selected2');
+        // }
     });
 });
 
