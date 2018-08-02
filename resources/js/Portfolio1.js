@@ -169,17 +169,6 @@ function newNum(){
 }
 
 //Manipulate portfolio button arrow 
-// document.querySelector('#main_button').addEventListener('mouseover',function(){
-//     document.querySelector('.ion-arrow-right-c').style.transform = 'rotate(90deg)';
-//     document.querySelector('.ion-arrow-right-c').style.transition = '0.4s';
-// })
-
-// document.querySelector('#main_button').addEventListener('mouseout',function(){
-//     document.querySelector('.ion-arrow-right-c').style.transform = 'rotate(0deg)';
-// })
-
-// .portfolio-main-button
-
 document.querySelector('#main_button').addEventListener('mouseover',function(){
     document.querySelector('.portfolio-main-button').style.transform = 'rotate(90deg)';
     document.querySelector('.portfolio-main-button').style.transition = '0.4s';

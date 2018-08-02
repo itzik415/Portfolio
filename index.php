@@ -70,7 +70,7 @@
                 <p id="open" >Hello, I'm Itzik Shaoulian.</p>
                 <p id="come_in">I'm a full stack web developer.</p>
                 <div id="portfolio_button">
-                    <button id="main_button"><p id='portfolio_name'>View my work</p><i class='ion-arrow-right-c'></i></button>
+                    <button id="main_button"><p id='portfolio_name'>View my work</p><img class="portfolio-main-button" src="resources/css/images/main-arrow-button.png"></button>
                 </div>
                 <img class="star-img" src="resources/css/images/star3.png">
             </div>
