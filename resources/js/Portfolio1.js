@@ -179,9 +179,9 @@ document.querySelector('#main_button').addEventListener('mouseout',function(){
 })
 
 //Manipulate submit form button
-document.querySelector('#button-submit').addEventListener('click', function (){
-    document.querySelector('.send-spaceship').style.animation = 'send-spaceship 5s 1';
-})
+// document.querySelector('#button-submit').addEventListener('click', function (){
+//     document.querySelector('.send-spaceship').style.animation = 'send-spaceship 5s 1';
+// })
 
 // document.querySelector('#button-submit').addEventListener('mouseout',function(){
 //     document.querySelector('#button-submit').style.background = 'white';
