@@ -21,7 +21,7 @@
      
     mail($to,$email_subject,$email_body,$headers);
      
-    header("Location: index.php");
+    header("Location: https://itzikshaoulianportfolio.herokuapp.com/");
  
  
 ?>
