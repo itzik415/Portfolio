@@ -270,6 +270,9 @@ for(let i = 0; i < document.querySelectorAll('.black-arrow-right').length; i++){
 }
 
 
+
+
+
 //document.querySelector('#main-opening').offsetHeight;
 
 // innerHeight: 557 החלק של הבפנים לא כולל הקונסול

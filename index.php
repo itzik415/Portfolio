@@ -261,7 +261,20 @@
                     <h4>Contact Me</h4>
                     <hr>
                 </div>
-                <form>
+                <form id="form" action="portfolio.php">
+
+                    <?php
+
+                        if ($_GET['success'] == 1) {
+                            echo "<div class=\"form-messages success\">Thank you for sanding this mail!</div>";
+                        }
+
+                        if ($_GET['error'] == -1){
+                            echo "<div class=\"form-messages error\">Oops! Something went wrong please try again mail!</div>";
+                        } 
+
+                    ?>
+
                     <input class="holder" placeholder="Name" type="text" name="name" required>
                     <input class="holder" placeholder="Email" type="email" name="email" required>
                     <textarea class="holder" placeholder="Drop me some lines" type="text" name="message"></textarea>
