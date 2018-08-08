@@ -350,34 +350,34 @@ h2 {
     top: 30px;
     right: 10px;
     z-index: 0;
-    -webkit-animation: star 12s linear 0s infinite;
-            animation: star 12s linear 0s infinite;
+    -webkit-animation: star 18s linear 0s infinite;
+            animation: star 18s linear 0s infinite;
 }
 
 @-webkit-keyframes star {
     from  {
-        right:0px; 
+        right:400px; 
         top:0px;
         height: 1px;
     }
 
     to {
-        right:1150px; 
-        top:850px;
+        right:2200px; 
+        top:1150px;
         height: 3px;
     } 
 }
 
 @keyframes star {
     from  {
-        right:0px; 
+        right:400px; 
         top:0px;
         height: 1px;
     }
 
     to {
-        right:1150px; 
-        top:850px;
+        right:2200px; 
+        top:1150px;
         height: 3px;
     } 
 }
