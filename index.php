@@ -32,7 +32,7 @@
                     <h9><a href="#about-content" class="nav-content0" id="about2">About</a></h9>
                     <h9><a href="#portfolio-content" class="nav-content0" id="portfolio2">Portfolio</a></h9>
                     <h9><a href="#skills-content" class="nav-content0" id="skills2">Skills</a></h9>
-                    <!-- <h9><a href="#contact-content" class="nav-content0" id="contact2">Contact</a></h9> -->
+                    <h9><a href="#contact-content" class="nav-content0" id="contact2">Contact</a></h9>
                     <h9><a href="resources/css/images/Itzik-Shaoulian-html-resume.pdf" target="_blank" class="nav-content0">Resume</a></h9>
                 </div>
                 <div class="bottom-hidden">
@@ -58,7 +58,7 @@
                             <li class="option-name"><a href="#about-content" class="nav-content" id="about1">About</a></li>
                             <li class="option-name"><a href="#portfolio-content" class="nav-content" id="portfolio1">Portfolio</a></li>
                             <li class="option-name"><a href="#skills-content" class="nav-content" id="skills1">Skills</a></li>
-                            <!-- <li class="option-name"><a href="#contact-content" class="nav-content" id="contact1">Contact</a></li> -->
+                            <li class="option-name"><a href="#contact-content" class="nav-content" id="contact1">Contact</a></li>
                             <li><a href="resources/css/images/Itzik-Shaoulian-html-resume-1.jpg" target="_blank" class="resume-header" class="nav-content">Resume</a></li>
                         </ul>
                     </nav>
@@ -194,8 +194,10 @@
                                     <p class="main-project-title">Digital-Timer</p>
                                     <p class="main-project-description">Timer</p>
                                     <hr class="main-project-hr">
-                                    <p class="main-project-long-description">A timer is a specialized type of clock used for measuring specific time intervals. 
-                                        Timers can be categorized into two main types. 
+                                    <p class="main-project-long-description">The first JavaScript project that I completed entirely by myself: JavaScript Timer, built with pure JavaScript. 
+                                        This project marks the beginning of my journey of becoming a full-stack web developer. 
+                                        This project made me realize my weaknesses and gave me confidence in my strengths. 
+                                        I had a really hard time making this timer work properly, and that's what makes this project so meaningful for me.
                                     </p>       
                                 </div>
                                 <div class="buttons">
@@ -256,12 +258,25 @@
                     <img class="skills-image" src="resources/css/images/skills-5.png">
                 </div>  
             </div>
-            <!-- <div class="contact" id="contact-content">
+            <div class="contact" id="contact-content">
                 <div class="main-line">
                     <h4>Contact Me</h4>
                     <hr>
                 </div>
-                <form id="contact-form" method="post" action="email.php">
+                <form id="form" action="portfolio.php">
+
+                    <?php
+
+                        if ($_GET['success'] == 1) {
+                            echo "<div class=\"form-messages success\">Thank you for sanding this mail!</div>";
+                        }
+
+                        if ($_GET['error'] == -1){
+                            echo "<div class=\"form-messages error\">Oops! Something went wrong please try again mail!</div>";
+                        } 
+
+                    ?>
+
                     <input class="holder" placeholder="Name" type="text" name="name" required>
                     <input class="holder" placeholder="Email" type="email" name="email" required>
                     <textarea class="holder" placeholder="Drop me some lines" type="text" name="message"></textarea>
@@ -269,7 +284,7 @@
                         <button id="button-submit" type="submit"><p id='submit_word'>Submit</p><img class="send-spaceship" src="resources/css/images/send-spaceship.png"></button>
                     </div>
                 </form>
-            </div> -->
+            </div>
             <footer>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/itzik.shaoulian" target="_blank"><i class="fab fa-facebook-square fa-2x " class="icon-footer"></i></a>
