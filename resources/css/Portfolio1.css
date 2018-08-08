@@ -547,7 +547,7 @@ h6:hover {
 }
 
 .image-3{
-    background-image: url(images/timer1.png);
+    background-image: url(images/timer-main.png);
     background-size: cover;
     background-position: center;
     background-size: 400px 300px;
@@ -818,7 +818,7 @@ h6:hover {
 /*--TIMER-IMAGES--*/
 
 .number-2-0 {
-    background: url(images/timer1.png);
+    background: url(images/timer-main.png);
     background-size: cover;
 }
 
