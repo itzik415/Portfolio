@@ -1,25 +1,5 @@
 
 $(document).ready(function() {
-    var scrollLink = $('.option-name');
-    scrollLink.click(function(e){ //e refers that there is an event
-        e.preventDefault();//preventing default action=hard jump
-    	// calculating position of section
-        let linkRef = $(this).find('a').attr('href');
-        //the following will account for header height
-        let position = $(linkRef).offset().top;
-    	$('html, body').animate({
-    		scrollTop : position
-    		}, 500)
-    	//animate is looking for css property
-    	// scrollTop measures how far from top this is 	
-    })
-
-    //making the Porfolio button work
-    $('#main_button').click(function(){
-    	$('html, body').animate({
-    		scrollTop : $('.portfolio').offset().top
-    	}, 500) 	
-    })
 
     //making my name at the bottom scroll to the top of the page
     $('.itzik').click(function(){
@@ -52,57 +32,10 @@ $(document).ready(function() {
         $('.hidden2').slideToggle("slow")
     });
 
-    // $('#contact2').click(function() {
-    //     $('.hidden2').slideToggle("slow")
-    // });
-    
-    // Change highlighted nav item on scroll
-    $(window).scroll(function() {
-        var navHeight = $('#nav').height(),
-            documentHeight = $(document).height(),
-            windowHeight = $(window).height(),
-            scroll = $(window).scrollTop(),
-            about = $('#about-content').offset().top,
-            portfolio = $('#portfolio-content').offset().top,
-            home = $('#main-opening').offset().top,
-            // contacct = $('#contact-content').offset().top,
-            skills = $('#skills-content').offset().top;
-
-        // If at the top of the page
-        if (scroll >= home) {
-            $('#nav a').removeClass('selected');
-            $('#home1').addClass('selected');
-            $('h9 a').removeClass('selected2');
-            $('#home2').addClass('selected2');
-        }
-
-        if (scroll >= about - navHeight) {
-            $('#nav a').removeClass('selected');
-            $('#about1').addClass('selected');
-            $('h9 a').removeClass('selected2');
-            $('#about2').addClass('selected2');
-        }
-        if (scroll >= portfolio - navHeight) {
-            $('#nav a').removeClass('selected');
-            $('#portfolio1').addClass('selected');
-            $('h9 a').removeClass('selected2');
-            $('#portfolio2').addClass('selected2');
-        }
-        if (scroll >= skills - navHeight) {
-            $('#nav a').removeClass('selected');
-            $('#skills1').addClass('selected');
-            $('h9 a').removeClass('selected2');
-            $('#skills2').addClass('selected2');
-        }
-
-        // If at the bottom of the page
-        // if (scroll >= contact - navHeight) {
-        //     $('#nav a').removeClass('selected');
-        //     $('#contact1').addClass('selected');
-        //     $('h9 a').removeClass('selected2');
-        //     $('#contact2').addClass('selected2');
-        // }
+    $('#contact2').click(function() {
+        $('.hidden2').slideToggle("slow")
     });
+    
 });
 
 
@@ -167,25 +100,6 @@ function newNum(){
     var x = Math.floor(Math.random() * -800);
     return x;
 }
-
-//Manipulate portfolio button arrow 
-document.querySelector('#main_button').addEventListener('mouseover',function(){
-    document.querySelector('.portfolio-main-button').style.transform = 'rotate(90deg)';
-    document.querySelector('.portfolio-main-button').style.transition = '0.4s';
-})
-
-document.querySelector('#main_button').addEventListener('mouseout',function(){
-    document.querySelector('.portfolio-main-button').style.transform = 'rotate(0deg)';
-})
-
-//Manipulate submit form button
-// document.querySelector('#button-submit').addEventListener('click', function (){
-//     document.querySelector('.send-spaceship').style.animation = 'send-spaceship 5s 1';
-// })
-
-// document.querySelector('#button-submit').addEventListener('mouseout',function(){
-//     document.querySelector('#button-submit').style.background = 'white';
-// })
 
 
 //Manipulate projects images
@@ -268,25 +182,3 @@ for(let i = 0; i < document.querySelectorAll('.black-arrow-right').length; i++){
         }    
     })
 }
-
-
-
-
-
-//document.querySelector('#main-opening').offsetHeight;
-
-// innerHeight: 557 החלק של הבפנים לא כולל הקונסול
-// innerWidth: 1019
-
-// outerHeight: 557 החלק של הבפנים כולל הקונסול
-// outerWidth: 1019
-
-// document.body.scrollHeight: 4597 אורך הדף הכולל
-// screen.height: 940 קבוע לא משתנה
-
-// pageYOffset: 2172 אורך הדף + הקונסול 
-
-// screenTop: 22 השטח מחוץ לדף שנשאר
-// scrollY: 2172 האורך של הדף באותו חלק שאנחנו נמצאים
-// screenY: 22 השטח מחוץ לדף שנשאר 
-

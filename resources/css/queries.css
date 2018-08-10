@@ -1,27 +1,43 @@
 /* Big tablets to 1500px (widths smaller than the 1140px row) */
-@media only screen and (max-width: 1500px) {
-    .cartoon-moon {
-        width: 200px;
+
+@media only screen and (max-width: 1350px) {
+    
+    .about-para {
+        display: flex;
+        flex-direction: column;
     }
 
-    .send-spaceship {
-        left: 52%;
+    .about-para-me {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
     }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-heading-para {
+        text-align: center;
+        width: 400px;
+    }
+
+    .about-main-para {
+        text-align: center;
+        width: 300%;
+    }
+
+    .about-para-photo {
+        margin-bottom: 30px;
+    }
+
 }
 
 @media only screen and (max-width: 1100px) {
-    .cartoon-moon {
-        display: none;
-    }
-
-    .about-me {
-        font-size: 100%;
-        line-height: 25px;
-    }
-
-    .my-photo {
-        width: 500px;
-    }
 
     h2 {
         font-size: 120%;
@@ -34,6 +50,10 @@
 
     .resume-header {
         font-size: 90%;
+    }
+
+    .about-para-photo {
+        width: 70%;
     }
 
     .send-spaceship {
@@ -67,29 +87,12 @@
         width: 100px;
     }
 
-    .para {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-    }
-
     .my-photo {
         width: 450px;
     }
 
-    .about-me {
-        width: 400px;
-        text-align: center;
-        margin-top: 20px;
-    }
-
     .skills-image {
-        width: 1100px;
-        margin: -100px 0 -20px 0;
+        width: 500px;
     }
 
     .nav-options {
@@ -290,6 +293,18 @@
         display: none;
     }
 
+    .about-heading-para {
+        font-size: 110%;
+    }
+
+    .about-main-para {
+        font-size: 100%;
+    }
+
+    .about-para-photo {
+        width: 90%;
+    }
+
     .closing-icon-bar {
         width: 45px;
         height: 45px;
@@ -314,11 +329,6 @@
         width: 320px;
     }
 
-    .about-me {
-        font-size: 80%;
-        width: 320px;
-    }
-
     .project-image {
         width: 300px;
         height: 200px;
@@ -330,8 +340,8 @@
     }
 
     .skills-image {
-        width: 700px;
-        margin: -80px 0 -20px 0;
+        width: 300px;
+        margin: 10px 0;
     }
 
     .holder {

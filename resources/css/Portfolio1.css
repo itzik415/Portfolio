@@ -1,13 +1,8 @@
 
 /*
-font-family: 'Abril Fatface', cursive;
-font-family: 'Special Elite', cursive;
-font-family: 'Butcherman', cursive;
-font-family: 'VT323', monospace;
-font-family: 'Bangers', cursive;
-font-family: 'Faster One', cursive;
-font-family: 'Righteous', cursive;
-font-family: 'Josefin Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Playfair Display', serif;
+
 color: #ff4e6c;
 color: #ff804e;
 colo: #4eff98;
@@ -23,21 +18,19 @@ colo: #4eff98;
 
 html,
 body {
-    font-family: 'Josefin Sans','Lato', 'Arial', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-size: 20px;
     background: white;
     overflow-x: hidden; 
 }
 
-.about,
+.about-section,
 .portfolio,
 .skills,
 .contact,
 footer {
     padding: 30px 0px;
-    margin: 3px 0;
-    height: 100%;
 }
 
 .hidden {
@@ -49,16 +42,19 @@ footer {
 }
 
 hr {
-    width: 150px;
+    width: 200px;
     height: 2px;
     border-radius: 10px;
-    margin: 20px 20px 0 20px;
+    margin: 10px 20px 0 20px;
 }
 
 h4 {
     font-size: 200%;
+    text-transform: uppercase;
     margin: 25px 0 4px 0;
-    color: grey;
+    color: black;
+    letter-spacing: 3px;
+    font-weight: bold;
 }
 
 a {
@@ -82,30 +78,6 @@ a {
     margin-bottom: 25px;
 }
 
-header {
-    position:fixed; 
-    top: 0; 
-    left: 0; 
-    z-index: 2000; 
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 60px;
-    padding: 10px;
-    background: white;
-    opacity: 0.85; 
-}
 
 .list-options {
     display: -webkit-box;
@@ -134,64 +106,11 @@ header {
             align-items: center;
 }
 
-h2 {
-    color: grey;
-}
-
-
-.astro-man-header {
-    width: 40px;
-    margin-right: 5px;
-}
-
-.nav-content {
-    cursor: pointer;
-    color: grey;
-    font-size: 90%;
-    margin: 0 40px 0 0;
-    font-family: sans-serif;
-    font-weight: 100;
-    -webkit-transition: 0.2s;
-    -o-transition: 0.2s;
-    transition: 0.2s;
-}
-
-.nav-content:hover {
-    color: #b84eff;
-    border-bottom: 2px solid #b84eff;
-    padding-bottom: 3px;
-    font-weight: 400;
-}
-
-.resume-header {
-    color: white;
-    background: #b84eff;
-    border: 1px solid #b84eff;
-    padding: 10px;
-    border-radius: 18px;
-    font-family: sans-serif;
-    font-weight: 100;
-    font-size: 80%;
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s;
-}
-
-.resume-header:hover {
-    background: none;
-    color: #b84eff;
-    border: 1px solid #b84eff;
-    text-decoration: none;
-}
-
-
-
 /*******************/
 /*------HOME-------*/
 /*******************/
 
 #main-opening {
-    font-family: 'Righteous', cursive;
     background: -webkit-gradient(linear, left top, left bottom, from(#04050a),color-stop(60%, #131f51),to(#48577D));
     background: -webkit-linear-gradient(top, #04050a 0%,#131f51 60%,#48577D 100%);
     background: -o-linear-gradient(top, #04050a 0%,#131f51 60%,#48577D 100%);
@@ -222,76 +141,20 @@ h2 {
 
 #open {
     display: block;
-    font-size: 255%;
+    font-size: 290%;
     text-shadow: 0px 0px 100px rgba(240, 240, 240, 0.2),0px 0px 100px rgba(250, 250, 250, 0.5),0px 0px 100px rgba(255, 255, 255,0.8);
-    color: rgb(235, 231, 231);  
+    color: rgb(235, 231, 231); 
+    letter-spacing: 5px;
+    font-weight: bold;
     z-index: 2;
 }
 
 #come_in {
-    font-size: 220%;
+    font-size: 255%;
     text-shadow: 0px 0px 100px #9063e471,0px 0px 100px#9063e471,0px 0px 100px #9063e471;
     color: #b84eff;
+    letter-spacing: 3.5px;
     z-index: 2;
-}
-
-/* .animated {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-
-.animated.infinite {
-    animation-iteration-count: infinite;
-}
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translate3d(0, -100%, 0);
-    }
-
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-.fadeInDown {
-    animation-name: fadeInDown;
-} */
-
-#main_button {
-    color: rgb(255, 255, 255);
-    margin-top: 15px;
-    background-color: rgba(0, 0, 0, 0);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border-radius: 5px;
-    border: 2px solid white;
-    width: 240px;
-    height: 55px;
-}
-
-#main_button:hover {
-    background-color: #4eff98;
-    cursor: pointer;
-    border: none;
-}
-
-
-.portfolio-main-button {
-    -webkit-box-align: right;
-        -ms-flex-align: right;
-            align-items: right;
-    width: 30px;
-    margin-left: 10px;
 }
 
 
@@ -319,14 +182,6 @@ h2 {
     20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
         opacity: 0;
     }
-}
-
-.cartoon-moon {
-    width: 250px;
-    position: absolute;
-    top:100px;
-    right: 40px;
-    z-index: 0;
 }
 
 .astro {
@@ -386,72 +241,60 @@ h2 {
 /*------ABOUT------*/
 /*******************/
 
-.about{
-    background: white;
+.about-section{
+    background: rgb(228, 228, 228, .4);
+    display: flex;
     padding: 50px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
     height: 100%;
+    margin: 30px;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.767);
 }
 
-.about-me {
-    color: grey;
-    font-size: 125%;
-    display: -webkit-box;
-    display: -ms-flexbox;
+.about-para {
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    line-height: 30px;
-    width: 430px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
-.open-para {
-    color: black;
-    font-size: 150%;
-    line-height: 30px;
+.about-para-photo {
+    width: 40%;
+    border-radius: 3px;
+    box-shadow: 0px 5px 10px grey;
 }
 
-.my-photo {
-    width: 600px;
-    height: auto;
-    padding: 0.8%;
-    border-radius: 5%;
+.about-para-me {
+    width: 30%;
+    margin-left: 15px;
 }
 
-.para {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    min-height: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;   
-    margin: 30px 0;
+.about-heading-para {
+    font-size: 185%;
+    font-weight: bold;
+    letter-spacing: 2px;
+    width: 100%;
 }
+
+.para-seperator {
+    width: 90%;
+    margin: 20px 0;
+}
+
+.about-main-para {
+    font-size: 120%;
+    font-weight: 100;
+}
+
 
 /********************/
 /*----PORTFOILIO----*/
 /********************/
 
 .portfolio{
-    background: rgb(243, 243, 243);
+    background: rgb(228, 228, 228, .4);
     padding: 50px 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -466,7 +309,8 @@ h2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.767);
+    margin: 30px;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.767);
     height: 100%;
 }
 
@@ -584,8 +428,9 @@ h6:hover {
 }
 
 .header-title {
-    font-size: 26px;
+    font-size: 30px;
     margin: 0px 0 5px 0;
+    letter-spacing: 2px;
     opacity: 0;
 }
 
@@ -826,7 +671,34 @@ h6:hover {
     background: url(images/timer1.png);
 }
 
-.number-2-2 {
+.<div class="about-section" id="about-content">
+<div class="main-line">
+    <h4 class="animated fadeInLeftBig">About Me</h4>
+    <hr class="animated fadeInLeftBig">
+</div>
+<div class="about-para">
+    <img class="about-para-photo" src="resources/css/images/itzik2.jpg">
+    <div class="about-para-me">
+        <div class="about">
+            <p class="about-heading-para">Hi, I'm Itzik!</p>
+            <p class="about-main-para">
+            I'm a software developer who found his true passion in programming. 
+            Previously I worked in business development and served as an IDF military commander, lending to my strong leadership and communication skills.
+            I enjoy using my creative and logical problem-solving 
+            abilities to innovate and solve complex problems when writing code.
+        </div>
+        <hr class="para-seperator">
+        <div class="about">
+            <p class="about-heading-para">Intrests</p>
+            <p class="about-main-para">
+            Playing ths piano, web design, astronomy and cosmology, fitness, thai boxing, 
+            spanish, persian, traveling, reading (some of my favorite books include "The Outliers" and "David and Goliath" by Malcom Gladwell, 
+            "The Future of the Mind" and "Physics of the Impossible" by Michio Kaku, to name a few)
+            </p>
+        </div>
+    </div>
+</div>
+</div> {
     background: url(images/timer2.png);
 }
 
@@ -856,6 +728,7 @@ h6:hover {
 /********************/
 
 .skills{
+    background: rgb(228, 228, 228, .4);
     height: 100%;
     padding: 50px 0;
     display: -webkit-box;
@@ -871,7 +744,8 @@ h6:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.767);
+    margin: 30px;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.767);
 }
 
 .para2 {
@@ -891,8 +765,8 @@ h6:hover {
 }
 
 .skills-image {
-    width: 1600px;
-    margin: -160px 0 -100px 0;
+    width: 800px;
+    margin: 50px;
 }
 
 /*******************/
@@ -900,7 +774,7 @@ h6:hover {
 /*******************/
 
 .contact{
-    background: rgb(243, 243, 243);
+    background: rgb(228, 228, 228, .4);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -914,13 +788,16 @@ h6:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 100vh;
+    height: 100%;
+    margin: 30px;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.767);
 }
 
 form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1102,8 +979,7 @@ footer{
     margin: 1%;
 }
 
-.fa-facebook-square,
-.fa-camera-retro,
+.fa-file-alt,
 .fa-github-square,
 .fa-envelope,
 .fa-linkedin,
@@ -1114,8 +990,7 @@ footer{
     color: white;
 }
 
-.fa-facebook-square:hover,
-.fa-camera-retro:hover,
+.fa-file-alt:hover,
 .fa-github-square:hover,
 .fa-linkedin:hover,
 .fa-envelope:hover,
@@ -1127,6 +1002,7 @@ footer{
     transition: 0.3s;
     -webkit-box-shadow: 0px 2px 4px grey;
             box-shadow: 0px 2px 4px grey;
+    transform: scale(1.5) skew(-10deg);
 }
 
 .footer-name {

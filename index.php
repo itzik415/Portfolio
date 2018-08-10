@@ -6,7 +6,7 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <title>Itzik Shaoulian</title>
-            <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Bangers|Butcherman|Faster+One|Righteous|Creepster|Fontdiner+Swanky|VT323" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Righteous|Oswald:200|Playfair+Display:400,700,900|VT323" rel="stylesheet">
             <link rel="stylesheet" href="resources/css/Portfolio1.css">
             <link rel="stylesheet" href="resources/css/queries.css">
             <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
@@ -32,36 +32,17 @@
                     <h9><a href="#about-content" class="nav-content0" id="about2">About</a></h9>
                     <h9><a href="#portfolio-content" class="nav-content0" id="portfolio2">Portfolio</a></h9>
                     <h9><a href="#skills-content" class="nav-content0" id="skills2">Skills</a></h9>
-                    <h9><a href="resources/css/images/Itzik-Shaoulian-html-resume.pdf" target="_blank" class="nav-content0">Resume</a></h9>
                 </div>
                 <div class="bottom-hidden">
                     <p class="footer-name-2">© 2018 Itzik Shaoulian. Made in Israel</p>
                     <div class="social-icons-hidden2">
-                        <a href="https://www.facebook.com/itzik.shaoulian" target="_blank"><i class="fab fa-facebook-square fa-2x icon-footer3"></i></a>
-                        <a href="https://www.instagram.com/itzikshaoulian" target="_blank"><i class="fas fa-camera-retro fa-2x icon-footer3"></i></a>
                         <a href="https://github.com/itzik415" target="_blank"><i class="fab fa-github-square fa-2x icon-footer3"></i></a>
                         <a href="https://www.linkedin.com/in/itzik-shaoulian-b61294106/" target="_blank"><i class="fab fa-linkedin fa-2x icon-footer3"></i></a>
                         <a href="mailto:itzikshaoulian@gmail.com"><i class="fa fa-envelope icon-footer3" aria-hidden="true"></i></a>
+                        <a href="resources/css/images/Itzik-Shaoulian-html-resume.pdf" target="_blank"><i class="fas fa-file-alt icon-footer3"></i></a>
                     </div>
                 </div>
             </div>
-            <header id="header">
-                <div class="my-name-header">
-                    <img src="resources/css/images/people.png" class="astro-man-header">
-                    <h2>Itzik Shaoulian</h2>
-                </div>
-                <div class="nav-options">
-                    <nav id="nav">
-                        <ul class="list-options">
-                            <li class="option-name"><a href="#main-opening" class="nav-content selected" id="home1">Home</a></li>
-                            <li class="option-name"><a href="#about-content" class="nav-content" id="about1">About</a></li>
-                            <li class="option-name"><a href="#portfolio-content" class="nav-content" id="portfolio1">Portfolio</a></li>
-                            <li class="option-name"><a href="#skills-content" class="nav-content" id="skills1">Skills</a></li>
-                            <li><a href="resources/css/images/Itzik-Shaoulian-html-resume-1.jpg" target="_blank" class="resume-header" class="nav-content">Resume</a></li>
-                        </ul>
-                    </nav>
-                </div> 
-            </header>
             <div id ="main-opening">
                 <div id="falling-star"></div>
                 <img class="cartoon-moon" src="resources/css/images/cartoon-moon.png">
@@ -72,21 +53,32 @@
                 </div>
                 <img class="star-img" src="resources/css/images/star3.png">
             </div>
-            <div class="about" id="about-content">
+            <div class="about-section" id="about-content">
                 <div class="main-line">
                     <h4 class="animated fadeInLeftBig">About Me</h4>
                     <hr class="animated fadeInLeftBig">
                 </div>
-                <div class="para">
-                    <img class="my-photo" src="resources/css/images/itzik2.jpg">
-                    <p class="about-me">
-                        <span class="open-para">Hi, I'm Itzik!</span> I'm a software developer who found his true passion in programming. 
-                        Curious as to how programs work, I started teaching myself how to code, 
-                        before eventually attending a computer programming bootcamp to accelerate and further expand my learning capacity. 
-                        I enjoy using my creative and logical problem-solving skills to innovate and solve complex problems when writing code. 
-                        In my spare time, I like to master the classical pieces of Bach and Chopin on piano, 
-                        as well as study the wonders of astronomy.
-                    </p>
+                <div class="about-para">
+                    <img class="about-para-photo" src="resources/css/images/itzik2.jpg">
+                    <div class="about-para-me">
+                        <div class="about">
+                            <p class="about-heading-para">Hi, I'm Itzik!</p>
+                            <p class="about-main-para">
+                            I'm a software developer who found his true passion in programming. 
+                            Previously I worked in business development and served as an IDF military commander, lending to my strong leadership and communication skills.
+                            I enjoy using my creative and logical problem-solving 
+                            abilities to innovate and solve complex problems when writing code.
+                        </div>
+                        <hr class="para-seperator">
+                        <div class="about">
+                            <p class="about-heading-para">Intrests</p>
+                            <p class="about-main-para">
+                            Playing ths piano, web design, astronomy and cosmology, fitness, thai boxing, 
+                            spanish, persian, traveling, reading (some of my favorite books include "The Outliers" and "David and Goliath" by Malcom Gladwell, 
+                            "The Future of the Mind" and "Physics of the Impossible" by Michio Kaku, to name a few)
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="portfolio" id="portfolio-content">
@@ -258,11 +250,10 @@
             </div>
             <footer>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/itzik.shaoulian" target="_blank"><i class="fab fa-facebook-square fa-2x " class="icon-footer"></i></a>
-                    <a href="https://www.instagram.com/itzikshaoulian" target="_blank"><i class="fas fa-camera-retro fa-2x" class="icon-footer"></i></a>
                     <a href="https://github.com/itzik415" target="_blank"><i class="fab fa-github-square fa-2x" class="icon-footer"></i></a>
                     <a href="https://www.linkedin.com/in/itzik-shaoulian-b61294106/" target="_blank"><i class="fab fa-linkedin fa-2x" class="icon-footer"></i></a>
                     <a href="mailto:itzikshaoulian@gmail.com"><i class="fa fa-envelope" aria-hidden="true" class="icon-footer"></i></a>
+                    <a href="resources/css/images/Itzik-Shaoulian-html-resume.pdf" target="_blank"><i class="fas fa-file-alt"></i></a>
                 </div>
                 <p class="footer-name">© 2018 <span class="itzik">Itzik Shaoulian</span>. Made in Israel</p>
             </footer>
