@@ -55,10 +55,6 @@
     .about-para-photo {
         width: 70%;
     }
-
-    .send-spaceship {
-        left: 53%;
-    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -72,11 +68,6 @@
 
     #portfolio_name {
         font-size: 17px;
-    }
-
-    #main_button {
-        width: 180px;
-        height: 45px;
     }
 
     h4 {
@@ -194,18 +185,6 @@
                 align-items: center;
     }
 
-    h9 {
-        font-size: 170%;
-        padding: 14px;
-        margin: 15px 0;
-        color: grey;
-        font-family: sans-serif;
-        font-weight: 100;
-        -webkit-transition: color 0.3s;
-        -o-transition: color 0.3s;
-        transition: color 0.3s;
-    }
-
     .nav-content0 {
         color: grey;
         font-family: sans-serif;
@@ -260,10 +239,6 @@
         width: 19px;
     }
 
-    header {
-        display: none;
-    }
-
 }
 
 @media only screen and (max-width: 500px) {
@@ -311,11 +286,6 @@
         margin-left: 86%;
     }
 
-    h9 {
-        font-size: 100%;
-        margin: 10px 0;
-    }
-
     h4 {
         font-size: 100%;
         padding: 0;
@@ -352,8 +322,7 @@
         min-width: 60%;
     }
 
-    .fa-facebook-square, 
-    .fa-camera-retro, 
+    .fa-file-alt,
     .fa-github-square, 
     .fa-envelope, 
     .fa-linkedin, 
@@ -361,9 +330,5 @@
         margin: 0 4px 10px 4px;
         padding: 5px 9px;
         font-size: 45px;
-    }
-
-    .send-spaceship {
-        left: 58%;
     }
 }
