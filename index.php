@@ -45,12 +45,8 @@
             </div>
             <div id ="main-opening">
                 <div id="falling-star"></div>
-                <img class="cartoon-moon" src="resources/css/images/cartoon-moon.png">
                 <p id="open" >Hello, I'm Itzik Shaoulian.</p>
                 <p id="come_in">I'm a full stack web developer.</p>
-                <div id="portfolio_button">
-                    <button id="main_button"><p id='portfolio_name'>View my work</p><img class="portfolio-main-button" src="resources/css/images/main-arrow-button.png"></button>
-                </div>
                 <img class="star-img" src="resources/css/images/star3.png">
             </div>
             <div class="about-section" id="about-content">
@@ -201,41 +197,6 @@
                                 </div> 
                             </div>
                         </div>
-                        <!-- <div class="photo">
-                            <div class="project-image image-4"></div>
-                            <div class="text">
-                                <p class="header-title">Digicaching</p>
-                                <p class="title-description">Node.js + React</p>
-                            </div>
-                            <div class="project-button project4">LEARN MORE</div>
-                        </div>
-                        <div class="hidden-folder">
-                            <div class="middle-section">
-                                <div class="projects-images number-4">
-                                    <img class="black-arrow-left" src="resources/css/images/black-arrow-left.png">
-                                    <img class="black-arrow-right" src="resources/css/images/black-arrow-right.png">
-                                </div>
-                                <div class="project-description">
-                                    <p class="main-project-title">Digicaching</p>
-                                    <p class="main-project-description">Online Game</p>
-                                    <hr class="main-project-hr">
-                                    <p class="main-project-long-description">Digicaching is a virtual geocaching app that lets users find, 
-                                            collect, and share virtual items by exploring their communities and environment. 
-                                            Users can combine items to upgrade them into more rare items, 
-                                            and fulfill collections by combining advanced component items to build the rarest ones.
-                                    </p> 
-                                </div>
-                                <div class="buttons">
-                                    <a href="https://www.google.com" target="_blank"><div class="video-button-div">
-                                        <ion-icon class="open-icon" name="open"></ion-icon>
-                                        <p class="video-button">Watch Video</p>   
-                                    </div></a> 
-                                    <div class="icon-button">
-                                        <ion-icon class="project-close-button" name="close"></ion-icon>
-                                    </div> 
-                                </div> 
-                            </div>
-                        </div> -->
                     </div>
                 </div> 
             </div>
@@ -245,7 +206,7 @@
                     <hr>
                 </div>
                 <div class="para2">
-                    <img class="skills-image" src="resources/css/images/skills-5.png">
+                    <img class="skills-image" src="resources/css/images/skills.png">
                 </div>  
             </div>
             <footer>
