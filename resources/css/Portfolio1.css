@@ -31,6 +31,7 @@ body {
 .contact,
 footer {
     padding: 30px 0px;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.4);
 }
 
 .hidden {
@@ -46,6 +47,7 @@ hr {
     height: 2px;
     border-radius: 10px;
     margin: 10px 20px 0 20px;
+    animation: moveInLeft 1.4s ease-out;
 }
 
 h4 {
@@ -55,6 +57,7 @@ h4 {
     color: black;
     letter-spacing: 3px;
     font-weight: bold;
+    animation: moveInLeft .5s ease-out;
 }
 
 a {
@@ -117,7 +120,6 @@ a {
     background: linear-gradient(to bottom, #04050a 0%,#131f51 60%,#48577D 100%);
     
     -webkit-animation-play-state: running;
-    
             animation-play-state: running;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
@@ -142,19 +144,21 @@ a {
 #open {
     display: block;
     font-size: 290%;
-    text-shadow: 0px 0px 100px rgba(240, 240, 240, 0.2),0px 0px 100px rgba(250, 250, 250, 0.5),0px 0px 100px rgba(255, 255, 255,0.8);
+    text-shadow: 0px 0px 100px #f0f0f033,0px 0px 100px #fafafa80,0px 0px 100px #ffffffcc;
     color: rgb(235, 231, 231); 
     letter-spacing: 5px;
     font-weight: bold;
     z-index: 2;
+    animation: moveInRight 1.5s ease-out;
 }
 
 #come_in {
     font-size: 255%;
     text-shadow: 0px 0px 100px #9063e471,0px 0px 100px#9063e471,0px 0px 100px #9063e471;
-    color: #b84eff;
+    color: #a372ff;
     letter-spacing: 3.5px;
     z-index: 2;
+    animation: moveInLeft 1.5s ease-out;
 }
 
 
@@ -250,7 +254,6 @@ a {
     justify-content: center;
     height: 100%;
     margin: 30px;
-    border-bottom: 1px solid rgba(100, 100, 100, 0.767);
 }
 
 .about-para {
@@ -264,11 +267,13 @@ a {
     width: 40%;
     border-radius: 3px;
     box-shadow: 0px 5px 10px grey;
+    animation: moveInLeft 1s ease-out;
 }
 
 .about-para-me {
     width: 30%;
     margin-left: 15px;
+    animation: moveInRight 1s ease-out;
 }
 
 .about-heading-para {
@@ -281,6 +286,7 @@ a {
 .para-seperator {
     width: 90%;
     margin: 20px 0;
+    animation: moveInRight .4s ease-out;
 }
 
 .about-main-para {
@@ -310,28 +316,8 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 30px;
-    border-bottom: 1px solid rgba(100, 100, 100, 0.767);
     height: 100%;
 }
-
-/* .choosing-option {
-    display: flex;
-    width: 70%;
-    justify-content: space-evenly;
-}
-
-h6 {
-    color: grey;
-    font-size: 110%;
-    padding: 1% 2%;
-    font-weight: 100;
-}
-
-h6:hover {
-    background: #d6a2f8;
-    border: 1px solid rgb(214, 214, 214);
-    cursor: pointer;
-} */
 
 .gallery {
     padding: 30px 0 100px 0;
@@ -382,12 +368,14 @@ h6:hover {
     background-image: url(images/digicaching-main.jpg);
     background-size: cover;
     background-position: center;
+    animation: moveInLeft 1.5s ease-out;
 }
 
 .image-2{
     background-image: url(images/catalyst-main.png);
     background-size: cover;
     background-position: center;
+    animation: moveInLeft 1.5s ease-out;
 }
 
 .image-3{
@@ -395,12 +383,14 @@ h6:hover {
     background-size: cover;
     background-position: center;
     background-size: 400px 300px;
+    animation: moveInRight 1.5s ease-out;
 }
 
 .image-4{
     background-image: url(images/digicaching-main.jpg);
     background-size: cover;
     background-position: center;
+    animation: moveInRight 1.5s ease-out;
 }
 
 .project-button {
@@ -429,6 +419,7 @@ h6:hover {
 
 .header-title {
     font-size: 30px;
+    font-weight: bold;
     margin: 0px 0 5px 0;
     letter-spacing: 2px;
     opacity: 0;
@@ -671,34 +662,7 @@ h6:hover {
     background: url(images/timer1.png);
 }
 
-.<div class="about-section" id="about-content">
-<div class="main-line">
-    <h4 class="animated fadeInLeftBig">About Me</h4>
-    <hr class="animated fadeInLeftBig">
-</div>
-<div class="about-para">
-    <img class="about-para-photo" src="resources/css/images/itzik2.jpg">
-    <div class="about-para-me">
-        <div class="about">
-            <p class="about-heading-para">Hi, I'm Itzik!</p>
-            <p class="about-main-para">
-            I'm a software developer who found his true passion in programming. 
-            Previously I worked in business development and served as an IDF military commander, lending to my strong leadership and communication skills.
-            I enjoy using my creative and logical problem-solving 
-            abilities to innovate and solve complex problems when writing code.
-        </div>
-        <hr class="para-seperator">
-        <div class="about">
-            <p class="about-heading-para">Intrests</p>
-            <p class="about-main-para">
-            Playing ths piano, web design, astronomy and cosmology, fitness, thai boxing, 
-            spanish, persian, traveling, reading (some of my favorite books include "The Outliers" and "David and Goliath" by Malcom Gladwell, 
-            "The Future of the Mind" and "Physics of the Impossible" by Michio Kaku, to name a few)
-            </p>
-        </div>
-    </div>
-</div>
-</div> {
+.number-2-2{
     background: url(images/timer2.png);
 }
 
@@ -745,10 +709,9 @@ h6:hover {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 30px;
-    border-bottom: 1px solid rgba(100, 100, 100, 0.767);
 }
 
-.para2 {
+.skills-div {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -764,9 +727,44 @@ h6:hover {
             justify-content: center;
 }
 
+.expertise-para-me {
+    margin: 50px 0 50px 15px;
+    float: left;
+    width: 500px;
+    animation: moveInRight 1s ease-out;
+}
+
+.expertise-icon {
+    margin-right: 10px;
+}
+
+.expertise-icon:hover {
+    margin-right: 10px;
+    color: grey;
+}
+
+
+.expertise-heading-para {
+    font-size: 185%;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.expertise-seperator {
+    margin: 42px 0;
+    animation: moveInRight .4s ease-out;
+    width: 60%;
+}
+
+.expertise-main-para {
+    font-size: 120%;
+    font-weight: 100;
+}
+
 .skills-image {
-    width: 800px;
-    margin: 50px;
+    width: 700px;
+    margin: 50px 20px;
+    border-radius: 50%;
 }
 
 /*******************/
@@ -951,11 +949,8 @@ textarea {
 /********************/
 
 footer{
-    background: -webkit-gradient(linear,left top, left bottom,from(#b6b6b6),to(#9d9d9d));
-    background: -webkit-linear-gradient(#b6b6b6,#9d9d9d);
-    background: -o-linear-gradient(#b6b6b6,#9d9d9d);
-    background: linear-gradient(#b6b6b6,#9d9d9d);
-    height: 150px;
+    background: #3d546d;
+    height: 200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -988,6 +983,7 @@ footer{
     padding: 9px;
     font-size: 60px;
     color: white;
+    transition: all .3s;
 }
 
 .fa-file-alt:hover,
@@ -995,14 +991,11 @@ footer{
 .fa-linkedin:hover,
 .fa-envelope:hover,
 .fa-clipboard-list:hover {
+
     cursor: pointer;
     color: black;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
     -webkit-box-shadow: 0px 2px 4px grey;
             box-shadow: 0px 2px 4px grey;
-    transform: scale(1.5) skew(-10deg);
 }
 
 .footer-name {
@@ -1017,6 +1010,7 @@ footer{
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+    letter-spacing: 2px;
 }
 
 .selected {
@@ -1031,5 +1025,25 @@ footer{
     -o-transition: 0.4s;
     transition: 0.4s;
 } 
+
+@keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-10rem); }
+    80% {
+      transform: translateX(1rem); }
+    100% {
+      opacity: 1;
+      transform: translateX(0); } }
+  
+  @keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(10rem); }
+    80% {
+      transform: translateX(-1rem); }
+    100% {
+      opacity: 1;
+      transform: translateX(0); } }
 
 

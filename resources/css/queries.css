@@ -35,6 +35,22 @@
         margin-bottom: 30px;
     }
 
+    .expertise-values {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .expertise {
+        text-align: center;
+    }
+
+    .expertise-seperator {
+        margin: 30px auto;
+
+    }
+
 }
 
 @media only screen and (max-width: 1100px) {
@@ -276,6 +292,28 @@
         font-size: 100%;
     }
 
+    .expertise {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .expertise-heading-para {
+        font-size: 110%;
+    }
+
+    .expertise-main-para {
+        font-size: 100%;
+        width: 50%;
+    }
+
+
+    .expertise-seperator {
+        width: 20%;
+    }
+
     .about-para-photo {
         width: 90%;
     }
@@ -300,7 +338,7 @@
     }
 
     .project-image {
-        width: 300px;
+        width: 280px;
         height: 200px;
     }
 
@@ -310,7 +348,7 @@
     }
 
     .skills-image {
-        width: 300px;
+        width: 280px;
         margin: 10px 0;
     }
 

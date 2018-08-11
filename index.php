@@ -9,6 +9,7 @@
             <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Righteous|Oswald:200|Playfair+Display:400,700,900|VT323" rel="stylesheet">
             <link rel="stylesheet" href="resources/css/Portfolio1.css">
             <link rel="stylesheet" href="resources/css/queries.css">
+            <link rel="stylesheet" href="css/style.css">
             <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
             <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -16,32 +17,21 @@
             <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
         </head>
         <body>
-            <div class="hidden">
-                <div class="my-name-header">
-                    <img src="resources/css/images/people.png" class="astro-man-header">
-                    <h2>Itzik Shaoulian</h2>
-                </div>
-                <img src="resources/css/images/nav-icon" class="nav-icon-bar">
-            </div>
-            <div class="hidden2">
-                <div class="close-button">
-                    <img src="resources/css/images/closing-icon.png" class="closing-icon-bar">
-                </div>
-                <div class="main-menu-buttons">
-                    <h9><a href="#main-opening" class="nav-content0 selected2" id="home2">Home</a></h9>
-                    <h9><a href="#about-content" class="nav-content0" id="about2">About</a></h9>
-                    <h9><a href="#portfolio-content" class="nav-content0" id="portfolio2">Portfolio</a></h9>
-                    <h9><a href="#skills-content" class="nav-content0" id="skills2">Skills</a></h9>
-                </div>
-                <div class="bottom-hidden">
-                    <p class="footer-name-2">© 2018 Itzik Shaoulian. Made in Israel</p>
-                    <div class="social-icons-hidden2">
-                        <a href="https://github.com/itzik415" target="_blank"><i class="fab fa-github-square fa-2x icon-footer3"></i></a>
-                        <a href="https://www.linkedin.com/in/itzik-shaoulian-b61294106/" target="_blank"><i class="fab fa-linkedin fa-2x icon-footer3"></i></a>
-                        <a href="mailto:itzikshaoulian@gmail.com"><i class="fa fa-envelope icon-footer3" aria-hidden="true"></i></a>
-                        <a href="resources/css/images/Itzik-Shaoulian-html-resume.pdf" target="_blank"><i class="fas fa-file-alt icon-footer3"></i></a>
-                    </div>
-                </div>
+            <div class="navigation">
+                <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+                <label for="navi-toggle" class="navigation__button">
+                    <span class="navigation__icon">&nbsp;</span>
+                </label>
+                <div class="navigation__background">&nbsp;</div>
+                <nav class="navigation__nav">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a href="#about-content" class="navigation__link"><span>01</span>About Me</a></li>
+                        <li class="navigation__item"><a href="#portfolio-content" class="navigation__link"><span>02</span>Portfolio</a></li>
+                        <li class="navigation__item"><a href="#skills-content" class="navigation__link"><span>03</span>Skills</a></li>
+                        <li class="navigation__item"><a href="#footer" class="navigation__link"><span>04</span>contact</a></li>
+                        <li class="navigation__item"><a href="resources/css/images/Itzik-Shaoulian-html-resume.jpg" target="_blank" class="navigation__link"><span>05</span>Resume</a></li>
+                    </ul>
+                </nav>
             </div>
             <div id ="main-opening">
                 <div id="falling-star"></div>
@@ -109,9 +99,9 @@
                                     <p class="main-project-description">Online Game</p>
                                     <hr class="main-project-hr">
                                     <p class="main-project-long-description">Digicaching is a virtual geocaching app that lets users find, 
-                                            collect, and share virtual items by exploring their communities and environment. 
-                                            Users can combine items to upgrade them into more rare items, 
-                                            and fulfill collections by combining advanced component items to build the rarest ones.
+                                        collect, and share virtual items by exploring their communities and environment. 
+                                        Users can combine items to upgrade them into more rare items, 
+                                        and fulfill collections by combining advanced component items to build the rarest ones.
                                     </p>
                                 </div>
                                 <div class="buttons">
@@ -205,16 +195,43 @@
                     <h4>Skills</h4>
                     <hr>
                 </div>
-                <div class="para2">
-                    <img class="skills-image" src="resources/css/images/skills.png">
-                </div>  
+                <div class="expertise-values">
+                    <div class="skills-div">
+                        <img class="skills-image" src="resources/css/images/skills.png">
+                    </div> 
+                    <div class="expertise-para-me">
+                        <div class="expertise">
+                            <p class="expertise-heading-para"><i class="fas fa-diagnoses expertise-icon"></i>Ideas</p>
+                            <p class="expertise-main-para">
+                                I collaborate with clients and peers to nurture and transform ideas into well thought out design specs. 
+                                After all, that's where the majority of amazing user experiences start.
+                        </div>
+                        <hr class="expertise-seperator">
+                        <div class="expertise">
+                            <p class="expertise-heading-para"><i class="fas fa-gem expertise-icon"></i>Design</p>
+                            <p class="expertise-main-para">
+                                I sketch and wireframe interfaces focusing on content structure, 
+                                intuitive UI patterns and simple interactions. 
+                                I'm a minimalist who truly believes that less is more.
+                            </p>
+                        </div>
+                        <hr class="expertise-seperator">
+                        <div class="expertise">
+                            <p class="expertise-heading-para"><i class="fas fa-code expertise-icon"></i>Code</p>
+                            <p class="expertise-main-para">
+                                I design in the browser with HTML(5), CSS(3) and a touch of JavaScript. 
+                                I love coding things from scratch, but I can work with front-end frameworks like Bootstrap too.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <footer>
+            <footer id="footer">
                 <div class="social-icons">
                     <a href="https://github.com/itzik415" target="_blank"><i class="fab fa-github-square fa-2x" class="icon-footer"></i></a>
                     <a href="https://www.linkedin.com/in/itzik-shaoulian-b61294106/" target="_blank"><i class="fab fa-linkedin fa-2x" class="icon-footer"></i></a>
                     <a href="mailto:itzikshaoulian@gmail.com"><i class="fa fa-envelope" aria-hidden="true" class="icon-footer"></i></a>
-                    <a href="resources/css/images/Itzik-Shaoulian-html-resume.pdf" target="_blank"><i class="fas fa-file-alt"></i></a>
+                    <a href="resources/css/images/Itzik-Shaoulian-html-resume.jpg" target="_blank"><i class="fas fa-file-alt"></i></a>
                 </div>
                 <p class="footer-name">© 2018 <span class="itzik">Itzik Shaoulian</span>. Made in Israel</p>
             </footer>

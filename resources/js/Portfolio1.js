@@ -1,6 +1,11 @@
 
 $(document).ready(function() {
 
+    //Nav icon react when there is a click on one of its elements
+    $(".navigation__item").click(function(){
+        $('#navi-toggle').attr('checked', false);
+    });
+
     //making my name at the bottom scroll to the top of the page
     $('.itzik').click(function(){
     	$('html, body').animate({
