@@ -59,8 +59,8 @@
                         <div class="about">
                             <p class="about-heading-para">Intrests</p>
                             <p class="about-main-para">
-                            Playing ths piano, web design, astronomy and cosmology, fitness, thai boxing, 
-                            spanish, persian, traveling, reading (some of my favorite books include "The Outliers" and "David and Goliath" by Malcom Gladwell, 
+                            Piano, web design, astronomy, fitness, thai boxing, 
+                            languages, traveling, reading (some of my favorite books include "The Outliers" and "David and Goliath" by Malcom Gladwell, and 
                             "The Future of the Mind" and "Physics of the Impossible" by Michio Kaku, to name a few)
                             </p>
                         </div>
@@ -203,24 +203,24 @@
                         <div class="expertise">
                             <p class="expertise-heading-para"><i class="fas fa-diagnoses expertise-icon"></i>Ideas</p>
                             <p class="expertise-main-para">
-                                I collaborate with clients and peers to nurture and transform ideas into well thought out design specs. 
-                                After all, that's where the majority of amazing user experiences start.
+                            I collaborate with clients and peers to nurture and transform ideas into well thought out design specs. 
+                            After all, that's where the majority of amazing user experiences start.
                         </div>
                         <hr class="expertise-seperator">
                         <div class="expertise">
                             <p class="expertise-heading-para"><i class="fas fa-gem expertise-icon"></i>Design</p>
                             <p class="expertise-main-para">
-                                I sketch and wireframe interfaces focusing on content structure, 
-                                intuitive UI patterns and simple interactions. 
-                                I'm a minimalist who truly believes that less is more.
+                            I sketch and wireframe interfaces focusing on content structure, 
+                            intuitive UI patterns and simple interactions. 
+                            I'm a minimalist who truly believes that less is more.
                             </p>
                         </div>
                         <hr class="expertise-seperator">
                         <div class="expertise">
                             <p class="expertise-heading-para"><i class="fas fa-code expertise-icon"></i>Code</p>
                             <p class="expertise-main-para">
-                                I design in the browser with HTML(5), CSS(3) and a touch of JavaScript. 
-                                I love coding things from scratch, but I can work with front-end frameworks like Bootstrap too.
+                            I design in the browser with HTML(5), CSS(3) and a touch of JavaScript. 
+                            I love coding things from scratch, but I can work with front-end frameworks like Bootstrap too.
                             </p>
                         </div>
                     </div>
