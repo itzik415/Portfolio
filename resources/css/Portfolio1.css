@@ -206,8 +206,8 @@ a {
     -webkit-box-shadow: inset 6px -4px 5px rgba(0,0,0,0.4);
             box-shadow: inset 6px -4px 5px rgba(0,0,0,0.4);
     position: absolute;
-    top: 30px;
-    right: 10px;
+    /* top: 30px;
+    right: 10px; */
     z-index: 0;
     -webkit-animation: star 18s linear 0s infinite;
             animation: star 18s linear 0s infinite;
@@ -387,7 +387,7 @@ a {
 }
 
 .image-4{
-    background-image: url(images/digicaching-main.jpg);
+    background-image: url(images/israel-main.png);
     background-size: cover;
     background-position: center;
     animation: moveInRight 1.5s ease-out;
@@ -682,6 +682,39 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 530px 380px;
+}
+
+/*--TIMER-IMAGES--*/
+
+.number-3-0 {
+    background: url(images/israel1.jpg);
+    background-size: cover;
+}
+
+.number-3-1 {
+    background: url(images/israel2.jpg);
+}
+
+.number-3-2{
+    background: url(images/israel3.jpg);
+}
+
+.number-3-3 {
+    background: url(images/israel4.jpg);
+}
+
+.number-3-4 {
+    background: url(images/israel5.jpg);
+}
+
+.number-3-1,
+.number-3-2,
+.number-3-3,
+.number-3-4 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 648px 385px;
 }
 
 
