@@ -387,7 +387,7 @@ a {
 }
 
 .image-4{
-    background-image: url(images/israel-main.png);
+    background-image: url(images/israel-main.jpg);
     background-size: cover;
     background-position: center;
     animation: moveInRight 1.5s ease-out;
