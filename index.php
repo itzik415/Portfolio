@@ -187,6 +187,41 @@
                                 </div> 
                             </div>
                         </div>
+                        <div class="photo">
+                            <div class="project-image image-4"></div>
+                            <div class="text">
+                                <p class="header-title">Israel-Traveling</p>
+                                <p class="title-description">HTML + Sass</p>
+                            </div>
+                            <div class="project-button project4">LEARN MORE</div>
+                        </div>
+                        <div class="hidden-folder">
+                            <div class="middle-section">
+                                <div class="projects-images number-3-0">
+                                    <img class="black-arrow-left" src="resources/css/images/black-arrow-left.png">
+                                    <img class="black-arrow-right" src="resources/css/images/black-arrow-right.png">
+                                </div>
+                                <div class="project-description">
+                                    <p class="main-project-title">Israel-Traveling</p>
+                                    <p class="main-project-description">Traveling app</p>
+                                    <hr class="main-project-hr">
+                                    <p class="main-project-long-description">Digicaching is a virtual geocaching app that lets users find, 
+                                            collect, and share virtual items by exploring their communities and environment. 
+                                            Users can combine items to upgrade them into more rare items, 
+                                            and fulfill collections by combining advanced component items to build the rarest ones.
+                                    </p> 
+                                </div>
+                                <div class="buttons">
+                                    <a href="https://youtu.be/YhcJyAnwu-Q" target="_blank"><div class="video-button-div">
+                                        <ion-icon class="open-icon" name="open"></ion-icon>
+                                        <p class="video-button">Watch Video</p>   
+                                    </div></a> 
+                                    <div class="icon-button">
+                                        <ion-icon class="project-close-button" name="close"></ion-icon>
+                                    </div> 
+                                </div> 
+                            </div>
+                        </div>
                     </div>
                 </div> 
             </div>
