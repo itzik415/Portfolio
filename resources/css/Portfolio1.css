@@ -356,6 +356,7 @@ a {
 
 .photo:hover {
     cursor: pointer;
+    border: 1px solid rgb(109, 109, 109);
 }
 
 .project-image {
