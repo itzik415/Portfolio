@@ -57,10 +57,10 @@
                         </div>
                         <hr class="para-seperator">
                         <div class="about">
-                            <p class="about-heading-para">Intrests</p>
+                            <p class="about-heading-para">Interests</p>
                             <p class="about-main-para">
                             Piano, web design, astronomy, fitness, thai boxing, 
-                            languages, traveling, reading (some of my favorite books include "The Outliers" and "David and Goliath" by Malcom Gladwell, and 
+                            languages, traveling, reading (some of my favorite books include "The Outliers" and "David and Goliath" by Malcom Gladwell and 
                             "The Future of the Mind" and "Physics of the Impossible" by Michio Kaku, to name a few)
                             </p>
                         </div>
@@ -238,24 +238,20 @@
                         <div class="expertise">
                             <p class="expertise-heading-para"><i class="fas fa-diagnoses expertise-icon"></i>Ideas</p>
                             <p class="expertise-main-para">
-                            I collaborate with clients and peers to nurture and transform ideas into well thought out design specs. 
-                            After all, that's where the majority of amazing user experiences start.
-                        </div>
-                        <hr class="expertise-seperator">
-                        <div class="expertise">
-                            <p class="expertise-heading-para"><i class="fas fa-gem expertise-icon"></i>Design</p>
-                            <p class="expertise-main-para">
-                            I sketch and wireframe interfaces focusing on content structure, 
-                            intuitive UI patterns and simple interactions. 
-                            I'm a minimalist who truly believes that less is more.
-                            </p>
+                            I’m a creative thinker with software development skills. I have frequent new and changing ideas in the realm of application development that I want to bring to the forefront.
                         </div>
                         <hr class="expertise-seperator">
                         <div class="expertise">
                             <p class="expertise-heading-para"><i class="fas fa-code expertise-icon"></i>Code</p>
                             <p class="expertise-main-para">
-                            I design in the browser with HTML(5), CSS(3) and a touch of JavaScript. 
-                            I love coding things from scratch, but I can work with front-end frameworks like Bootstrap too.
+                            I work with JavaScript frameworks and libraries, PostgreSQL, and HTML5/CSS3 to build the most responsive and visually appealing web applications. I write clean and functional code.
+                            </p>
+                        </div>
+                        <hr class="expertise-seperator">
+                        <div class="expertise">
+                            <p class="expertise-heading-para"><i class="fas fa-gem expertise-icon"></i>Design</p>
+                            <p class="expertise-main-para">
+                            I’m a full-stack developer who is passionate about the visual, front-end component of an application. I aim for clean, attractive, and interesting designs with superior user interactions. 
                             </p>
                         </div>
                     </div>
