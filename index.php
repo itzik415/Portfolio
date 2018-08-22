@@ -17,7 +17,7 @@
             <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
         </head>
         <body>
-            <div class="navigation">
+            <div class="navigation" id="navi">
                 <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
                 <label for="navi-toggle" class="navigation__button">
                     <span class="navigation__icon">&nbsp;</span>
@@ -41,8 +41,8 @@
             </div>
             <div class="about-section" id="about-content">
                 <div class="main-line">
-                    <h4 class="animated fadeInLeftBig">About Me</h4>
-                    <hr class="animated fadeInLeftBig">
+                    <h4 id="about-h4">About Me</h4>
+                    <hr id="about-hr">
                 </div>
                 <div class="about-para">
                     <img class="about-para-photo" src="resources/css/images/itzik2.jpg">
@@ -57,10 +57,10 @@
                         </div>
                         <hr class="para-seperator">
                         <div class="about">
-                            <p class="about-heading-para">Interests</p>
+                            <p class="about-heading-para">Intrests</p>
                             <p class="about-main-para">
                             Piano, web design, astronomy, fitness, thai boxing, 
-                            languages, traveling, reading (some of my favorite books include "The Outliers" and "David and Goliath" by Malcom Gladwell and 
+                            languages, traveling, reading (some of my favorite books include "The Outliers" and "David and Goliath" by Malcom Gladwell, and 
                             "The Future of the Mind" and "Physics of the Impossible" by Michio Kaku, to name a few)
                             </p>
                         </div>
@@ -69,8 +69,8 @@
             </div>
             <div class="portfolio" id="portfolio-content">
                 <div class="main-line">
-                    <h4>Portfolio</h4>
-                    <hr>
+                    <h4 id="portfolio-h4">Portfolio</h4>
+                    <hr id="portfolio-hr">
                 </div>
                 <!-- <div class="choosing-option">
                     <h6 class="all-programming-languages">ALL</h6>
@@ -227,8 +227,8 @@
             </div>
             <div class="skills" id="skills-content">
                 <div class="main-line">
-                    <h4>Skills</h4>
-                    <hr>
+                    <h4 id="skills-h4">Skills</h4>
+                    <hr id="skills-hr">
                 </div>
                 <div class="expertise-values">
                     <div class="skills-div">
@@ -238,20 +238,24 @@
                         <div class="expertise">
                             <p class="expertise-heading-para"><i class="fas fa-diagnoses expertise-icon"></i>Ideas</p>
                             <p class="expertise-main-para">
-                            I’m a creative thinker with software development skills. I have frequent new and changing ideas in the realm of application development that I want to bring to the forefront.
-                        </div>
-                        <hr class="expertise-seperator">
-                        <div class="expertise">
-                            <p class="expertise-heading-para"><i class="fas fa-code expertise-icon"></i>Code</p>
-                            <p class="expertise-main-para">
-                            I work with JavaScript frameworks and libraries, PostgreSQL, and HTML5/CSS3 to build the most responsive and visually appealing web applications. I write clean and functional code.
-                            </p>
+                            I collaborate with clients and peers to nurture and transform ideas into well thought out design specs. 
+                            After all, that's where the majority of amazing user experiences start.
                         </div>
                         <hr class="expertise-seperator">
                         <div class="expertise">
                             <p class="expertise-heading-para"><i class="fas fa-gem expertise-icon"></i>Design</p>
                             <p class="expertise-main-para">
-                            I’m a full-stack developer who is passionate about the visual, front-end component of an application. I aim for clean, attractive, and interesting designs with superior user interactions. 
+                            I sketch and wireframe interfaces focusing on content structure, 
+                            intuitive UI patterns and simple interactions. 
+                            I'm a minimalist who truly believes that less is more.
+                            </p>
+                        </div>
+                        <hr class="expertise-seperator">
+                        <div class="expertise">
+                            <p class="expertise-heading-para"><i class="fas fa-code expertise-icon"></i>Code</p>
+                            <p class="expertise-main-para">
+                            I design in the browser with HTML(5), CSS(3) and a touch of JavaScript. 
+                            I love coding things from scratch, but I can work with front-end frameworks like Bootstrap too.
                             </p>
                         </div>
                     </div>

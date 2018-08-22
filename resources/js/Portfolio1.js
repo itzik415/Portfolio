@@ -13,32 +13,36 @@ $(document).ready(function() {
     	}, 500) 	
     })
 
-    $('.nav-icon-bar').click(function() {
-        $('.hidden2').slideToggle("slow")
-    });
+    // Make the animations work on the right time
+    $(window).scroll(function() {
+        var navHeight = $('.navigation__button').offset().top,
+            about = $('.about-section').offset().top,
+            portfolio = $('.portfolio').offset().top,
+            skills = $('.skills').offset().top;
 
-    $('.closing-icon-bar').click(function() {
-        $('.hidden2').slideToggle("slow")
-    });
+        if (navHeight >= about) {
+            $('.about-section').addClass('change-opacity');
+            $('#about-h4').addClass('animated-left-h4');
+            $('#about-hr').addClass('animated-left-hr');
+            $('.about-para-photo').addClass('animated-left');
+            $('.about-para-me').addClass('animated-right');
+            $('.para-seperator').addClass('animated-right');
+        }
 
-    $('#home2').click(function() {
-        $('.hidden2').slideToggle("slow")
-    });
+        if (navHeight >= portfolio) {
+            $('.portfolio').addClass('change-opacity');
+            $('#portfolio-h4').addClass('animated-left-h4');
+            $('#portfolio-hr').addClass('animated-left-hr');
+            $('.gallery').addClass('animated-fadedIn');
+        }
 
-    $('#about2').click(function() {
-        $('.hidden2').slideToggle("slow")
-    });
-
-    $('#portfolio2').click(function() {
-        $('.hidden2').slideToggle("slow")
-    });
-
-    $('#skills2').click(function() {
-        $('.hidden2').slideToggle("slow")
-    });
-
-    $('#contact2').click(function() {
-        $('.hidden2').slideToggle("slow")
+        if (navHeight >= skills) {
+            $('.skills').addClass('change-opacity');
+            $('#skills-h4').addClass('animated-left-h4');
+            $('#skills-hr').addClass('animated-left-hr');
+            $('.expertise-para-me').addClass('animated-left');
+            $('.skills-image').addClass('animated-fadedIn');
+        }
     });
     
 });
