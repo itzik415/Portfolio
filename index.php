@@ -222,6 +222,40 @@
                                 </div> 
                             </div>
                         </div>
+                        <div class="photo">
+                            <div class="project-image image-5"></div>
+                            <div class="text">
+                                <p class="header-title">Shopping-cart</p>
+                                <p class="title-description">Pure React</p>
+                            </div>
+                            <div class="project-button project4">LEARN MORE</div>
+                        </div>
+                        <div class="hidden-folder">
+                            <div class="middle-section">
+                                <div class="projects-images number-4-0">
+                                    <img class="black-arrow-left" src="resources/css/images/black-arrow-left.png">
+                                    <img class="black-arrow-right" src="resources/css/images/black-arrow-right.png">
+                                </div>
+                                <div class="project-description">
+                                    <p class="main-project-title">Shopping-cart</p>
+                                    <p class="main-project-description">Shopping</p>
+                                    <hr class="main-project-hr">
+                                    <p class="main-project-long-description">
+                                        This website is an attempt to build a full functioning online shopping cart with pure React.
+                                        
+                                    </p>
+                                </div>
+                                <div class="buttons">
+                                    <a href="https://youtu.be/H_EL4AYThxU" target="_blank"><div class="video-button-div">
+                                        <ion-icon class="open-icon" name="open"></ion-icon>
+                                        <p class="video-button">Watch Video</p>   
+                                    </div></a> 
+                                    <div class="icon-button">
+                                        <ion-icon class="project-close-button" name="close"></ion-icon>
+                                    </div> 
+                                </div>                                           
+                            </div>
+                        </div>
                     </div>
                 </div> 
             </div>

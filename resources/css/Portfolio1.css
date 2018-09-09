@@ -343,6 +343,7 @@ a {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    max-width: 1000px
 }
 
 .photo {
@@ -388,6 +389,12 @@ a {
 .image-4{
     background-image: url(images/israel-main.jpg);
     background-size: cover;
+    background-position: center;
+}
+
+.image-5{
+    background-image: url(images/shopping-cart-main.png);
+    background-size: 480px 300px;
     background-position: center;
 }
 
@@ -682,7 +689,7 @@ a {
     background-size: 530px 380px;
 }
 
-/*--TIMER-IMAGES--*/
+/*--Israel-tour-IMAGES--*/
 
 .number-3-0 {
     background: url(images/israel1.jpg);
@@ -715,6 +722,38 @@ a {
     background-size: 648px 385px;
 }
 
+/*--Shopping-cart-IMAGES--*/
+
+.number-4-0 {
+    background: url(images/shopping-cart1.png);
+}
+
+.number-4-1 {
+    background: url(images/shopping-cart2.png);
+}
+
+.number-4-2{
+    background: url(images/shopping-cart3.png);
+}
+
+.number-4-3 {
+    background: url(images/shopping-cart4.png);
+}
+
+.number-4-4 {
+    background: url(images/shopping-cart5.png);
+}
+
+.number-4-0,
+.number-4-1,
+.number-4-2,
+.number-4-3,
+.number-4-4 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 648px 385px;
+}
 
 
 
