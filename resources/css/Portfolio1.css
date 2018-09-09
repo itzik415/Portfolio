@@ -343,7 +343,7 @@ a {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    max-width: 1000px
+    max-width: 1000px;
 }
 
 .photo {
