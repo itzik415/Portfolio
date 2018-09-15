@@ -339,29 +339,11 @@ a {
 }
 
 .gallery {
-    padding: 30px 0 100px 0;
-}
-
-.first-project-line {
-    display: -webkit-box;
-    display: -ms-flexbox;
+    padding: 30px 0;
+    width: 100%;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-}
-.second-project-line {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    max-width: 1000px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .photo {
@@ -369,51 +351,31 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    align-content: center;
+    padding: 20px;
+    margin: 20px 30px;
+    transition: .3s;
 }
 
 .photo:hover {
     cursor: pointer;
-    border: 1px solid rgb(109, 109, 109);
 }
 
 .project-image {
-    width: 480px;
-    height: 300px;
-    margin: 5px;
+    height: 320px;
+    padding: 10px;
 }
+    
 
-.image-1{
-    background-image: url(images/digicaching-main.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.image-2{
-    background-image: url(images/catalyst-main.png);
-    background-size: cover;
-    background-position: center;
-}
-
-.image-3{
-    background-image: url(images/timer-main.png);
-    background-size: cover;
-    background-position: center;
-    background-size: 400px 300px;
-}
-
-.image-4{
-    background-image: url(images/israel-main.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.image-5{
-    background-image: url(images/shopping-cart-main.png);
-    background-size: 480px 300px;
-    background-position: center;
+.bottom-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
 }
 
 .project-button {
@@ -458,56 +420,53 @@ a {
 
 .hidden-folder {
     display: none;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    position: absolute;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.856);
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 10000;
 }
 
-.middle-section {
-    margin: 100px auto;
-    width: 650px;
-    height: 650px;
-    border: 1px solid black;
-    background: white;
+.middle-photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
 }
 
 .projects-images {
-    height: 60%;
-    width: 100%;
-    border-bottom: 5px solid black;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    max-width: 60%;
+    max-height: 580px;
 }
 
 .black-arrow-left,
 .black-arrow-right {
-    width: 55px;
+    width: 50px;
     height: 50px;
+    margin: 15px;
     z-index: 1000;
-    padding: 15px 20px;
-    background: rgba(128, 128, 128, 0.462);
-    -webkit-transition: background 0.3s;
-    -o-transition: background 0.3s;
-    transition: background 0.3s;
+    transition: 0.3s;
+    background-color: white;
+    border-radius: 50%;
 }
 
 .black-arrow-left:hover,
 .black-arrow-right:hover {
-    background: rgba(128, 128, 128, 0.601);
+    background-color: grey;
     cursor: pointer;
 }
 
 .project-description {
-    height: 31%;
+    width: 550px;
     padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .main-project-title {
@@ -525,7 +484,7 @@ a {
 }
 
 .main-project-hr {
-    width: 618px;
+    width: 450px;
     margin: 10px 0;
     font-family: sans-serif;
 }
@@ -543,18 +502,25 @@ a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0 5px 0 10px;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.icon-button {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 10vh;
 }
 
 .project-close-button {
     color: black;
-    font-size: 25px;
-    margin-top: 20px;
+    font-size: 45px;
+    padding: 20px;
 }
 
 .project-close-button:hover {
@@ -575,7 +541,7 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
     background: #4eff98;
-    margin-top: 10px;
+    margin: 10px 5px;
     width: 140px;
     height: 40px;
 }
@@ -594,7 +560,7 @@ a {
 }
 
 .video-button-div:hover {
-    background: white;
+    background: none;
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
@@ -604,175 +570,6 @@ a {
 .video-button-div:hover > .open-icon {
     color: #4eff98;
 }
-
-/*--HIDDEN-FOLDER-BY-NUMBER--*/
-
-/*--DIGICACHING-IMAGES--*/
-
-.number-0-0 {
-    background: url(images/digicaching-main.jpg);
-    background-size: cover;
-}
-
-.number-0-1 {
-    background: url(images/digicaching1.jpg);
-}
-
-.number-0-2 {
-    background: url(images/digicaching2.jpg);
-}
-
-.number-0-3 {
-    background: url(images/digicaching3.jpg);
-}
-
-.number-0-4 {
-    background: url(images/digicaching4.jpg);
-}
-
-.number-0-1,
-.number-0-2,
-.number-0-3,
-.number-0-4 {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 648px 384px;
-} 
-
-/*--CATALYST-IMAGES--*/
-
-
-.number-1-0 {
-    background: url(images/catalyst-main.png);
-    background-size: cover;
-}
-
-.number-1-1 {
-    background: url(images/catalyst1.png);
-}
-
-.number-1-2 {
-    background: url(images/catalyst2.png);
-}
-
-.number-1-3 {
-    background: url(images/catalyst3.png);
-}
-
-.number-1-4 {
-    background: url(images/catalyst4.png);
-}
-
-.number-1-1,
-.number-1-2,
-.number-1-3,
-.number-1-4 {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 250px 388.8px;
-}
-
-/*--TIMER-IMAGES--*/
-
-.number-2-0 {
-    background: url(images/timer-main.png);
-    background-size: cover;
-}
-
-.number-2-1 {
-    background: url(images/timer1.png);
-}
-
-.number-2-2{
-    background: url(images/timer2.png);
-}
-
-.number-2-3 {
-    background: url(images/timer3.png);
-}
-
-.number-2-4 {
-    background: url(images/timer4.png);
-}
-
-.number-2-1,
-.number-2-2,
-.number-2-3,
-.number-2-4 {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 530px 380px;
-}
-
-/*--Israel-tour-IMAGES--*/
-
-.number-3-0 {
-    background: url(images/israel1.jpg);
-    background-size: cover;
-}
-
-.number-3-1 {
-    background: url(images/israel2.jpg);
-}
-
-.number-3-2{
-    background: url(images/israel3.jpg);
-}
-
-.number-3-3 {
-    background: url(images/israel4.jpg);
-}
-
-.number-3-4 {
-    background: url(images/israel5.jpg);
-}
-
-.number-3-1,
-.number-3-2,
-.number-3-3,
-.number-3-4 {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 648px 385px;
-}
-
-/*--Shopping-cart-IMAGES--*/
-
-.number-4-0 {
-    background: url(images/shopping-cart1.png);
-}
-
-.number-4-1 {
-    background: url(images/shopping-cart2.png);
-}
-
-.number-4-2{
-    background: url(images/shopping-cart3.png);
-}
-
-.number-4-3 {
-    background: url(images/shopping-cart4.png);
-}
-
-.number-4-4 {
-    background: url(images/shopping-cart5.png);
-}
-
-.number-4-0,
-.number-4-1,
-.number-4-2,
-.number-4-3,
-.number-4-4 {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 648px 385px;
-}
-
 
 
 /********************/

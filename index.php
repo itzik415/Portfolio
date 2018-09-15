@@ -79,184 +79,179 @@
                     <h6 class="all-programming-languages">JAVASCRIPT</h6>
                 </div> -->
                 <div class="gallery">
-                    <div class="first-project-line">
-                        <div class="photo">
-                            <div class="project-image image-1"></div>
-                            <div class="text">
-                                <p class="header-title">Digicaching</p>
-                                <p class="title-description">Node.js + React</p>
-                            </div>
-                            <div class="project-button project1">LEARN MORE</div>
+                    <div class="hidden-folder">
+                        <div class="icon-button">
+                            <ion-icon class="project-close-button" name="close"></ion-icon>
+                        </div> 
+                        <div class="middle-photos">
+                            <img class="black-arrow-left" src="resources/css/images/black-arrow-left.png">
+                            <img class="projects-images" src="resources/css/images/photo-0-1.png">
+                            <img class="black-arrow-right" src="resources/css/images/black-arrow-right.png">
                         </div>
-                        <div class="hidden-folder">
-                            <div class="middle-section">
-                                <div class="projects-images number-0-0">
-                                    <img class="black-arrow-left" src="resources/css/images/black-arrow-left.png">
-                                    <img class="black-arrow-right" src="resources/css/images/black-arrow-right.png">
-                                </div>
-                                <div class="project-description">
-                                    <p class="main-project-title">Digicaching</p>
-                                    <p class="main-project-description">Online Game</p>
-                                    <hr class="main-project-hr">
-                                    <p class="main-project-long-description">Digicaching is a virtual geocaching app that lets users find, 
-                                        collect, and share virtual items by exploring their communities and environment. 
-                                        Users can combine items to upgrade them into more rare items, 
-                                        and fulfill collections by combining advanced component items to build the rarest ones.
-                                    </p>
-                                </div>
-                                <div class="buttons">
-                                    <a href="https://www.youtube.com/watch?v=PlbsAkes1VU&feature=youtu.be" target="_blank"><div class="video-button-div">
-                                        <ion-icon class="open-icon" name="open"></ion-icon>
-                                        <p class="video-button">Watch Video</p>   
-                                    </div></a> 
-                                    <div class="icon-button">
-                                        <ion-icon class="project-close-button" name="close"></ion-icon>
-                                    </div> 
-                                </div>                                           
+                    </div>
+                    <div class="photo">
+                        <img class="project-image" src="resources/css/images/face-recognition.png" alt="project-picture">
+                        <div class="bottom-part">
+                            <div class="project-description">
+                                <p class="main-project-title">Facey</p>
+                                <p class="main-project-description">Face-Recognition</p>
+                                <hr class="main-project-hr">
+                                <p class="main-project-long-description">Facey is a web application created with React for the front and and Node.js and postgreSQL for the back end. 
+                                    It uses a machine learning API called Clarifai to detect human faces in randome images submitted via an input form. 
+                                    The app counts the amount of times the user tried to look for images and ranking it.
+                                </p>
                             </div>
+                            <div class="buttons">
+                                <a href="https://www.youtube.com/watch?v=n0GMFIba7j0&feature=youtu.be" target="_blank"><div class="video-button-div">
+                                    <ion-icon class="open-icon" name="open"></ion-icon>
+                                    <p class="video-button">Watch Video</p>   
+                                </div></a> 
+                                <a href="https://github.com/itzik415/Facial-recognition-app" target="_blank"><div class="video-button-div">
+                                    <ion-icon class="open-icon" name="logo-github"></ion-icon>
+                                    <p class="video-button">GitHub</p>   
+                                </div></a> 
+                            </div>        
                         </div>
-                        <div class="photo">
-                            <div class="project-image image-2"></div>
-                            <div class="text">
-                                <p class="header-title">Catalyst</p>
-                                <p class="title-description">Node.js + React</p>
+                    </div> 
+                    <div class="hidden-folder">
+                        <div class="icon-button">
+                            <ion-icon class="project-close-button" name="close"></ion-icon>
+                        </div> 
+                        <div class="middle-photos">
+                            <img class="black-arrow-left" src="resources/css/images/black-arrow-left.png">
+                            <img class="projects-images" src="resources/css/images/photo-1-1.png">
+                            <img class="black-arrow-right" src="resources/css/images/black-arrow-right.png">
+                        </div>
+                    </div>
+                    <div class="photo">
+                        <img class="project-image" src="resources/css/images/israel.png" alt="project-picture">
+                        <div class="bottom-part">
+                            <div class="project-description">
+                                <p class="main-project-title">Isra-App</p>
+                                <p class="main-project-description">Traveling app</p>
+                                <hr class="main-project-hr">
+                                <p class="main-project-long-description">
+                                    The Isra-App is a travel guide for tourists wanting to visit Israel. 
+                                    The app provides users with trip options and reviews from previous customers. 
+                                    The app serves ass an advertisement for a pretend travel company.
+                                </p> 
                             </div>
-                            <div class="project-button project2">LEARN MORE</div>
-                        </div>
-                        <div class="hidden-folder">
-                            <div class="middle-section">
-                                <div class="projects-images number-1-0">
-                                    <img class="black-arrow-left" src="resources/css/images/black-arrow-left.png">
-                                    <img class="black-arrow-right" src="resources/css/images/black-arrow-right.png">
-                                </div>
-                                <div class="project-description">
-                                    <p class="main-project-title">Catalyst</p>
-                                    <p class="main-project-description">Online Motivational App</p>
-                                    <hr class="main-project-hr">
-                                    <p class="main-project-long-description">Motivational app for people that are lacking that extra push. 
-                                        Group of close friends post their goals that they want to commit to. 
-                                        Your friends vote for a ridiculous punishment for you if you don’t follow through. 
-                                        You have to ‘check-in’ to prove that you actually doing the work, else get punished!
-                                    </p>
-                                </div>
-                                <div class="buttons">
-                                    <a href="https://www.youtube.com/watch?v=hNMJl7z7fHQ&t=0s" target="_blank"><div class="video-button-div">
-                                        <ion-icon class="open-icon" name="open"></ion-icon>
-                                        <p class="video-button">Watch Video</p>   
-                                    </div></a> 
-                                    <div class="icon-button">
-                                        <ion-icon class="project-close-button" name="close"></ion-icon>
-                                    </div> 
-                                </div> 
+                            <div class="buttons">
+                                <a href="https://youtu.be/YhcJyAnwu-Q" target="_blank"><div class="video-button-div">
+                                    <ion-icon class="open-icon" name="open"></ion-icon>
+                                    <p class="video-button">Watch Video</p>   
+                                </div></a> 
+                                <a href="https://github.com/itzik415/traveling-app" target="_blank"><div class="video-button-div">
+                                    <ion-icon class="open-icon" name="logo-github"></ion-icon>
+                                    <p class="video-button">GitHub</p> 
+                                </div></a> 
                             </div>
                         </div>
                     </div>
-                    <div class="second-project-line">
-                        <div class="photo">
-                            <div class="project-image image-3"></div>
-                            <div class="text">
-                                <p class="header-title">Digital-Timer</p>
-                                <p class="title-description">Pure JavaScript</p>
-                            </div>
-                            <div class="project-button project3">LEARN MORE</div>
-                        </div>
-                        <div class="hidden-folder">
-                            <div class="middle-section">
-                                <div class="projects-images number-2-0">
-                                    <img class="black-arrow-left" src="resources/css/images/black-arrow-left.png">
-                                    <img class="black-arrow-right" src="resources/css/images/black-arrow-right.png">
-                                </div>
-                                <div class="project-description">
-                                    <p class="main-project-title">Digital-Timer</p>
-                                    <p class="main-project-description">Timer</p>
-                                    <hr class="main-project-hr">
-                                    <p class="main-project-long-description">The first JavaScript project that I completed entirely by myself: JavaScript Timer, built with pure JavaScript. 
-                                        This project marks the beginning of my journey of becoming a full-stack web developer. 
-                                        This project made me realize my weaknesses and gave me confidence in my strengths. 
-                                        I had a really hard time making this timer work properly, and that's what makes this project so meaningful for me.
-                                    </p>       
-                                </div>
-                                <div class="buttons">
-                                    <a href="https://www.youtube.com/watch?v=n0GMFIba7j0&feature=youtu.be" target="_blank"><div class="video-button-div">
-                                        <ion-icon class="open-icon" name="open"></ion-icon>
-                                        <p class="video-button">Watch Video</p>   
-                                    </div></a> 
-                                    <div class="icon-button">
-                                        <ion-icon class="project-close-button" name="close"></ion-icon>
-                                    </div> 
-                                </div> 
-                            </div>
-                        </div>
-                        <div class="photo">
-                            <div class="project-image image-4"></div>
-                            <div class="text">
-                                <p class="header-title">Israel-Traveling</p>
-                                <p class="title-description">HTML + Sass</p>
-                            </div>
-                            <div class="project-button project4">LEARN MORE</div>
-                        </div>
-                        <div class="hidden-folder">
-                            <div class="middle-section">
-                                <div class="projects-images number-3-0">
-                                    <img class="black-arrow-left" src="resources/css/images/black-arrow-left.png">
-                                    <img class="black-arrow-right" src="resources/css/images/black-arrow-right.png">
-                                </div>
-                                <div class="project-description">
-                                    <p class="main-project-title">Israel-Traveling</p>
-                                    <p class="main-project-description">Traveling app</p>
-                                    <hr class="main-project-hr">
-                                    <p class="main-project-long-description">Digicaching is a virtual geocaching app that lets users find, 
-                                            collect, and share virtual items by exploring their communities and environment. 
-                                            Users can combine items to upgrade them into more rare items, 
-                                            and fulfill collections by combining advanced component items to build the rarest ones.
-                                    </p> 
-                                </div>
-                                <div class="buttons">
-                                    <a href="https://youtu.be/YhcJyAnwu-Q" target="_blank"><div class="video-button-div">
-                                        <ion-icon class="open-icon" name="open"></ion-icon>
-                                        <p class="video-button">Watch Video</p>   
-                                    </div></a> 
-                                    <div class="icon-button">
-                                        <ion-icon class="project-close-button" name="close"></ion-icon>
-                                    </div> 
-                                </div> 
-                            </div>
-                        </div>
-                        <div class="photo">
-                            <div class="project-image image-5"></div>
-                            <div class="text">
-                                <p class="header-title">Shopping-cart</p>
-                                <p class="title-description">Pure React</p>
-                            </div>
-                            <div class="project-button project4">LEARN MORE</div>
-                        </div>
-                        <div class="hidden-folder">
-                            <div class="middle-section">
-                                <div class="projects-images number-4-0">
-                                    <img class="black-arrow-left" src="resources/css/images/black-arrow-left.png">
-                                    <img class="black-arrow-right" src="resources/css/images/black-arrow-right.png">
-                                </div>
-                                <div class="project-description">
-                                    <p class="main-project-title">Shopping-cart</p>
-                                    <p class="main-project-description">Shopping</p>
-                                    <hr class="main-project-hr">
-                                    <p class="main-project-long-description">
-                                        This website is an attempt to build a full functioning online shopping cart with pure React.
-                                        
-                                    </p>
-                                </div>
-                                <div class="buttons">
-                                    <a href="https://youtu.be/H_EL4AYThxU" target="_blank"><div class="video-button-div">
-                                        <ion-icon class="open-icon" name="open"></ion-icon>
-                                        <p class="video-button">Watch Video</p>   
-                                    </div></a> 
-                                    <div class="icon-button">
-                                        <ion-icon class="project-close-button" name="close"></ion-icon>
-                                    </div> 
-                                </div>                                           
-                            </div>
+                    <div class="hidden-folder">
+                        <div class="icon-button">
+                            <ion-icon class="project-close-button" name="close"></ion-icon>
+                        </div> 
+                        <div class="middle-photos">
+                            <img class="black-arrow-left" src="resources/css/images/black-arrow-left.png">
+                            <img class="projects-images" src="resources/css/images/photo-2-1.png">
+                            <img class="black-arrow-right" src="resources/css/images/black-arrow-right.png">
                         </div>
                     </div>
+                    <div class="photo">
+                        <img class="project-image" src="resources/css/images/digicaching.png" alt="project-picture">
+                        <div class="bottom-part">
+                            <div class="project-description">
+                                <p class="main-project-title">Digicaching</p>
+                                <p class="main-project-description">Online Game</p>
+                                <hr class="main-project-hr">
+                                <p class="main-project-long-description">Digicaching is a virtual geocaching app that lets users find, 
+                                    collect, and share virtual items by exploring their communities and environment. 
+                                    Users can combine items to upgrade them into more rare items, 
+                                    and fulfill collections by combining advanced component items to build the rarest ones.
+                                </p> 
+                            </div>
+                            <div class="buttons">
+                                <a href="https://www.youtube.com/watch?v=PlbsAkes1VU&feature=youtu.be" target="_blank"><div class="video-button-div">
+                                    <ion-icon class="open-icon" name="open"></ion-icon>
+                                    <p class="video-button">Watch Video</p>   
+                                </div></a> 
+                                <a href="https://github.com/itzik415/Digicaching" target="_blank"><div class="video-button-div">
+                                    <ion-icon class="open-icon" name="logo-github"></ion-icon>
+                                    <p class="video-button">GitHub</p>  
+                                </div></a> 
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="hidden-folder">
+                        <div class="icon-button">
+                            <ion-icon class="project-close-button" name="close"></ion-icon>
+                        </div> 
+                        <div class="middle-photos">
+                            <img class="black-arrow-left" src="resources/css/images/black-arrow-left.png">
+                            <img class="projects-images" src="resources/css/images/photo-3-1.png">
+                            <img class="black-arrow-right" src="resources/css/images/black-arrow-right.png">
+                        </div>
+                    </div>
+                    <div class="photo">
+                        <img class="project-image" src="resources/css/images/catalyst.png" alt="project-picture">
+                        <div class="bottom-part">
+                            <div class="project-description">
+                                <p class="main-project-title">Catalyst</p>
+                                <p class="main-project-description">Online Motivational App</p>
+                                <hr class="main-project-hr">
+                                <p class="main-project-long-description">Motivational app for people that are lacking that extra push. 
+                                    Group of close friends post their goals that they want to commit to. 
+                                    Your friends vote for a ridiculous punishment for you if you don’t follow through. 
+                                    You have to ‘check-in’ to prove that you actually doing the work, else get punished!
+                                </p>
+                            </div>
+                            <div class="buttons">
+                                <a href="https://www.youtube.com/watch?v=hNMJl7z7fHQ&t=0s" target="_blank"><div class="video-button-div">
+                                    <ion-icon class="open-icon" name="open"></ion-icon>
+                                    <p class="video-button">Watch Video</p>   
+                                </div></a> 
+                                <a href="https://github.com/Catalyst-DC/Catalyst" target="_blank"><div class="video-button-div">
+                                    <ion-icon class="open-icon" name="logo-github"></ion-icon>
+                                    <p class="video-button">GitHub</p>
+                                </div></a> 
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="hidden-folder">
+                        <div class="icon-button">
+                            <ion-icon class="project-close-button" name="close"></ion-icon>
+                        </div> 
+                        <div class="middle-photos">
+                            <img class="black-arrow-left" src="resources/css/images/black-arrow-left.png">
+                            <img class="projects-images" src="resources/css/images/photo-4-1.png">
+                            <img class="black-arrow-right" src="resources/css/images/black-arrow-right.png">
+                        </div>
+                    </div>
+                    <div class="photo">
+                        <img class="project-image" src="resources/css/images/shopping-cart.png" alt="project-picture">
+                        <div class="bottom-part">
+                            <div class="project-description">
+                                <p class="main-project-title">Shopping-Cart</p>
+                                <p class="main-project-description">Shopping</p>
+                                <hr class="main-project-hr">
+                                <p class="main-project-long-description">
+                                    This program utilizes React in its functioning as a shopping cart for an online store. 
+                                    This cart includes advanced functions such as an item editor and a coupon input log.
+                                </p>
+                            </div>
+                            <div class="buttons">
+                                <a href="https://youtu.be/H_EL4AYThxU" target="_blank"><div class="video-button-div">
+                                    <ion-icon class="open-icon" name="open"></ion-icon>
+                                    <p class="video-button">Watch Video</p>   
+                                </div></a> 
+                                <a href="https://github.com/itzik415/Shopping-Cart" target="_blank"><div class="video-button-div">
+                                    <ion-icon class="open-icon" name="logo-github"></ion-icon>
+                                    <p class="video-button">GitHub</p>  
+                                </div></a> 
+                            </div>
+                        </div>
+                    </div>    
                 </div> 
             </div>
             <div class="skills" id="skills-content">

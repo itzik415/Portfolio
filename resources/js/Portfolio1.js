@@ -112,82 +112,39 @@ function newNum(){
 
 
 //Manipulate projects images
-var projectImage = document.querySelectorAll('.photo');
-
-for(let i = 0; i < projectImage.length; i++) {
-    projectImage[i].addEventListener('mouseover',function(){
-        document.querySelectorAll('.project-image')[i].style.opacity = '0';
-        document.querySelectorAll('.project-image')[i].style.transition = '0.4s';
-        document.querySelectorAll('.header-title')[i].style.opacity = '1';
-        document.querySelectorAll('.header-title')[i].style.transition = '0.4s';
-        document.querySelectorAll('.title-description')[i].style.opacity = '1';
-        document.querySelectorAll('.title-description')[i].style.transition = '0.4s';
-        document.querySelectorAll('.project-button')[i].style.opacity = '1';
-        document.querySelectorAll('.project-button')[i].style.transition = '0.4s';
-        document.querySelectorAll('.project-button')[i].style.bottom = '45px';
-        document.querySelectorAll('.text')[i].style.top = '50px';
-        document.querySelectorAll('.text')[i].style.transition = '0.4s';
+for(let i = 0; i < document.querySelectorAll('.project-image').length; i++) {
+    document.querySelectorAll('.project-image')[i].addEventListener('click',function(){
+        document.querySelectorAll('.hidden-folder')[i].style.display = 'flex';
     })
-}
+    
+    let y = 1;
 
-for(let i = 0; i < projectImage.length; i++) {
-    projectImage[i].addEventListener('mouseout',function(){
-        document.querySelectorAll('.project-image')[i].style.opacity = '1';
-        document.querySelectorAll('.header-title')[i].style.opacity = '0';
-        document.querySelectorAll('.title-description')[i].style.opacity = '0';
-        document.querySelectorAll('.project-button')[i].style.opacity = '0';
-        document.querySelectorAll('.project-button')[i].style.bottom = '0px';
-        document.querySelectorAll('.project-button')[i].style.transition = '0.4s';
-        document.querySelectorAll('.text')[i].style.top = '0px';
-        document.querySelectorAll('.text')[i].style.transition = '0.4s';
-    })
-}
-
-
-//Manipulate project button
-var totalHeight = document.body.scrollHeight;
-var hiddenFolder = document.querySelectorAll('.hidden-folder');
-
-for(let i = 0; i < document.querySelectorAll('.project-button').length; i++){
-    document.querySelectorAll('.project-button')[i].addEventListener('click', function (){
-        hiddenFolder[i].style.display = 'block';
-        hiddenFolder[i].style.height = totalHeight + 'px';
-        hiddenFolder[i].style.position = 'fixed';
-        hiddenFolder[i].style.top = '0';
-        hiddenFolder[i].style.left = '0';
-    })
-}
-
-for(let i = 0; i < document.querySelectorAll('.project-close-button').length; i++){
-    document.querySelectorAll('.project-close-button')[i].addEventListener('click', function (){
-        hiddenFolder[i].style.display = 'none';
-    })
-}
-
-//Manipulate photos arrow buttons
-for(let i = 0; i < document.querySelectorAll('.black-arrow-right').length; i++){
-    let y = 0;
     document.querySelectorAll(".black-arrow-right")[i].addEventListener('click', function(){ 
-        if(y < 4){
-            document.querySelectorAll(".projects-images")[i].classList.remove(`number-${i}-${y}`);
-            document.querySelectorAll(".projects-images")[i].classList.add(`number-${i}-${y+1}`);
+        if(y < 5){
+            document.querySelectorAll(".projects-images")[i].src = `resources/css/images/photo-${i}-${y+1}.png`;
             y++;
-        }else{
-            document.querySelectorAll(".projects-images")[i].classList.remove(`number-${i}-4`);
-            document.querySelectorAll(".projects-images")[i].classList.add(`number-${i}-0`);
-            y = 0;
-        }    
-    })
+        }else {
+            document.querySelectorAll(".projects-images")[i].src = `resources/css/images/photo-${i}-1.png`;
+            y = 1;
+        }
+    });
 
     document.querySelectorAll(".black-arrow-left")[i].addEventListener('click', function(){ 
-        if(y > 0){
-            document.querySelectorAll(".projects-images")[i].classList.remove(`number-${i}-${y}`);
-            document.querySelectorAll(".projects-images")[i].classList.add(`number-${i}-${y-1}`);
+         if(y > 1){
+            document.querySelectorAll(".projects-images")[i].src = `resources/css/images/photo-${i}-${y-1}.png`;
             y--;
-        }else{
-            document.querySelectorAll(".projects-images")[i].classList.remove(`number-${i}-0`);
-            document.querySelectorAll(".projects-images")[i].classList.add(`number-${i}-4`);
-            y = 4;
-        }    
+        }else {
+            document.querySelectorAll(".projects-images")[i].src = `resources/css/images/photo-${i}-5.png`;
+            y = 5;
+        }
+    });
+}
+
+//Manipulate photos closing button
+for(let i = 0; i < document.querySelectorAll('.project-close-button').length; i++){
+    document.querySelectorAll('.project-close-button')[i].addEventListener('click', function (){
+        document.querySelectorAll('.hidden-folder')[i].style.display = 'none';
     })
 }
+
+
