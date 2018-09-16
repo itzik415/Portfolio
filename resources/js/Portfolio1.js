@@ -58,7 +58,7 @@ var amount = function(i){
     let x = String(Math.floor(Math.random() * screen.width));
     var star = document.getElementsByClassName('star-img')[i];
     var img = document.createElement("img");
-    img.src = "resources/css/images/star3.png";
+    img.src = "../resources/css/images/star3.png";
     img.setAttribute('class', "star-img");
     star.style.top = y + "px";
     star.style.right = x + "px";
@@ -148,3 +148,7 @@ for(let i = 0; i < document.querySelectorAll('.project-close-button').length; i+
 }
 
 
+//Manipulate submit form button
+document.querySelector('.submit-button').addEventListener('click', function (){
+    document.querySelector('.send-spaceship').style.animation = 'send-spaceship 5s 1';
+})

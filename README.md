@@ -1,5 +1,21 @@
-# Portfolio
+# Node Contact Form
 
-My personal portfolio. I began this portfolio over a year ago at the start of my Software Development journey. 
-This portfoilo changed over time according to my skillset. I like to experiment with new ideas on my porfolio, and use it as a 
-playground for practicing my design skills. 
+Simple Node.js/Express app using Nodemailer to send emails
+
+- Please add your own SMTP info for it to work
+
+### Version
+
+1.0.0
+
+## Install Dependencies
+
+```bash
+npm install 
+```
+
+## Run
+
+```bash
+node app
+```
