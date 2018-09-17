@@ -511,8 +511,7 @@ a {
 .project-image {
     height: 320px;
     padding: 10px;
-}
-    
+}   
 
 .bottom-part {
     display: flex;
@@ -878,30 +877,6 @@ textarea:hover {
 }
 
 
-@keyframes send-spaceship {
-    20%, 25%, 30% {
-        width: 100px;
-        height: 100px;
-        transform: translate(100px,-350px) rotate(-90deg);   
-    }
-
-    35%, 40%, 45%, 50% {
-        width: 150px;
-        height: 150px;
-    }
-    
-    60%, 65%, 70%{
-        width: 200px;
-        height: 200px;
-    } 
-    
-    80%, 85%, 100%{
-        width: 260px;
-        height: 260px;
-        transform: translate(-2000px,-300px) rotate(-90deg);
-    } 
-}
-
 /********************/
 /*------FOOTER------*/
 /********************/
@@ -1069,6 +1044,31 @@ footer{
     }
     to {
         opacity: 1;
+    } 
+}
+
+
+@keyframes send-spaceship {
+    20%, 25%, 30% {
+        width: 100px;
+        height: 100px;
+        transform: translate(100px,-350px) rotate(-90deg);   
+    }
+
+    35%, 40%, 45%, 50% {
+        width: 150px;
+        height: 150px;
+    }
+    
+    60%, 65%, 70%{
+        width: 200px;
+        height: 200px;
+    } 
+    
+    80%, 85%, 100%{
+        width: 260px;
+        height: 260px;
+        transform: translate(-2000px,-300px) rotate(-90deg);
     } 
 }
 

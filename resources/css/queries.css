@@ -74,6 +74,37 @@
 }
 
 @media only screen and (max-width: 900px) {
+
+    .navigation__button {
+        height: 60px;
+        width: 60px;
+        top: 35px;
+        right: 35px;
+    }
+      
+    .navigation__background {
+        height: 60px;
+        width: 60px;
+        top: 35px;
+        right: 35px;
+    }
+      
+    .navigation__item {
+        margin: 2rem; 
+    }
+      
+    .navigation__link:link, .navigation__link:visited {
+        font-size: 25px;
+    }
+      
+    .navigation__icon {
+        margin-top: 28px; 
+    }
+    
+    .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+        width: 27px;
+    }
+
     #open {
         font-size: 170%;
     }
@@ -257,7 +288,61 @@
 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 610px) {
+      
+    .navigation__button {
+        height: 40px;
+        width: 40px;
+        top: 20px;
+        right: 20px;
+    }
+      
+    .navigation__background {
+        height: 40px;
+        width: 40px;
+        top: 20px;
+        right: 20px;
+    }
+      
+    .navigation__nav {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1500;
+        opacity: 0;
+        width: 0;
+        transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+    }
+      
+    .navigation__list {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        list-style: none;
+        text-align: center;
+        width: 100%; 
+    }
+      
+    .navigation__item {
+        margin: 1rem; 
+    }
+      
+    .navigation__link:link, .navigation__link:visited {
+        font-size: 18px;
+        margin: 5px; 
+    }
+      
+    .navigation__icon {
+        margin-top: 19px; 
+    }
+    
+    .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+        width: 20px;
+    }
+    
 
     h2 {
         font-size: 100%;
@@ -337,9 +422,28 @@
         width: 320px;
     }
 
+    .photo {
+        display: flex;
+        align-items: center;
+    }
+
     .project-image {
-        width: 280px;
-        height: 200px;
+        width: 240px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+
+    .main-project-title {
+        margin-top: 20px;
+    }
+    
+    .main-project-hr {
+        width: 300px;
+    }
+    
+    .main-project-long-description {
+        width: 60%;
+        margin-bottom: 40px;
     }
 
     .gallery {
@@ -356,8 +460,25 @@
         width: 70%;
     }
 
+    .input-form, 
     textarea {
-        min-width: 60%;
+        font-size: 15px;
+        margin: 0 7px 7px 7px;
+        width: 300px;
+    }
+
+    textarea {
+        min-width: 300px;
+        max-width: 300px;
+    }
+
+    .submit-button-container {
+        margin: 20px 200px 0 0;
+    }
+
+    .submit-button {
+        padding: 13px 40px 13px 20px;
+        font-size: 17px;
     }
 
     .fa-file-alt,
