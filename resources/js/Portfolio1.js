@@ -72,11 +72,11 @@ if(outerWidth < 1050 && outerWidth >= 800 ){
         amount(i);
     } 
 }else if(outerWidth < 800 && outerWidth >= 500){
-    for(let i = 0; i < 400; i++){
+    for(let i = 0; i < 300; i++){
         amount(i);
     } 
 }else if(outerWidth < 500){
-    for(let i = 0; i < 300; i++){
+    for(let i = 0; i < 200; i++){
         amount(i);
     } 
 }else {
