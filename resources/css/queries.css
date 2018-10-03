@@ -356,7 +356,7 @@
     
     .navigation__icon, .navigation__icon::before, .navigation__icon::after {
         width: 20px;
-        height: 1px;
+        height: 2px;
     }
 
     .black-arrow-left,
@@ -371,11 +371,15 @@
     }
 
     #open {
-        font-size: 100%;
+        font-size: 180%;
+        letter-spacing: 1px;
+        /* text-shadow: none; */
     }
 
     #come_in {
-        font-size: 90%;
+        font-size: 155%;
+        letter-spacing: 1px;
+        letter-spacing: 0.2px;
     }
 
     #portfolio_name {
